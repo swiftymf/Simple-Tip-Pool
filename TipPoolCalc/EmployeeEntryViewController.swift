@@ -10,9 +10,6 @@ import UIKit
 import CurrencyTextField
 import ChameleonFramework
 
-// Adding comment to test changes for GitHub
-
-
 class EmployeeEntryViewController: UITableViewController {
   
   var serverArray = Array<String>()
