@@ -7,45 +7,95 @@
 //
 
 import UIKit
+//import CurrencyTextField
 
 class TipEntryViewController: UIViewController {
+  
+  var cashTips = Decimal()
+  var creditTips = Decimal()
+  var barbackSplit = Decimal()
+  
+  var totalTips = Decimal()
+  var percentageOfTipsAreCash = Decimal()
+  var tips = String()
+  
+  
+  @IBOutlet weak var cashTipsTextField: UITextField!
+  @IBOutlet weak var creditTipsTextField: UITextField!
+  @IBOutlet weak var barbackSplitTextField: UITextField!
+  
+  @IBAction func infoButtonTapped(_ sender: UIButton) {
+    let alert = UIAlertController(title: "How to use:", message: "1. Enter Cash and Credit card tips\n\n2. Enter % for barbacks\n(or other support staff)\n\n3. Tap Next\n\n4. Enter employee name and hours worked\n\n5. Choose server or barback\n\nAs you add employees, tips will be calculated automatically.", preferredStyle: .alert)
+    alert.addAction(UIAlertAction(title: "Let's go!", style: .default, handler: nil))
+    
+    self.present(alert, animated: true)
+  }
+  
 
+  
+  // Create share button (text, email, etc.)
+  // Also need to format table to readable text
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
     
-    @IBOutlet weak var cashTipsTextField: UITextField!
+    // Nav bar background color (change view background in storyboard)
+    navigationController?.navigationBar.barTintColor = UIColor.init(hexString: "93827f")    //UIColor.flatForestGreen
+    navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        
+    // Create the info button
+    let infoButton = UIButton(type: .infoLight)
     
-    @IBOutlet weak var creditTipsTextField: UITextField!
+    // You will need to configure the target action for the button itself, not the bar button item
+    infoButton.addTarget(self, action: #selector(infoButtonTapped), for: .touchUpInside)
     
-    @IBOutlet weak var barbackSplitTextField: UITextField!
+    // Create a bar button item using the info button as its custom view
+    let infoBarButtonItem = UIBarButtonItem(customView: infoButton)
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "NextSegue"  {
-            if let employeeVC = segue.destination as? EmployeeEntryViewController {
-                
-                // if cashTips == nil && creditTips == nil {
-                //      show alert saying to enter some value
-                // }
-                
-                let barbackSplit: Double = Double(barbackSplitTextField.text!) ?? 0.00
-                let cashTips: Double = Double(cashTipsTextField.text!) ?? 0.00
-                let creditTips: Double = Double(creditTipsTextField.text!) ?? 0.00
-                let totalTips = cashTips + creditTips
-                let percentageOfTipsAreCash = cashTips / totalTips
-                let tips = String(format: "%.2f", totalTips)
-                
-                employeeVC.barbackSplitPercentage = barbackSplit
-                employeeVC.percentageIsCash = percentageOfTipsAreCash
-                employeeVC.totalTips = totalTips
-                employeeVC.totalTipsForLabel = "Total tips $\(tips)"
-            }
+    // Use it as required
+    navigationItem.rightBarButtonItem = infoBarButtonItem
+  }
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == "NextSegue"  {
+      if let employeeVC = segue.destination as? EmployeeEntryViewController {
+        
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        
+        if let number1 = formatter.number(from: cashTipsTextField.text!) {
+          cashTips = number1.decimalValue
+          print("cash tips are \(cashTips)")
         }
+        if let number1 = formatter.number(from: creditTipsTextField.text!) {
+          creditTips = number1.decimalValue
+          print("credit tips are \(creditTips)")
+        }
+        
+        if cashTips == 0 && creditTips == 0 {
+          let alert = UIAlertController(title: "No tips?", message: "You didn't make any tips today? Double check those amounts because you definitely deserved some tips for all your hard work.", preferredStyle: .alert)
+          alert.addAction(UIAlertAction(title: "Go back", style: .default, handler: nil))
+          
+          self.present(alert, animated: true)
+        }
+        
+        barbackSplit = Decimal(Double(barbackSplitTextField.text!) ?? 0.00)
+        
+        totalTips = cashTips + creditTips
+        print("Total tips: \(totalTips)")
+        
+        percentageOfTipsAreCash = cashTips / totalTips
+        tips = String(format: "%.2f", Double(truncating: totalTips as NSNumber))
+        print("Tips are \(tips)")
+        
+        employeeVC.barbackSplitPercentage = barbackSplit
+        employeeVC.percentageIsCash = percentageOfTipsAreCash
+        employeeVC.totalTips = totalTips
+        employeeVC.totalTipsForLabel = "Total tips $\(tips)"
+      }
     }
-    
-    
+  }
+  
+  
 }
 
