@@ -26,7 +26,8 @@ class EmployeeEntryViewController: UITableViewController {
   var totalTipsForLabel = ""
   var totalTips: Decimal = 0.00
   
-  
+  var serverTipsPerHour: String = ""
+  var barbackTipsPerHour: String = ""
   
   @IBOutlet weak var employeeNameTextField: UITextField!
   @IBOutlet weak var hoursTextField: UITextField!
@@ -38,7 +39,7 @@ class EmployeeEntryViewController: UITableViewController {
     super.viewDidLoad()
     
     // Nav bar color (change empty table area background in storyboard -> identity inspector
-    navigationController?.navigationBar.barTintColor =  UIColor.init(hexString: "93827f")    //UIColor.flatForestGreen
+    navigationController?.navigationBar.barTintColor =  UIColor.init(hexString: "93827f")
     navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     
     totalTipsLabel.text = totalTipsForLabel
@@ -55,18 +56,16 @@ class EmployeeEntryViewController: UITableViewController {
     let view = UIView()
     
     // Employee entry background color
-    view.backgroundColor = UIColor.init(hexString: "8ae0ad")   //UIColor.flatPowderBlue
-    //    view.layer.cornerRadius = 10.0
+    view.backgroundColor = UIColor.init(hexString: "8ae0ad")
+
     return view
   }()
-  
+
   private func pinBackground(_ view: UIView, to stackView: UIStackView) {
     view.translatesAutoresizingMaskIntoConstraints = false
     stackView.insertSubview(view, at: 0)
     view.pin(to: stackView)
   }
-  
-  
   
   // MARK: - Table view data source
   
@@ -104,15 +103,15 @@ class EmployeeEntryViewController: UITableViewController {
     
     if barbackSplitPercentage == 0.00 {
       if section == 0 {
-        return "Servers  $\(totalTipsText)          (Cash + Credit)"
+        return "Servers  $\(totalTipsText)   TPH: $\(serverTipsPerHour)"
       } else {
-        return "Barbacks  $0.00         (Cash + Credit)"
+        return "Barbacks  $0.00   TPH: $\(barbackTipsPerHour)"
       }
     } else {
       if section == 0 {
-        return "Servers  $\(serverText)                (Cash + Credit)"
+        return "Servers  $\(serverText)   TPH: $\(serverTipsPerHour)"
       } else {
-        return "Barbacks  $\(barbackText)             (Cash + Credit)"
+        return "Barbacks  $\(barbackText)    TPH: $\(barbackTipsPerHour)"
       }
     }
   }
@@ -258,6 +257,8 @@ class EmployeeEntryViewController: UITableViewController {
       
       serverPayoutText.append("$\(cashPortionRounded) + $\(creditPortionRounded) = $\(serverPayoutRounded)")
       
+      let serverTipsPerHourRounded = String(format: "%.2f", Double(truncating: serverTipsHourly as NSNumber))
+      serverTipsPerHour = serverTipsPerHourRounded
     }
     
     for hours in barbackHours {
@@ -272,6 +273,8 @@ class EmployeeEntryViewController: UITableViewController {
       
       barbackPayoutText.append("$\(cashPortionRounded) + $\(creditPortionRounded) = $\(barbackPayoutRounded)")
       
+      let barbackTipsPerHourRounded = String(format: "%.2f", Double(truncating: barbackTipsHourly as NSNumber))
+      barbackTipsPerHour = barbackTipsPerHourRounded
     }
     
     employeeNameTextField.text = ""
@@ -302,6 +305,7 @@ class EmployeeEntryViewController: UITableViewController {
   
   
 }
+
 
 public extension UIView {
   public func pin(to view: UIView) {
