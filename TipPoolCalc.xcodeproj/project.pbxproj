@@ -15,6 +15,7 @@
 		2A27FE8820CF2C0200FC8949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A27FE8720CF2C0200FC8949 /* Assets.xcassets */; };
 		2A27FE8B20CF2C0200FC8949 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A27FE8920CF2C0200FC8949 /* LaunchScreen.storyboard */; };
 		2A65E68C2135CF7F001DEB03 /* Pods_TipPoolCalc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C8037C554207E3F608888C9 /* Pods_TipPoolCalc.framework */; };
+		2ACDD7322145A9FA003CD60F /* WeightedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACDD7312145A9FA003CD60F /* WeightedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		2A27FE8720CF2C0200FC8949 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A27FE8A20CF2C0200FC8949 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A27FE8C20CF2C0200FC8949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ACDD7312145A9FA003CD60F /* WeightedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightedViewController.swift; sourceTree = "<group>"; };
 		7C8037C554207E3F608888C9 /* Pods_TipPoolCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TipPoolCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B09A3179D8DD911963A908C8 /* Pods-TipPoolCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TipPoolCalc.release.xcconfig"; path = "Pods/Target Support Files/Pods-TipPoolCalc/Pods-TipPoolCalc.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +70,7 @@
 				2A27FE7D20CF2BFE00FC8949 /* AppDelegate.swift */,
 				2A27FE7F20CF2BFE00FC8949 /* TipEntryViewController.swift */,
 				2A15D3FC20CF37E8006B9BD4 /* EmployeeEntryViewController.swift */,
+				2ACDD7312145A9FA003CD60F /* WeightedViewController.swift */,
 				2A27FE8120CF2BFE00FC8949 /* Main.storyboard */,
 				2A27FE8720CF2C0200FC8949 /* Assets.xcassets */,
 				2A27FE8920CF2C0200FC8949 /* LaunchScreen.storyboard */,
@@ -208,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ACDD7322145A9FA003CD60F /* WeightedViewController.swift in Sources */,
 				2A27FE8020CF2BFE00FC8949 /* TipEntryViewController.swift in Sources */,
 				2A27FE7E20CF2BFE00FC8949 /* AppDelegate.swift in Sources */,
 				2A27FE8620CF2BFE00FC8949 /* TipPoolCalc.xcdatamodeld in Sources */,
