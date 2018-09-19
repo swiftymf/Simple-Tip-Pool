@@ -3,14 +3,17 @@ PODS:
   - ChameleonFramework/Swift (2.1.0):
     - ChameleonFramework/Default
   - CurrencyTextField (1.1)
+  - McPicker (1.0.0)
 
 DEPENDENCIES:
   - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`)
   - CurrencyTextField
+  - McPicker
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - CurrencyTextField
+    - McPicker
 
 EXTERNAL SOURCES:
   ChameleonFramework:
@@ -24,7 +27,8 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   CurrencyTextField: 949e4e7b1bb83ef4e49d05af697f9fc898293136
+  McPicker: 130183cd3d22fc6933ea9e63c5a0d0d1becc0122
 
-PODFILE CHECKSUM: 75ddd351c484e61d63eb5a1bec01fa49e06e4f20
+PODFILE CHECKSUM: 45dfe1276ef94b0d226a088f983048d19921121c
 
 COCOAPODS: 1.5.3
