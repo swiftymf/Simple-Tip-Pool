@@ -111,7 +111,7 @@ class TierTableViewController: UITableViewController {
       if positionTextField.text! == "" {
         positionTextField.text = "\(tierPositionArray.count + 1)"
 
-        let newTier = TiersClass(position: positionTextField.text!, weight: Int(weightTextField.text!) ?? 0)
+        let newTier = TiersClass(position: positionTextField.text!, weight: weightTextField.text!)
 
         tiersArray.append(newTier)
         print("tiersArray just added: \(tiersArray)")
@@ -121,7 +121,7 @@ class TierTableViewController: UITableViewController {
         
       } else {
         
-        let newTier = TiersClass(position: positionTextField.text!, weight: Int(weightTextField.text!) ?? 0)
+        let newTier = TiersClass(position: positionTextField.text!, weight: weightTextField.text!)
         
         tiersArray.append(newTier)
         print("tiersArray just added: \(tiersArray)")

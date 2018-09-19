@@ -12,9 +12,9 @@ import CoreData
 class TiersClass {
   
   var position: String = ""
-  var weight: Int = 0
+  var weight: String = ""
   
-  init(position: String, weight: Int) {
+  init(position: String, weight: String) {
     self.position = position
     self.weight = weight
   }

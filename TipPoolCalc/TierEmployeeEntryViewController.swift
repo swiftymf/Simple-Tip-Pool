@@ -68,22 +68,20 @@ class TierEmployeeEntryViewController: UITableViewController {
       print("Could not fetch. \(error), \(error.userInfo)")
     }
     
-    // This works ok, need to get the other one to work using the array instead of core data
-//    for tier in tiers {
-//      let position = tier.value(forKey: "position")
-//      let weight = tier.value(forKey: "weight")
-//
-//      tierStrings[0].append("\(position): \(weight))")
-//      print("tierStrings: \(tierStrings)")
-//    }
+    for tier in tiers {
+      let position = tier.value(forKey: "position") as! String
+      let weight = tier.value(forKey: "weight") as! String
+
+      tiersArray.append(TiersClass(position: position, weight: weight))
+      
+      print("tiersArray: \(tiersArray)")
+    }
     
-    // This isn't populating the popoverPicker right now
-    tiersArray = TierTVC.tiersArray
-    for tier in  tiersArray {
+    for tier in tiersArray {
       let position = tier.position
       let weight = tier.weight
       
-      tierStrings[0].append("\(position): \(weight))")
+      tierStrings[0].append("\(position): \(weight)")
       print("tierStrings: \(tierStrings)")
     }
     
