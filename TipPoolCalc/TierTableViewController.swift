@@ -49,6 +49,16 @@ class TierTableViewController: UITableViewController {
     } catch let error as NSError {
       print("Could not fetch. \(error), \(error.userInfo)")
     }
+    
+    for tier in tiers {
+      let position = tier.value(forKey: "position") as! String
+      let weight = tier.value(forKey: "weight") as! String
+      
+      tiersArray.append(TiersClass(position: position, weight: weight))
+      
+      print("tiersArray: \(tiersArray)")
+    }
+    
     tableView.reloadData()
   }
   
@@ -85,7 +95,7 @@ class TierTableViewController: UITableViewController {
       context.delete(tiers[indexPath.row])
       // context.delete(tiersArray[indexPath.row])
       
-      self.tiersArray.remove(at: indexPath.row)
+      self.tiersArray.remove(at: indexPath.row) // crashes when delete row
       self.tiers.remove(at: indexPath.row)
       
       print("tiersArray deleted: \(tiersArray)")

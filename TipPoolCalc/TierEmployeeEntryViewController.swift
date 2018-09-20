@@ -17,6 +17,9 @@ class TierEmployeeEntryViewController: UITableViewController {
   var employees: [Employee] = []
   var tiersArray: [TiersClass] = []
   let TierTVC = TierTableViewController()
+  var arrayOfPositions: [String] = []
+  var arrayOfEmployees: [[Employee]] = [[]]
+  var titleForHeader: String = ""
   
   @IBOutlet weak var tierButtonLabel: UIButton!
   @IBOutlet weak var employeeNameTextField: UITextField!
@@ -50,7 +53,8 @@ class TierEmployeeEntryViewController: UITableViewController {
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
-    
+    tiersArray.removeAll()
+
     //1
     guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
       return
@@ -67,7 +71,7 @@ class TierEmployeeEntryViewController: UITableViewController {
     } catch let error as NSError {
       print("Could not fetch. \(error), \(error.userInfo)")
     }
-    
+        
     for tier in tiers {
       let position = tier.value(forKey: "position") as! String
       let weight = tier.value(forKey: "weight") as! String
@@ -84,19 +88,38 @@ class TierEmployeeEntryViewController: UITableViewController {
       tierStrings[0].append("\(position): \(weight)")
       print("tierStrings: \(tierStrings)")
     }
-    
+    createArraysFromTiers()
+  }
+  
+  func createArraysFromTiers() {
+    arrayOfPositions.removeAll()
+    for i in tiersArray {
+      // make an array positions as Strings that will be the section header titles
+      // when entering employees/hours, match the position name to the section title for sorting into sections
+      arrayOfPositions.append(i.position)
+      print("\(i.position) added to arrayOfPositions")
+      // append each tier as an array into the array of arrays with position name as the array name
+    }
   }
   
   // MARK: - Table view data source
   
   override func numberOfSections(in tableView: UITableView) -> Int {
 
-    return tierStrings.count
+    return tiersArray.count
   }
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-    // Figure out to take unknown amount of arrays and translate to this
+    // Amount of arrays will equal amount of positions/tiers
+    // Figure out how to take unknown amount of arrays and translate to this
+    // Ex: bartender.count, barback.count, someOtherPosition.count
+    // if section header = position add some some mystery array
+    // for i in arrayOfPostiions {
+    // if i == Employee.position {
+    // arrayOfArrays.insert(Employee, at: i)
+    // }
+    // }
     
 //    if section == 0 {
 //      return serverArray.count   //   tier1Array.count
@@ -104,9 +127,17 @@ class TierEmployeeEntryViewController: UITableViewController {
 //      return barbackArray.count  //   tier2Array.count
 //    }
     
-    
     return 0
   }
+  
+  override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+
+    for i in 0...section {
+      titleForHeader =  arrayOfPositions[i]
+    }
+    return titleForHeader
+  }
+  
   
   /*
    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
