@@ -18,7 +18,7 @@ class TierEmployeeEntryViewController: UITableViewController {
   var tiersArray: [TiersClass] = []
   let TierTVC = TierTableViewController()
   var arrayOfPositions: [String] = []
-  var arrayOfEmployees: [[Employee]] = [[]]
+  var arrayOfEmployees: [[Employee]] = [[],[],[],[]]
   var titleForHeader: String = ""
   
   @IBOutlet weak var tierButtonLabel: UIButton!
@@ -117,7 +117,7 @@ class TierEmployeeEntryViewController: UITableViewController {
     // if section header = position add some some mystery array
     // for i in arrayOfPostiions {
     // if i == Employee.position {
-    // arrayOfArrays.insert(Employee, at: i)
+    // arrayOfEmployees.insert(Employee, at: i)
     // }
     // }
     
@@ -139,23 +139,65 @@ class TierEmployeeEntryViewController: UITableViewController {
   }
   
   
-  /*
-   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-   let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-   
-   // Configure the cell...
-   
-   return cell
-   }
-   */
- 
-//  func addNewEmployee() {
-//    let newEmployee = Employee()
-//    newEmployee.name = employeeNameTextField.text ?? "No name entered"
-//    newEmployee.hours = 10.0  //hoursTextField.text //convert to decimal
-//    newEmployee.weight = tiers.value(forKey: "weight")
-//    newEmployee.position = tiers.value(forKey: "position")
-//
-//  }
+  
+  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+    
+    cell.textLabel?.text = arrayOfEmployees[indexPath.row][0].name
+    
+    return cell
+  }
+  
+  
+
+
+  
+  
+  
+  @IBAction func addEmployeeButtonPressed(_ sender: UIButton) {
+    
+    if employeeNameTextField.text == "" || hoursTextField.text == "" {
+      let alert = UIAlertController(title: "Error", message: "Make sure that Employee Name and Hours are NOT blank", preferredStyle: .alert)
+      alert.addAction(UIAlertAction(title: "Go back", style: .default, handler: nil))
+      self.present(alert, animated: true)
+    } else {
+      addNewEmployee()
+
+    }
+  }
+  
+  
+  func sortEmployeesByPosition() {
+    
+    // Run this in cellForRow?
+    // interate through arrayOfPositions/arrayOfEmployees to sort Employees into positions, calculate, then display in tableView
+    
+  }
+  
+  func addNewEmployee() {
+    let newEmployee = Employee()
+    newEmployee.name = employeeNameTextField.text ?? "No name entered"
+    newEmployee.hours = hoursTextField.text ?? "no hours entered"
+
+    // Adding the newEmployee everytime it runs through. need to stop that.
+    // selected position needs to match the string in arrayOfPositions, get that index, add to arrayOfEmployees at that index
+    
+    
+    for (index, element) in arrayOfPositions.enumerated() {
+
+      newEmployee.weight = tiersArray[index].weight  // this is assigning the wrong value
+      newEmployee.position = tiersArray[index].position  // this is assigning the wrong value
+
+      if element == newEmployee.position {
+        arrayOfEmployees[1].append(newEmployee)
+        print("newEmployee \(newEmployee.position, newEmployee.weight, newEmployee.hours, newEmployee.name)") // weight, position wrong
+        print("arrayOfEmployees \(arrayOfEmployees)")
+        print("index: \(index)")
+      }
+      
+      print("index: \(index), element: \(element)")
+    }
+    tableView.reloadData()
+  }
   
 }

@@ -397,6 +397,9 @@
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOb-6i-VHo">
                                     <rect key="frame" x="155.5" y="112.5" width="64" height="37.5"/>
                                     <state key="normal" title="Calculate"/>
+                                    <connections>
+                                        <action selector="addEmployeeButtonPressed:" destination="SUl-6P-T3B" eventType="touchUpInside" id="jBL-sL-qdf"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </stackView>
