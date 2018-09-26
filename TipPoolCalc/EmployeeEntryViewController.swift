@@ -37,7 +37,8 @@ class EmployeeEntryViewController: UITableViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    self.hideKeyboardWhenTappedAround()
+
     // Nav bar color (change empty table area background in storyboard -> identity inspector
     navigationController?.navigationBar.barTintColor =  UIColor.init(hexString: "93827f")
     navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]

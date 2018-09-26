@@ -24,6 +24,7 @@ class TierEmployeeEntryViewController: UITableViewController {
   var percentageIsCash: Decimal = 0.00
   var totalTipsForLabel = ""
   var totalTips: Decimal = 0.00
+  var totalPoints: Decimal = 0.00
   
   @IBOutlet weak var tierButtonLabel: UIButton!
   @IBOutlet weak var employeeNameTextField: UITextField!
@@ -33,8 +34,9 @@ class TierEmployeeEntryViewController: UITableViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    tierButtonLabel.setTitle("Select Position", for: .normal)
+    self.hideKeyboardWhenTappedAround()
+
+    tierButtonLabel.setTitle("Tap Here", for: .normal)
     
     totalTipsLabel.text = totalTipsForLabel
 
@@ -161,6 +163,10 @@ class TierEmployeeEntryViewController: UITableViewController {
         // "\(arrayOfEmployees[indexPath.section][indexPath.row].name): hours worked"
         
         // cell.detailTextLabel?.text = cash tips + credit card tips = total tips
+        let stringTips = String(format: "%.2f", Double(truncating: arrayOfEmployees[indexPath.section][indexPath.row].tipsEarned as NSNumber))
+
+        cell.detailTextLabel?.text = "\(stringTips)"
+        
         
         break
       } else {
@@ -200,23 +206,58 @@ class TierEmployeeEntryViewController: UITableViewController {
     // Adding the newEmployee everytime it runs through. need to stop that.
     // selected position needs to match the string in arrayOfPositions, get that index, add to arrayOfEmployees at that index
     
+
     
     for (index, element) in arrayOfPositions.enumerated() {
-
-      newEmployee.weight = tiersArray[index].weight  // this is assigning the wrong value
-      newEmployee.position = tiersArray[index].position  // this is assigning the wrong value
-
+      
       if element == tierButtonLabel.titleLabel?.text {
+        
+        newEmployee.weight = tiersArray[index].weight  // this is assigning the wrong value
+        newEmployee.position = tiersArray[index].position  // this is assigning the wrong value
+        
         arrayOfEmployees[index].append(newEmployee)
         print("Element: \(element)")
         print("newEmployee \(newEmployee.position, newEmployee.weight, newEmployee.hours, newEmployee.name)") // weight, position wrong
         print("arrayOfEmployees \(arrayOfEmployees)")
         print("index: \(index)")
       }
-      
+      calculateTips()
       print("index: \(index), element: \(element)")
     }
     tableView.reloadData()
   }
   
+  
+  func calculateTips() {
+    
+    var tipsPerPoint: Decimal = 0.00
+    totalPoints = 0
+    
+    for position in arrayOfEmployees {
+      for employee in position {
+        let hoursWorked = Int(employee.hours)!
+        let positionWeight = Int(employee.weight)!
+        employee.points = hoursWorked * positionWeight
+        totalPoints = totalPoints + Decimal(employee.points)
+        tipsPerPoint = totalTips / totalPoints
+//        employee.tipsEarned = Decimal(employee.points) * tipsPerPoint
+      }
+    }
+      for position in arrayOfEmployees {
+      for employee in position {
+        employee.tipsEarned = Decimal(employee.points) * tipsPerPoint
+        
+        let stringTips = String(format: "%.2f", Double(truncating: employee.tipsEarned as NSNumber))
+        print("\(employee.name), hours \(employee.hours), position: \(employee.position), points: \(employee.points), tips: \(stringTips)")
+
+      }
+      
+      print("pointsTotal: \(totalPoints)")
+      print("tipsPerPoint: \(tipsPerPoint)")
+    }
+    
+    tableView.reloadData()
+  }
+  
 }
+

@@ -13,6 +13,8 @@ class Employee {
   var position: String = ""
   var weight: String = ""
   var hours: String = ""
+  var points: Int = 0
+  var tipsEarned: Decimal = 0.00
   
   init(name: String = "", position: String = "", weight: String = "", hours: String = "") {
     self.name = name

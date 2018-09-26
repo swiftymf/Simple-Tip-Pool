@@ -42,11 +42,12 @@ class TipEntryViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    self.hideKeyboardWhenTappedAround()
+
     // Nav bar background color (change view background in storyboard)
     navigationController?.navigationBar.barTintColor = UIColor.init(hexString: "93827f")    //UIColor.flatForestGreen
     navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-    
+  
     
     //    // Create the info button
     //    let infoButton = UIButton(type: .infoLight)
@@ -160,3 +161,14 @@ class TipEntryViewController: UIViewController {
   
 }
 
+extension UIViewController {
+  func hideKeyboardWhenTappedAround() {
+    let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+    tap.cancelsTouchesInView = false
+    view.addGestureRecognizer(tap)
+  }
+  
+  @objc func dismissKeyboard() {
+    view.endEditing(true)
+  }
+}

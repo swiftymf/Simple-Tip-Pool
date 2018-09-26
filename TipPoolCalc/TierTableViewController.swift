@@ -26,7 +26,8 @@ class TierTableViewController: UITableViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    self.hideKeyboardWhenTappedAround()
+
     
   }
   
