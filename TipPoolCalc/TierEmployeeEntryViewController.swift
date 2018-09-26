@@ -18,8 +18,12 @@ class TierEmployeeEntryViewController: UITableViewController {
   var tiersArray: [TiersClass] = []
   let TierTVC = TierTableViewController()
   var arrayOfPositions: [String] = []
-  var arrayOfEmployees: [[Employee]] = [[],[],[],[]]
+  var arrayOfEmployees: [[Employee]] = [[], [], [], []]
   var titleForHeader: String = ""
+  
+  var percentageIsCash: Decimal = 0.00
+  var totalTipsForLabel = ""
+  var totalTips: Decimal = 0.00
   
   @IBOutlet weak var tierButtonLabel: UIButton!
   @IBOutlet weak var employeeNameTextField: UITextField!
@@ -31,6 +35,8 @@ class TierEmployeeEntryViewController: UITableViewController {
     super.viewDidLoad()
     
     tierButtonLabel.setTitle("Select Position", for: .normal)
+    
+    totalTipsLabel.text = totalTipsForLabel
 
   }
   
@@ -83,9 +89,9 @@ class TierEmployeeEntryViewController: UITableViewController {
     
     for tier in tiersArray {
       let position = tier.position
-      let weight = tier.weight
+    //  let weight = tier.weight
       
-      tierStrings[0].append("\(position): \(weight)")
+      tierStrings[0].append("\(position)")
       print("tierStrings: \(tierStrings)")
     }
     createArraysFromTiers()
@@ -120,21 +126,23 @@ class TierEmployeeEntryViewController: UITableViewController {
     // arrayOfEmployees.insert(Employee, at: i)
     // }
     // }
-    
-//    if section == 0 {
-//      return serverArray.count   //   tier1Array.count
-//    } else {
-//      return barbackArray.count  //   tier2Array.count
-//    }
-    
-    return 0
+    let numberOfSections = tiersArray.count
+    var numberOfRows = 0
+    for i in 0...numberOfSections {
+      if section == i {
+        numberOfRows = arrayOfEmployees[i].count
+      }
+
+    }
+    return numberOfRows
   }
   
   override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
 
     for i in 0...section {
-      titleForHeader =  arrayOfPositions[i]
+      titleForHeader =  "\(tiersArray[i].position): \(tiersArray[i].weight)"   //arrayOfPositions[i]
     }
+    
     return titleForHeader
   }
   
@@ -143,16 +151,24 @@ class TierEmployeeEntryViewController: UITableViewController {
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
     
-    cell.textLabel?.text = arrayOfEmployees[indexPath.row][0].name
+    let numberOfSections = tiersArray.count
     
+    for i in 1...numberOfSections {
+      print("i: \(i)")
+      if indexPath.section == i - 1 {
+        cell.textLabel?.text = "\(arrayOfEmployees[indexPath.section][indexPath.row].name): \(arrayOfEmployees[indexPath.section][indexPath.row].hours) hours"
+        
+        // "\(arrayOfEmployees[indexPath.section][indexPath.row].name): hours worked"
+        
+        // cell.detailTextLabel?.text = cash tips + credit card tips = total tips
+        
+        break
+      } else {
+        cell.textLabel?.text = "Something went wrong"
+      }
+    }
     return cell
   }
-  
-  
-
-
-  
-  
   
   @IBAction func addEmployeeButtonPressed(_ sender: UIButton) {
     
@@ -164,6 +180,8 @@ class TierEmployeeEntryViewController: UITableViewController {
       addNewEmployee()
 
     }
+    employeeNameTextField.text = ""
+    hoursTextField.text = ""
   }
   
   
@@ -188,8 +206,9 @@ class TierEmployeeEntryViewController: UITableViewController {
       newEmployee.weight = tiersArray[index].weight  // this is assigning the wrong value
       newEmployee.position = tiersArray[index].position  // this is assigning the wrong value
 
-      if element == newEmployee.position {
-        arrayOfEmployees[1].append(newEmployee)
+      if element == tierButtonLabel.titleLabel?.text {
+        arrayOfEmployees[index].append(newEmployee)
+        print("Element: \(element)")
         print("newEmployee \(newEmployee.position, newEmployee.weight, newEmployee.hours, newEmployee.name)") // weight, position wrong
         print("arrayOfEmployees \(arrayOfEmployees)")
         print("index: \(index)")
