@@ -8,12 +8,14 @@
 
 import UIKit
 import CoreData
+import ChameleonFramework
 
 class TierTableViewController: UITableViewController {
   
   
   @IBOutlet weak var positionTextField: UITextField!
   @IBOutlet weak var weightTextField: UITextField!
+  @IBOutlet var positionEntryStackView: UIStackView!
   
   
   var tierPositionArray = [String]()
@@ -28,7 +30,26 @@ class TierTableViewController: UITableViewController {
     super.viewDidLoad()
     self.hideKeyboardWhenTappedAround()
 
+    // Nav bar background color (change view background in storyboard)
+    navigationController?.navigationBar.barTintColor = UIColor.init(hexString: "93827f")    //UIColor.flatForestGreen
+    navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     
+    pinBackground(backgroundView, to: positionEntryStackView)
+
+  }
+  private lazy var backgroundView: UIView = {
+    let view = UIView()
+    
+    // Employee entry background color
+    view.backgroundColor = UIColor.init(hexString: "8ae0ad")
+    
+    return view
+  }()
+  
+  private func pinBackground(_ view: UIView, to stackView: UIStackView) {
+    view.translatesAutoresizingMaskIntoConstraints = false
+    stackView.insertSubview(view, at: 0)
+    view.pin(to: stackView)
   }
   
   override func viewWillAppear(_ animated: Bool) {
@@ -63,6 +84,8 @@ class TierTableViewController: UITableViewController {
     tableView.reloadData()
   }
   
+
+  
   
   // MARK: - Table view data source
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -73,7 +96,26 @@ class TierTableViewController: UITableViewController {
     return 1
   }
   
+  override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    return "Positions"
+  }
+  
+  override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int){
+    
+    // Cell header background color
+    
+    //let cellColor = GradientColor(UIGradientStyle.leftToRight, frame: header.frame, colors: [UIColor(hexString: "4fd9bb")!, UIColor(hexString: "87e5d1")!])
+    let header = view as! UITableViewHeaderFooterView
+    
+    view.tintColor =  GradientColor(UIGradientStyle.leftToRight, frame: header.frame, colors: [UIColor(hexString: "2ccaa7")!, UIColor(hexString: "4fd9bb")!]) //UIColor.init(hexString: "aa9d9b")   //UIColor.flatMint
+    header.textLabel?.textColor = UIColor.black
+  }
+  
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
+    tableView.separatorStyle = .singleLine
+    
+    let cellColor = UIColor.init(hexString: "d9d3d2")!
     
     let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
     
@@ -81,6 +123,11 @@ class TierTableViewController: UITableViewController {
     
     cell.textLabel?.text =  tier.value(forKey: "position") as? String  //"\(tierPositionArray[indexPath.row])"
     cell.detailTextLabel?.text = tier.value(forKey: "weight") as? String   //"\(tierWeightArray[indexPath.row])"
+    
+    cell.backgroundColor = cellColor
+    
+    cell.textLabel?.textColor = ContrastColorOf(cellColor, returnFlat: true)
+    cell.detailTextLabel?.backgroundColor = UIColor.clear
     
     return cell
   }

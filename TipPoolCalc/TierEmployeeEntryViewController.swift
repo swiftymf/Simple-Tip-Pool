@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import McPicker
+import ChameleonFramework
 
 class TierEmployeeEntryViewController: UITableViewController {
   
@@ -18,7 +19,7 @@ class TierEmployeeEntryViewController: UITableViewController {
   var tiersArray: [TiersClass] = []
   let TierTVC = TierTableViewController()
   var arrayOfPositions: [String] = []
-  var arrayOfEmployees: [[Employee]] = [[], [], [], []]
+  var arrayOfEmployees: [[Employee]] = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [],]
   var titleForHeader: String = ""
   
   var percentageIsCash: Decimal = 0.00
@@ -30,6 +31,7 @@ class TierEmployeeEntryViewController: UITableViewController {
   @IBOutlet weak var employeeNameTextField: UITextField!
   @IBOutlet weak var hoursTextField: UITextField!
   @IBOutlet weak var totalTipsLabel: UILabel!
+  @IBOutlet weak var hoursEntryStackView: UIStackView!
   
   
   override func viewDidLoad() {
@@ -40,6 +42,27 @@ class TierEmployeeEntryViewController: UITableViewController {
     
     totalTipsLabel.text = totalTipsForLabel
 
+    // Nav bar background color (change view background in storyboard)
+    navigationController?.navigationBar.barTintColor = UIColor.init(hexString: "93827f")    //UIColor.flatForestGreen
+    navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+    
+    pinBackground(backgroundView, to: hoursEntryStackView)
+
+  }
+  
+  private lazy var backgroundView: UIView = {
+    let view = UIView()
+    
+    // Employee entry background color
+    view.backgroundColor = UIColor.init(hexString: "8ae0ad")
+    
+    return view
+  }()
+  
+  private func pinBackground(_ view: UIView, to stackView: UIStackView) {
+    view.translatesAutoresizingMaskIntoConstraints = false
+    stackView.insertSubview(view, at: 0)
+    view.pin(to: stackView)
   }
   
   @IBAction func popOverPicker(_ sender: UIButton) {
@@ -58,6 +81,8 @@ class TierEmployeeEntryViewController: UITableViewController {
       print("Component \(componentThatChanged) changed value to \(newSelection)")
     })
   }
+  
+
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
@@ -117,6 +142,17 @@ class TierEmployeeEntryViewController: UITableViewController {
     return tiersArray.count
   }
   
+  override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int){
+    
+    // Cell header background color
+    
+    //let cellColor = GradientColor(UIGradientStyle.leftToRight, frame: header.frame, colors: [UIColor(hexString: "4fd9bb")!, UIColor(hexString: "87e5d1")!])
+    let header = view as! UITableViewHeaderFooterView
+    
+    view.tintColor =  GradientColor(UIGradientStyle.leftToRight, frame: header.frame, colors: [UIColor(hexString: "2ccaa7")!, UIColor(hexString: "4fd9bb")!]) //UIColor.init(hexString: "aa9d9b")   //UIColor.flatMint
+    header.textLabel?.textColor = UIColor.black
+  }
+  
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
     // Amount of arrays will equal amount of positions/tiers
@@ -153,7 +189,13 @@ class TierEmployeeEntryViewController: UITableViewController {
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
     
+    tableView.separatorStyle = .singleLine
+    
+    let cellColor = UIColor.init(hexString: "d9d3d2")!
+    
     let numberOfSections = tiersArray.count
+    
+
     
     for i in 1...numberOfSections {
       print("i: \(i)")
@@ -163,15 +205,27 @@ class TierEmployeeEntryViewController: UITableViewController {
         // "\(arrayOfEmployees[indexPath.section][indexPath.row].name): hours worked"
         
         // cell.detailTextLabel?.text = cash tips + credit card tips = total tips
-        let stringTips = String(format: "%.2f", Double(truncating: arrayOfEmployees[indexPath.section][indexPath.row].tipsEarned as NSNumber))
-
-        cell.detailTextLabel?.text = "\(stringTips)"
+        let cashPortion = String(format: "%.2f", Double(truncating: (arrayOfEmployees[indexPath.section][indexPath.row].tipsEarned * percentageIsCash) as NSNumber))
         
+        let creditPortion = String(format: "%.2f", Double(truncating: (arrayOfEmployees[indexPath.section][indexPath.row].tipsEarned * (1 - percentageIsCash)) as NSNumber))
+        
+        let stringTips = String(format: "%.2f", Double(truncating: arrayOfEmployees[indexPath.section][indexPath.row].tipsEarned as NSNumber))
+        let payoutText = "\(cashPortion) + \(creditPortion) = \(stringTips)"
+
+        cell.detailTextLabel?.text = "\(payoutText)"
+
+        cell.backgroundColor = cellColor
+        cell.textLabel?.textColor = ContrastColorOf(cellColor, returnFlat: true)
+        cell.detailTextLabel?.backgroundColor = UIColor.clear
         
         break
       } else {
+        cell.backgroundColor = cellColor
+        cell.textLabel?.textColor = ContrastColorOf(cellColor, returnFlat: true)
+        cell.detailTextLabel?.backgroundColor = UIColor.clear
         cell.textLabel?.text = "Something went wrong"
       }
+      
     }
     return cell
   }

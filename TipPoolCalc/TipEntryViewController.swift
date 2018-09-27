@@ -28,12 +28,12 @@ class TipEntryViewController: UIViewController {
   @IBOutlet weak var creditTipsTextField: UITextField!
   @IBOutlet weak var barbackSplitTextField: UITextField!
   
-  //  @IBAction func infoButtonTapped(_ sender: UIButton) {
-  //    let alert = UIAlertController(title: "How to use:", message: "1. Enter Cash and Credit card tips\n\n2. Enter % for barbacks\n(or other support staff)\n\n3. Tap Next\n\n4. Enter employee name and hours worked\n\n5. Choose server or barback\n\nAs you add employees, tips will be calculated automatically.", preferredStyle: .alert)
-  //    alert.addAction(UIAlertAction(title: "Let's go!", style: .default, handler: nil))
-  //
-  //    self.present(alert, animated: true)
-  //  }
+  @IBAction func infoButtonTapped(_ sender: UIButton) {
+    let alert = UIAlertController(title: "How to use:", message: "1. Enter Cash and Credit card tips\n\n2. Enter % for barbacks\n(ignore if using points system)\n\n3. Choose Split Hourly or Split by Points\n\n4. Enter employee name and hours worked\n\n5. Choose server or barback for hourly split or select position for splitting by points\n\nAs you add employees, tips will be calculated automatically\n\n If splitting by points, if you will first need to create the positions and assign point values by tapping the Positions button in the top right of this screen.\n\nYou only need to do this once and the app will remember your entries. Swipe to delete if needed.", preferredStyle: .alert)
+    alert.addAction(UIAlertAction(title: "Let's go!", style: .default, handler: nil))
+    
+    self.present(alert, animated: true)
+  }
   
   
   
