@@ -21,6 +21,7 @@ class TierEmployeeEntryViewController: UITableViewController {
   var arrayOfPositions: [String] = []
   var arrayOfEmployees: [[Employee]] = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [],]
   var titleForHeader: String = ""
+  var shareText = Array<String>()
   
   var percentageIsCash: Decimal = 0.00
   var totalTipsForLabel = ""
@@ -145,8 +146,6 @@ class TierEmployeeEntryViewController: UITableViewController {
   override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int){
     
     // Cell header background color
-    
-    //let cellColor = GradientColor(UIGradientStyle.leftToRight, frame: header.frame, colors: [UIColor(hexString: "4fd9bb")!, UIColor(hexString: "87e5d1")!])
     let header = view as! UITableViewHeaderFooterView
     
     view.tintColor =  GradientColor(UIGradientStyle.leftToRight, frame: header.frame, colors: [UIColor(hexString: "2ccaa7")!, UIColor(hexString: "4fd9bb")!]) //UIColor.init(hexString: "aa9d9b")   //UIColor.flatMint
@@ -155,15 +154,6 @@ class TierEmployeeEntryViewController: UITableViewController {
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-    // Amount of arrays will equal amount of positions/tiers
-    // Figure out how to take unknown amount of arrays and translate to this
-    // Ex: bartender.count, barback.count, someOtherPosition.count
-    // if section header = position add some some mystery array
-    // for i in arrayOfPostiions {
-    // if i == Employee.position {
-    // arrayOfEmployees.insert(Employee, at: i)
-    // }
-    // }
     let numberOfSections = tiersArray.count
     var numberOfRows = 0
     for i in 0...numberOfSections {
@@ -200,7 +190,11 @@ class TierEmployeeEntryViewController: UITableViewController {
     for i in 1...numberOfSections {
       print("i: \(i)")
       if indexPath.section == i - 1 {
-        cell.textLabel?.text = "\(arrayOfEmployees[indexPath.section][indexPath.row].name): \(arrayOfEmployees[indexPath.section][indexPath.row].hours) hours"
+        
+        let name = arrayOfEmployees[indexPath.section][indexPath.row].name
+        let hours = arrayOfEmployees[indexPath.section][indexPath.row].hours
+        
+        cell.textLabel?.text = "\(name): \(hours) hours"
         
         // "\(arrayOfEmployees[indexPath.section][indexPath.row].name): hours worked"
         
@@ -218,6 +212,8 @@ class TierEmployeeEntryViewController: UITableViewController {
         cell.textLabel?.textColor = ContrastColorOf(cellColor, returnFlat: true)
         cell.detailTextLabel?.backgroundColor = UIColor.clear
         
+        shareText.append("\(tiersArray[i].position) \(name) worked \(hours) \(payoutText)\n")
+
         break
       } else {
         cell.backgroundColor = cellColor
@@ -228,6 +224,19 @@ class TierEmployeeEntryViewController: UITableViewController {
       
     }
     return cell
+  }
+  
+  override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    if editingStyle == .delete {
+      print("Deleted")
+      
+      self.arrayOfEmployees[indexPath.section].remove(at: indexPath.row) // crashes when delete row
+      
+      print("tiersArray deleted: \(tiersArray)")
+      
+      self.tableView.deleteRows(at: [indexPath], with: .automatic)
+      
+    }
   }
   
   @IBAction func addEmployeeButtonPressed(_ sender: UIButton) {
@@ -286,7 +295,8 @@ class TierEmployeeEntryViewController: UITableViewController {
     
     var tipsPerPoint: Decimal = 0.00
     totalPoints = 0
-    
+    shareText = []
+
     for position in arrayOfEmployees {
       for employee in position {
         let hoursWorked = Int(employee.hours)!
@@ -311,6 +321,25 @@ class TierEmployeeEntryViewController: UITableViewController {
     }
     
     tableView.reloadData()
+  }
+  
+  @IBAction func shareTextButton(_ sender: UIBarButtonItem) {
+    
+    // text to share
+    let text = shareText.joined(separator: "\n")
+    print(text)
+    
+    // set up activity view controller
+    let textToShare = [ text ]
+    let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
+    activityViewController.popoverPresentationController?.sourceView = self.view // so that iPads won't crash
+    
+    // exclude some activity types from the list (optional)
+    activityViewController.excludedActivityTypes = [ UIActivity.ActivityType.airDrop, UIActivity.ActivityType.postToFacebook ]
+    
+    // present the view controller
+    self.present(activityViewController, animated: true, completion: nil)
+    
   }
   
 }

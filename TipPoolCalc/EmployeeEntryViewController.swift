@@ -130,7 +130,7 @@ class EmployeeEntryViewController: UITableViewController {
       cell.textLabel?.text = "\(serverArray[indexPath.row]): \(serverHours[indexPath.row]) hours"
       cell.detailTextLabel?.text = payoutText
       
-      shareText.append("(Server) \(nameAndHours) \(payoutText)\n")
+      shareText.append("(Bartender) \(nameAndHours) \(payoutText)\n")
       
       cell.backgroundColor = cellColor
       

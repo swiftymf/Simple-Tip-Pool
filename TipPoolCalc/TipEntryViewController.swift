@@ -43,23 +43,11 @@ class TipEntryViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     self.hideKeyboardWhenTappedAround()
-
+    
     // Nav bar background color (change view background in storyboard)
     navigationController?.navigationBar.barTintColor = UIColor.init(hexString: "93827f")    //UIColor.flatForestGreen
     navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-  
     
-    //    // Create the info button
-    //    let infoButton = UIButton(type: .infoLight)
-    //
-    //    // You will need to configure the target action for the button itself, not the bar button item
-    //    infoButton.addTarget(self, action: #selector(infoButtonTapped), for: .touchUpInside)
-    //
-    //    // Create a bar button item using the info button as its custom view
-    //    let infoBarButtonItem = UIBarButtonItem(customView: infoButton)
-    //
-    //    // Use it as required
-    //    navigationItem.rightBarButtonItem = infoBarButtonItem
   }
   
   override func viewWillAppear(_ animated: Bool) {
@@ -86,7 +74,7 @@ class TipEntryViewController: UIViewController {
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if segue.identifier == "NextSegue"  {
+    if segue.identifier == "HourlySegue"  {
       if let employeeVC = segue.destination as? EmployeeEntryViewController {
         
         let formatter = NumberFormatter()
@@ -122,9 +110,10 @@ class TipEntryViewController: UIViewController {
         employeeVC.totalTips = totalTips
         employeeVC.totalTipsForLabel = "Total tips $\(tips)"
       }
-    } else if segue.identifier == "TierEmployeeSegue" {
       
-      if let tierVC = segue.destination as? TierEmployeeEntryViewController {
+    } else if segue.identifier == "QuickSplitSegue" {
+      
+      if let quickSplitVC = segue.destination as? QuickSplitViewController {
         
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
@@ -145,19 +134,57 @@ class TipEntryViewController: UIViewController {
           self.present(alert, animated: true)
         }
         
-        totalTips = cashTips + creditTips
-
+        barbackSplit = Decimal(Double(barbackSplitTextField.text!) ?? 0.00)
         percentageOfTipsAreCash = cashTips / totalTips
+        totalTips = cashTips + creditTips
         tips = String(format: "%.2f", Double(truncating: totalTips as NSNumber))
-        print("Tips are \(tips)")
+        quickSplitVC.barbackSplitPercentage = barbackSplit
+        quickSplitVC.totalTipsForLabel = "Total tips $\(tips)"
+        quickSplitVC.totalTips = totalTips
+      }
         
-        tierVC.percentageIsCash = percentageOfTipsAreCash
-        tierVC.totalTips = totalTips
-        tierVC.totalTipsForLabel = "Total tips $\(tips)"
+      } else if segue.identifier == "PointsSegue" {
+        if tiers.isEmpty {
+          let alert = UIAlertController(title: "No positions found", message: "It looks like you haven't added any positions yet. Tap the Positions button in the top right corner and add positions and their point values that are included in your tip pool.", preferredStyle: .alert)
+          alert.addAction(UIAlertAction(title: "Got it!", style: .default, handler: nil))
+          
+          self.present(alert, animated: true)
+        } else {
+          if let tierVC = segue.destination as? TierEmployeeEntryViewController {
+            
+            let formatter = NumberFormatter()
+            formatter.numberStyle = .currency
+            
+            if let number1 = formatter.number(from: cashTipsTextField.text!) {
+              cashTips = number1.decimalValue
+              print("cash tips are \(cashTips)")
+            }
+            if let number1 = formatter.number(from: creditTipsTextField.text!) {
+              creditTips = number1.decimalValue
+              print("credit tips are \(creditTips)")
+            }
+            
+            if cashTips == 0 && creditTips == 0 {
+              let alert = UIAlertController(title: "No tips?", message: "You didn't make any tips today? Double check those amounts because you definitely deserved some tips for all your hard work.", preferredStyle: .alert)
+              alert.addAction(UIAlertAction(title: "Go back", style: .default, handler: nil))
+              
+              self.present(alert, animated: true)
+            }
+            
+            totalTips = cashTips + creditTips
+            
+            percentageOfTipsAreCash = cashTips / totalTips
+            tips = String(format: "%.2f", Double(truncating: totalTips as NSNumber))
+            print("Tips are \(tips)")
+            
+            tierVC.percentageIsCash = percentageOfTipsAreCash
+            tierVC.totalTips = totalTips
+            tierVC.totalTipsForLabel = "Total tips $\(tips)"
+            
+          }
+        }
       }
     }
-  }
-  
   
 }
 
