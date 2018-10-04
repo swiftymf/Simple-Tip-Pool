@@ -28,6 +28,8 @@ class TierEmployeeEntryViewController: UITableViewController {
   var totalTips: Decimal = 0.00
   var totalPoints: Decimal = 0.00
   
+
+  
   @IBOutlet weak var tierButtonLabel: UIButton!
   @IBOutlet weak var employeeNameTextField: UITextField!
   @IBOutlet weak var hoursTextField: UITextField!
@@ -204,6 +206,7 @@ class TierEmployeeEntryViewController: UITableViewController {
         let creditPortion = String(format: "%.2f", Double(truncating: (arrayOfEmployees[indexPath.section][indexPath.row].tipsEarned * (1 - percentageIsCash)) as NSNumber))
         
         let stringTips = String(format: "%.2f", Double(truncating: arrayOfEmployees[indexPath.section][indexPath.row].tipsEarned as NSNumber))
+        let sharePayoutText = "\(cashPortion) (cash) + \(creditPortion) (credit) = \(stringTips)"
         let payoutText = "\(cashPortion) + \(creditPortion) = \(stringTips)"
 
         cell.detailTextLabel?.text = "\(payoutText)"
@@ -212,7 +215,7 @@ class TierEmployeeEntryViewController: UITableViewController {
         cell.textLabel?.textColor = ContrastColorOf(cellColor, returnFlat: true)
         cell.detailTextLabel?.backgroundColor = UIColor.clear
         
-        shareText.append("\(tiersArray[i].position) \(name) worked \(hours) \(payoutText)\n")
+        shareText.append("\(tiersArray[i - 1].position) \(name) worked \(hours) hours. \(sharePayoutText)\n")
 
         break
       } else {
@@ -235,8 +238,8 @@ class TierEmployeeEntryViewController: UITableViewController {
       print("tiersArray deleted: \(tiersArray)")
       
       self.tableView.deleteRows(at: [indexPath], with: .automatic)
-      
     }
+    calculateTips()
   }
   
   @IBAction func addEmployeeButtonPressed(_ sender: UIButton) {
@@ -296,20 +299,26 @@ class TierEmployeeEntryViewController: UITableViewController {
     var tipsPerPoint: Decimal = 0.00
     totalPoints = 0
     shareText = []
+    
+    let formatter = NumberFormatter()
+    formatter.generatesDecimalNumbers = true
+    
+    func decimal(with string: String) -> NSDecimalNumber {
+      return formatter.number(from: string) as? NSDecimalNumber ?? 0
+    }
 
     for position in arrayOfEmployees {
       for employee in position {
-        let hoursWorked = Int(employee.hours)!
-        let positionWeight = Int(employee.weight)!
-        employee.points = hoursWorked * positionWeight
-        totalPoints = totalPoints + Decimal(employee.points)
+        let hoursWorked = decimal(with: employee.hours)  //Decimal(Int(employee.hours)!)
+        let positionWeight = decimal(with: employee.weight)  //Decimal(Int(employee.weight)!)
+        employee.points = (hoursWorked as Decimal) * (positionWeight as Decimal)
+        totalPoints = totalPoints + employee.points
         tipsPerPoint = totalTips / totalPoints
-//        employee.tipsEarned = Decimal(employee.points) * tipsPerPoint
       }
     }
       for position in arrayOfEmployees {
       for employee in position {
-        employee.tipsEarned = Decimal(employee.points) * tipsPerPoint
+        employee.tipsEarned = employee.points * tipsPerPoint
         
         let stringTips = String(format: "%.2f", Double(truncating: employee.tipsEarned as NSNumber))
         print("\(employee.name), hours \(employee.hours), position: \(employee.position), points: \(employee.points), tips: \(stringTips)")
@@ -341,6 +350,8 @@ class TierEmployeeEntryViewController: UITableViewController {
     self.present(activityViewController, animated: true, completion: nil)
     
   }
+  
+
   
 }
 

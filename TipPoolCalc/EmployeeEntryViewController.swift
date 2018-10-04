@@ -156,6 +156,22 @@ class EmployeeEntryViewController: UITableViewController {
     return cell
   }
   
+  override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    if editingStyle == .delete {
+      print("Deleted")
+      
+      if indexPath.section == 0 {
+      self.serverArray.remove(at: indexPath.row)
+      self.serverHours.remove(at: indexPath.row)
+        
+      self.tableView.deleteRows(at: [indexPath], with: .automatic)
+      } else {
+        self.barbackArray.remove(at: indexPath.row)
+        self.barbackHours.remove(at: indexPath.row)
+      }
+    }
+    calculateTips()
+  }
   
   @IBAction func addServerButton(_ sender: UIButton) {
     

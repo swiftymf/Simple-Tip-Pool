@@ -32,24 +32,26 @@ class QuickSplitViewController: UIViewController {
 
   @IBAction func calculateTipsButtonPressed(_ sender: UIButton) {
 
-    let numberOfBartenders = Decimal(Int(numberOfBartendersTextField.text!)!)
-    let numberOfBarbacks = Decimal(Int(numberOfBarbacksTextField.text!)!)
+    let formatter = NumberFormatter()
+    formatter.generatesDecimalNumbers = true
+    
+    func decimal(with string: String) -> NSDecimalNumber {
+      return formatter.number(from: string) as? NSDecimalNumber ?? 0
+    }
+    
+    let numberOfBartenders: Decimal = decimal(with: numberOfBartendersTextField.text!) as Decimal
+    let numberOfBarbacks = decimal(with: numberOfBarbacksTextField.text!) as Decimal
     
     let barbackSplit = totalTips * (barbackSplitPercentage / 100)
+    let bartenderSplit = totalTips - barbackSplit
     
     let tipsForEachBartender = ((totalTips - barbackSplit) / numberOfBartenders)
     let tipsForEachBarback = (barbackSplit / numberOfBarbacks)
-    
-    bartenderTipsSplitLabel.text = "$\(String(format: "%.2f", Double(truncating: tipsForEachBartender as NSNumber)))"
-    barbackTipSplitLabel.text = "$\(String(format: "%.2f", Double(truncating: tipsForEachBarback as NSNumber)))"
 
-    //bartenderTipsSplitLabel.text = "\(tipsForEachBartender)"
-    //barbackTipSplitLabel.text = "\(tipsForEachBarback)"
     
-   // print("cash tips: \(cashTips), credit tips: \(creditTips), total tips: \(totalTips), number bartenders: \(numberOfBartenders), number barbacks: \(numberOfBarbacks), % for barbacks: \(barbackSplitPercentage), $ for barbacks: \(barbackSplit)")
-    
-    
+    bartenderTipsSplitLabel.text = "$\(String(format: "%.2f", Double(truncating: tipsForEachBartender as NSNumber))) ($\(String(format: "%.2f", Double(truncating: bartenderSplit as NSNumber))))"
+    barbackTipSplitLabel.text = "$\(String(format: "%.2f", Double(truncating: tipsForEachBarback as NSNumber))) ($\(String(format: "%.2f", Double(truncating: barbackSplit as NSNumber))))"
+
   }
-  
 
 }
