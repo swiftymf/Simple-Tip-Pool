@@ -3,156 +3,179 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03DCD393DF69EE6DE4AD424B1192DD02 /* UIViewController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C9D738141A79E7391678E44B9EC9FF7 /* UIViewController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0B9BE893ACCBE50D08178C883FE91B9C /* CurrencyTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1E89A34F2E75DFBE8D8F5BC88C265BE /* CurrencyTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0D7F425CFB628271BFB6FCFF8201BF4F /* UIButton+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A70CBCDE4CCEF43AF5DDC4090916FAB /* UIButton+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		139A9CEDE5163F58CBB1A3A135DAD6A3 /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B826FB5D0D4D77F41559C5E7C6F5314 /* UIImage+ChameleonPrivate.m */; };
-		1B704F3C816C4532F9B7FDFE0625732E /* ChameleonFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FBE30861BDF4211A7A7BB6430FB97930 /* ChameleonFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29F74E8A334254C68C6720E3B247CE32 /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C39DF759578191608549DD2C09F8F64 /* NSArray+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2DDDE2C06FB4DCC639CFD100F224D6FD /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D73405B0D19D0B58300DD0DE9DE82F /* UIColor+Chameleon.m */; };
+		03DCD393DF69EE6DE4AD424B1192DD02 /* UIViewController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = CFEECB26C3249854545F0B28BD9218EE /* UIViewController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B9BE893ACCBE50D08178C883FE91B9C /* CurrencyTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C31E4B35220876DA0D39EB2A88B00C1 /* CurrencyTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D7F425CFB628271BFB6FCFF8201BF4F /* UIButton+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 010782BF90F1898DA6C665EBCCF4AE09 /* UIButton+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		139A9CEDE5163F58CBB1A3A135DAD6A3 /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B0E3699982A73A612FD4D30D84B0D6 /* UIImage+ChameleonPrivate.m */; };
+		1B704F3C816C4532F9B7FDFE0625732E /* ChameleonFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F30F3A89480D35DA4D47D1D0F983DB6 /* ChameleonFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BD51C3AF439990929574DBBB46271CA /* Pods-TipPoolCalc-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7723B0D29FB95C404FF691EF76AAACF6 /* Pods-TipPoolCalc-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25BB7F3378AC8269552C0EEB5A7FFB22 /* SkyFloatingLabelTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A808D0EC054C259C115296F3854615 /* SkyFloatingLabelTextField-dummy.m */; };
+		29F74E8A334254C68C6720E3B247CE32 /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB55A945FE5A3675E9F5D4932358381 /* NSArray+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DDDE2C06FB4DCC639CFD100F224D6FD /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8547A1ED65F5E6491A37E72EF0BA14 /* UIColor+Chameleon.m */; };
 		36107423FC93FF8CAF6C04BEDF2D8FEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */; };
-		3D08C4F4E2E65D192D317AED0A8237B3 /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 430F2A587F9EBF5BED472BFC285044AC /* UIColor+ChameleonPrivate.m */; };
-		44117424757A5E62D87B8BF4B41A4207 /* UIColor+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = A93FF74CF0E5E6369984413922B21DD6 /* UIColor+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		459048ECD9FAA42B77566EC56ECAD793 /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB70340141DE8A569E8DB52A59BD12F /* UINavigationController+Chameleon.m */; };
+		3D08C4F4E2E65D192D317AED0A8237B3 /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CA8EA61F692F9C94684CCD7509D32 /* UIColor+ChameleonPrivate.m */; };
+		44117424757A5E62D87B8BF4B41A4207 /* UIColor+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F1D14E2F901215855638DAB1BE7296 /* UIColor+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		459048ECD9FAA42B77566EC56ECAD793 /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A9B9AF8873EFBFB393FA0485B1F119 /* UINavigationController+Chameleon.m */; };
+		467807D12D00B9E61BDDDE270DE30C2B /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351FEBDF4A8F48B5704685D8C5A9E168 /* UITextField+fixCaretPosition.swift */; };
+		4A396071DF2D1C080F5AC3B5AD3D5385 /* Pods-TipPoolCalc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A79767988EF3BBA9C61D2A44E4D9F27 /* Pods-TipPoolCalc-dummy.m */; };
 		5AA6DE679DDAF159A904532F556022B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */; };
-		5EA9F0ED011B06DEFA8542EEE72508C3 /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0666C9332A7B226F8DC0B953352CDA /* UIViewController+Chameleon.m */; };
-		604286A8F8A2ACB063BDF97B09D4987C /* UILabel+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 57B21627268C69C6736CFBC6A9C810AA /* UILabel+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6712100A2CCB9B987281A02F6778473C /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = A94930E99D7084F6666C7C31FA5729A0 /* NSArray+Chameleon.m */; };
+		5EA9F0ED011B06DEFA8542EEE72508C3 /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA67212EA15241A9B58FEB5A9A048B9 /* UIViewController+Chameleon.m */; };
+		604286A8F8A2ACB063BDF97B09D4987C /* UILabel+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BB86FBF7F809FA286FAE84DC6C424FC /* UILabel+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6712100A2CCB9B987281A02F6778473C /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CB03F38B0803BC96D5AC81675E0ADB /* NSArray+Chameleon.m */; };
 		673D37B7393421A843ECBC8A42CC56CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89163E94743FDDD60913C47150E225B /* UIKit.framework */; };
-		78281D8673FC507089FCFDC439DEDC16 /* Chameleon_.h in Headers */ = {isa = PBXBuildFile; fileRef = 3978EEECC893A2E09F9D99278A4A9DEB /* Chameleon_.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7C965FED7530AB946E6629E5ADE29B02 /* McPickerBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB579FA3D081D816C77D45287C3890E /* McPickerBarButtonItem.swift */; };
-		833F15A28A0D562548517BCA8EAF23B6 /* ChameleonShorthand.swift in Sources */ = {isa = PBXBuildFile; fileRef = E847AF53BB9C9CBD3F867E03ADE68817 /* ChameleonShorthand.swift */; };
-		83CFC8F573AD5B75191E162E64C7D039 /* UIButton+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4042D45D5752CCA8DFE0235A4E1BBA /* UIButton+Chameleon.m */; };
-		86F7D970F220974A0E26C3B632C5C74F /* UIImage+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 37B2DF70C08EBF32D6DBDAC4FA17F80F /* UIImage+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78281D8673FC507089FCFDC439DEDC16 /* Chameleon_.h in Headers */ = {isa = PBXBuildFile; fileRef = 28E402840288B794C3B4D3197B6978AF /* Chameleon_.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C965FED7530AB946E6629E5ADE29B02 /* McPickerBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6321658BFCB028465CEEF45F880F8329 /* McPickerBarButtonItem.swift */; };
+		833F15A28A0D562548517BCA8EAF23B6 /* ChameleonShorthand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCD97A72B6FD619F663CA90103679E3 /* ChameleonShorthand.swift */; };
+		83CFC8F573AD5B75191E162E64C7D039 /* UIButton+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CC504635D2BC6B7FCCE14F04E64E28 /* UIButton+Chameleon.m */; };
+		84C20EEF968D82CBB0AB1CE8235008F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */; };
+		86F7D970F220974A0E26C3B632C5C74F /* UIImage+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 73BEFF7EBF3359A3581A0D0A7C765924 /* UIImage+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		880335F009F5E57916A71EB430982255 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89163E94743FDDD60913C47150E225B /* UIKit.framework */; };
-		8ECF929AC5E737EBEB542283886D5E07 /* UIView+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C6EC59CFE1EAE6F3B02A618A03CE14E /* UIView+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		95E542740750F827BE2EBE3DE6F62D0E /* ChameleonFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FD3DDA1C8D712BC86A4E23E2E11B8C /* ChameleonFramework-dummy.m */; };
-		9652EC69FDFC0B8E7A899C265F4949EF /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3B7031E1EE1714711D5E2E8B7DF8FE /* CurrencyTextField.swift */; };
+		8ECF929AC5E737EBEB542283886D5E07 /* UIView+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A8A895569E76DF60EA59F983523F36E /* UIView+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95E542740750F827BE2EBE3DE6F62D0E /* ChameleonFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB18A202D9BCB3227BCDE0238527CB55 /* ChameleonFramework-dummy.m */; };
+		9652EC69FDFC0B8E7A899C265F4949EF /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5F64FCAB736D3BC16C64F30E9E6740 /* CurrencyTextField.swift */; };
 		97E9904F140EF13E0605FEF48FCE9604 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C473026796F8AFAA2ECD5A761494CE /* CoreGraphics.framework */; };
-		9A3EAF15D3C58FD56A552FD703A9154C /* ChameleonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = CD96EA12F3FB3D68EFCF39F0680C3DED /* ChameleonConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9B6AD39C81FAF37861FC0FEC41022146 /* UIAppearance+Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 3336D85DA227762CFE64A413F562D231 /* UIAppearance+Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9B9348C7CD2CD875D569E3B2A99B6CB2 /* McPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1153BAF97B4F02112AFBF6DB9DC8C3C5 /* McPicker.swift */; };
+		9A3EAF15D3C58FD56A552FD703A9154C /* ChameleonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BBA7DDCA59D88BD86458C5E98F33140 /* ChameleonConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B6AD39C81FAF37861FC0FEC41022146 /* UIAppearance+Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 297186BC80A4997AAFB659FFB1166C08 /* UIAppearance+Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B9348C7CD2CD875D569E3B2A99B6CB2 /* McPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA396B53BEDEABF55E6DEE4E07CA07F9 /* McPicker.swift */; };
 		9DD693AA2ADE8FEB96FB893D6F2EA633 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */; };
-		A664D0A12D5F3DBD08A7E8DFE3AE83E2 /* UIView+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0505D502DD94785111D1C719130F9BC2 /* UIView+ChameleonPrivate.m */; };
-		A94D766F7F89500E75FD25A9151DC3C2 /* McTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B9A67F5CC602F2FC5DA20E87855F83 /* McTextField.swift */; };
-		B26038F91C7C4CC322D7F25C5D16FE9E /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2315E5A47F6262386CFC6DD2C8D768C6 /* ChameleonConstants.m */; };
-		B4EA53699AA19822E674188743266B2B /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E418D27C025109B4DB1B43BA0F35A4E /* ChameleonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B5B7888D0FDB9CE5180E0D9391150DB2 /* CurrencyTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78EF8DC990CCA0A26706C03198A3491F /* CurrencyTextField-dummy.m */; };
+		A664D0A12D5F3DBD08A7E8DFE3AE83E2 /* UIView+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1098E0E61B04AB97EF0E78D1B0155F /* UIView+ChameleonPrivate.m */; };
+		A94D766F7F89500E75FD25A9151DC3C2 /* McTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D077EAAC0D200D947140579ACDE2510B /* McTextField.swift */; };
+		B26038F91C7C4CC322D7F25C5D16FE9E /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 06751D3E6DA131262252798484A56921 /* ChameleonConstants.m */; };
+		B3D9548464C5AD792C5A52C1E0E18E7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */; };
+		B4EA53699AA19822E674188743266B2B /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 21FE7D065C7675083D2D98C4C196A15F /* ChameleonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5B7888D0FDB9CE5180E0D9391150DB2 /* CurrencyTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2017594C90B9372DC75CEDFF21B80BFF /* CurrencyTextField-dummy.m */; };
 		BB0FDDCC82B2A765E40D762291143991 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65E433A68C225D6FF6B2CE970853F1D /* QuartzCore.framework */; };
-		BFA97401155C4E14893D9AA1E0D1EC80 /* UINavigationController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = F6349A9AA63FF97CCC9A262D372E0DC0 /* UINavigationController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C3C8BB46937DD0BBC7FBE25E298052F8 /* UIAppearance+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = 6514677D5D0DCB52E8C119D4AB64DDA3 /* UIAppearance+Swift.m */; };
-		CD47A06EC0176FBAB0BA550102F2F580 /* Pods-TipPoolCalc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A79767988EF3BBA9C61D2A44E4D9F27 /* Pods-TipPoolCalc-dummy.m */; };
-		D9D1D1E695E286199FD28E2E2B4DF818 /* McPickerPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED162296AE8978D58C95CCAB3DF0CCF7 /* McPickerPopoverViewController.swift */; };
-		DB5FB611FB6EBF2F2BA7B78FE0CED535 /* UIColor+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E95B5958817401AD8A7C31241205DD7 /* UIColor+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E11D7AD8DA07B7034991A420DA815E31 /* Pods-TipPoolCalc-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7723B0D29FB95C404FF691EF76AAACF6 /* Pods-TipPoolCalc-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E3D94A76D5526347E923FCC03F056F85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */; };
-		E7FA38FEAF957D69E92153FBAFB3DB40 /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = 790C58889AC33E1D3F4A7FFF9F4552F5 /* Chameleon_.m */; };
-		EB551CA1B0426BE7941431D5CD4A28F8 /* McPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BCECF24EFB2914B70BE988F925E05 /* McPicker-dummy.m */; };
-		EC786817C5CEBCD51A4C9EC9B883ED6F /* ChameleonEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D8E93D3844491DAAE8945BFD8A1F7FB /* ChameleonEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ED4DBD1E13182AA813DC1237FA6E3A42 /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E9A98CB3DEA50DF62EDC62FE93A5368 /* Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F7CAA4DAC0D4C6CC1A25CFB387A6F5B1 /* McPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F81609061F0279BB8E0A22F0770E146E /* McPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FB82C1293D7DDE0D3E2E6D68CDD5852C /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F1C2DD0C4B044B737181251F361FF4 /* UILabel+Chameleon.m */; };
+		BEE9EEB17EE44C63DF4D03B3DA039D00 /* SkyFloatingLabelTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7812F16CBCE99CE4C2862EA8C5E9F6E5 /* SkyFloatingLabelTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA97401155C4E14893D9AA1E0D1EC80 /* UINavigationController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = C78FA569C8D0EC55714B2F942A685F93 /* UINavigationController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3C8BB46937DD0BBC7FBE25E298052F8 /* UIAppearance+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = 4681B3EE6D4E40B21C2A6F12B603B3E6 /* UIAppearance+Swift.m */; };
+		D9D1D1E695E286199FD28E2E2B4DF818 /* McPickerPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA732201B2B92973BB12003B0ECD369 /* McPickerPopoverViewController.swift */; };
+		DB5FB611FB6EBF2F2BA7B78FE0CED535 /* UIColor+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = B1E1FE26B4B5DA6855D46395F434315C /* UIColor+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7FA38FEAF957D69E92153FBAFB3DB40 /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = 723675191AEBECF076D928D24FE8685A /* Chameleon_.m */; };
+		EB551CA1B0426BE7941431D5CD4A28F8 /* McPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6F533572043794FA25DB4068E143A1 /* McPicker-dummy.m */; };
+		EB7C67AC844F6FEB49E5AE794E83EBAC /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED58D937E07772A2A93D72B52E02D1D1 /* SkyFloatingLabelTextFieldWithIcon.swift */; };
+		EC786817C5CEBCD51A4C9EC9B883ED6F /* ChameleonEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 69EA3765C6535688E3C2FAA4CCE87CA3 /* ChameleonEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED4DBD1E13182AA813DC1237FA6E3A42 /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EF0937CD202543FAB7A5F0F3557F076 /* Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3187D0036FAAB20D383A091777AA49A /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C169891E42F21549E48DA42F1656C109 /* SkyFloatingLabelTextField.swift */; };
+		F7CAA4DAC0D4C6CC1A25CFB387A6F5B1 /* McPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 477222DBF16486E4B70D6F0655711732 /* McPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB82C1293D7DDE0D3E2E6D68CDD5852C /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F77390D3B770B73D1FED4DC03B52A9 /* UILabel+Chameleon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2A5F40786B20102D4AD5CEEE3DAABBEF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9681B55F2BD95C0085CBEBEC971A1030;
-			remoteInfo = CurrencyTextField;
-		};
-		925B58F114C7F43E4886B132DF6CD915 /* PBXContainerItemProxy */ = {
+		6D9159A60EF5C251ABB12B3846046C68 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 64FB6E81E491C0A1F61455E3D4588BE5;
 			remoteInfo = McPicker;
 		};
-		C0B4A26C3A09E2AE9FCF487E65E3C24C /* PBXContainerItemProxy */ = {
+		8A05EF78C70AC8ECD9847A36F7B6371C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 76BD4592010354D6C23D6ECCA20D83A8;
 			remoteInfo = ChameleonFramework;
 		};
+		C44A5DF790A66AD8FB145ABA5018B4AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EB5A9FC0FCC6C2564BA5E431B6D3CAF;
+			remoteInfo = SkyFloatingLabelTextField;
+		};
+		F1F50D575B2BDC4FB978935B53AA028C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9681B55F2BD95C0085CBEBEC971A1030;
+			remoteInfo = CurrencyTextField;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0505D502DD94785111D1C719130F9BC2 /* UIView+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.m"; sourceTree = "<group>"; };
-		09323AA4D3EE18C4024A28FBB3815389 /* McPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = McPicker.xcconfig; sourceTree = "<group>"; };
-		09CD584E4DBD8DEB69F4CEB745161E23 /* ChameleonFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ChameleonFramework.modulemap; sourceTree = "<group>"; };
+		010782BF90F1898DA6C665EBCCF4AE09 /* UIButton+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Chameleon.h"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.h"; sourceTree = "<group>"; };
+		041CA8EA61F692F9C94684CCD7509D32 /* UIColor+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		06751D3E6DA131262252798484A56921 /* ChameleonConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChameleonConstants.m; path = "Pod/Classes/Objective-C/ChameleonConstants.m"; sourceTree = "<group>"; };
 		0A79767988EF3BBA9C61D2A44E4D9F27 /* Pods-TipPoolCalc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TipPoolCalc-dummy.m"; sourceTree = "<group>"; };
-		0FB579FA3D081D816C77D45287C3890E /* McPickerBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = McPickerBarButtonItem.swift; path = McPicker/Classes/McPickerBarButtonItem.swift; sourceTree = "<group>"; };
-		1153BAF97B4F02112AFBF6DB9DC8C3C5 /* McPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = McPicker.swift; path = McPicker/Classes/McPicker.swift; sourceTree = "<group>"; };
+		0C31E4B35220876DA0D39EB2A88B00C1 /* CurrencyTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CurrencyTextField-umbrella.h"; sourceTree = "<group>"; };
+		0F1098E0E61B04AB97EF0E78D1B0155F /* UIView+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		11A808D0EC054C259C115296F3854615 /* SkyFloatingLabelTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SkyFloatingLabelTextField-dummy.m"; sourceTree = "<group>"; };
+		134231F2EAB43ED7E3A4D819458F4640 /* ChameleonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ChameleonFramework.framework; path = ChameleonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19E9831692079777493125DDED55D2DE /* Pods-TipPoolCalc-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TipPoolCalc-acknowledgements.plist"; sourceTree = "<group>"; };
-		1BC830A6FCFD070A59CC2B3371F8858D /* Pods_TipPoolCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TipPoolCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E9A98CB3DEA50DF62EDC62FE93A5368 /* Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon.h; path = "Pod/Classes/Objective-C/Chameleon.h"; sourceTree = "<group>"; };
-		2315E5A47F6262386CFC6DD2C8D768C6 /* ChameleonConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChameleonConstants.m; path = "Pod/Classes/Objective-C/ChameleonConstants.m"; sourceTree = "<group>"; };
-		25D73405B0D19D0B58300DD0DE9DE82F /* UIColor+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chameleon.m"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.m"; sourceTree = "<group>"; };
-		2B826FB5D0D4D77F41559C5E7C6F5314 /* UIImage+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.m"; sourceTree = "<group>"; };
-		2D3B431E993400EA16BCF40F44C554FD /* McPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "McPicker-prefix.pch"; sourceTree = "<group>"; };
-		2D8E93D3844491DAAE8945BFD8A1F7FB /* ChameleonEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonEnums.h; path = "Pod/Classes/Objective-C/ChameleonEnums.h"; sourceTree = "<group>"; };
-		318C6B3FB70AA456F8320F1B5F262AB4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3336D85DA227762CFE64A413F562D231 /* UIAppearance+Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAppearance+Swift.h"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.h"; sourceTree = "<group>"; };
-		37B2DF70C08EBF32D6DBDAC4FA17F80F /* UIImage+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		1BBA7DDCA59D88BD86458C5E98F33140 /* ChameleonConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonConstants.h; path = "Pod/Classes/Objective-C/ChameleonConstants.h"; sourceTree = "<group>"; };
+		2017594C90B9372DC75CEDFF21B80BFF /* CurrencyTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CurrencyTextField-dummy.m"; sourceTree = "<group>"; };
+		204FE35E388A5B14D087206A11DBF1E5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21CB03F38B0803BC96D5AC81675E0ADB /* NSArray+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Chameleon.m"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.m"; sourceTree = "<group>"; };
+		21FE7D065C7675083D2D98C4C196A15F /* ChameleonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = "Pod/Classes/Objective-C/ChameleonMacros.h"; sourceTree = "<group>"; };
+		28E402840288B794C3B4D3197B6978AF /* Chameleon_.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon_.h; path = "Pod/Classes/Objective-C/Chameleon_.h"; sourceTree = "<group>"; };
+		297186BC80A4997AAFB659FFB1166C08 /* UIAppearance+Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAppearance+Swift.h"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.h"; sourceTree = "<group>"; };
+		2F30F3A89480D35DA4D47D1D0F983DB6 /* ChameleonFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-umbrella.h"; sourceTree = "<group>"; };
+		30680EDCA3C9AC99444A5E3F910D25E0 /* ChameleonFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-prefix.pch"; sourceTree = "<group>"; };
+		343CBA70148C28A9A794223C685A3736 /* CurrencyTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CurrencyTextField-prefix.pch"; sourceTree = "<group>"; };
+		351FEBDF4A8F48B5704685D8C5A9E168 /* UITextField+fixCaretPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+fixCaretPosition.swift"; path = "Sources/UITextField+fixCaretPosition.swift"; sourceTree = "<group>"; };
+		35662D9C81486809C4C71107DC93C925 /* CurrencyTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CurrencyTextField.modulemap; sourceTree = "<group>"; };
 		37C473026796F8AFAA2ECD5A761494CE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		37EDA8DC32DFC6712E1E5399FB18C30C /* Pods-TipPoolCalc-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TipPoolCalc-resources.sh"; sourceTree = "<group>"; };
-		3978EEECC893A2E09F9D99278A4A9DEB /* Chameleon_.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon_.h; path = "Pod/Classes/Objective-C/Chameleon_.h"; sourceTree = "<group>"; };
-		3C9D738141A79E7391678E44B9EC9FF7 /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Chameleon.h"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.h"; sourceTree = "<group>"; };
+		3DA732201B2B92973BB12003B0ECD369 /* McPickerPopoverViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = McPickerPopoverViewController.swift; path = McPicker/Classes/McPickerPopoverViewController.swift; sourceTree = "<group>"; };
 		3F261BBB5335FC251AB7EEA3D72FC28F /* Pods-TipPoolCalc-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TipPoolCalc-acknowledgements.markdown"; sourceTree = "<group>"; };
-		430F2A587F9EBF5BED472BFC285044AC /* UIColor+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		44CE5ACAC2601ECC59E0D5D55DADF21E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4681B3EE6D4E40B21C2A6F12B603B3E6 /* UIAppearance+Swift.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAppearance+Swift.m"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.m"; sourceTree = "<group>"; };
+		477222DBF16486E4B70D6F0655711732 /* McPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "McPicker-umbrella.h"; sourceTree = "<group>"; };
 		54888FA530A979AC9AAD4AE213A077CB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		55B9A67F5CC602F2FC5DA20E87855F83 /* McTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = McTextField.swift; path = McPicker/Classes/McTextField.swift; sourceTree = "<group>"; };
-		57B21627268C69C6736CFBC6A9C810AA /* UILabel+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+Chameleon.h"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.h"; sourceTree = "<group>"; };
-		5994354EA148E9A251EAB269A5E11307 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5E0BCECF24EFB2914B70BE988F925E05 /* McPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "McPicker-dummy.m"; sourceTree = "<group>"; };
-		61F1C2DD0C4B044B737181251F361FF4 /* UILabel+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Chameleon.m"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.m"; sourceTree = "<group>"; };
-		6514677D5D0DCB52E8C119D4AB64DDA3 /* UIAppearance+Swift.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAppearance+Swift.m"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.m"; sourceTree = "<group>"; };
-		67AC412F8367F71902B7133D9C935071 /* CurrencyTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CurrencyTextField.xcconfig; sourceTree = "<group>"; };
-		6C39DF759578191608549DD2C09F8F64 /* NSArray+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chameleon.h"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.h"; sourceTree = "<group>"; };
-		6C6EC59CFE1EAE6F3B02A618A03CE14E /* UIView+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.h"; sourceTree = "<group>"; };
-		6D8BED2F290A30101DE80DBDDCC66EF0 /* McPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = McPicker.modulemap; sourceTree = "<group>"; };
-		6EB70340141DE8A569E8DB52A59BD12F /* UINavigationController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Chameleon.m"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.m"; sourceTree = "<group>"; };
+		57B0E3699982A73A612FD4D30D84B0D6 /* UIImage+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		5BB86FBF7F809FA286FAE84DC6C424FC /* UILabel+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+Chameleon.h"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.h"; sourceTree = "<group>"; };
+		5D87CB74485269355586B33DE20C08DD /* McPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "McPicker-prefix.pch"; sourceTree = "<group>"; };
+		5DA3DD8E809EA7A5716B835BE409269B /* McPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = McPicker.modulemap; sourceTree = "<group>"; };
+		5EF0937CD202543FAB7A5F0F3557F076 /* Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon.h; path = "Pod/Classes/Objective-C/Chameleon.h"; sourceTree = "<group>"; };
+		60EBECEA06473B870BE3ED510B4096BF /* SkyFloatingLabelTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SkyFloatingLabelTextField.modulemap; sourceTree = "<group>"; };
+		6321658BFCB028465CEEF45F880F8329 /* McPickerBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = McPickerBarButtonItem.swift; path = McPicker/Classes/McPickerBarButtonItem.swift; sourceTree = "<group>"; };
+		66CC504635D2BC6B7FCCE14F04E64E28 /* UIButton+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Chameleon.m"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.m"; sourceTree = "<group>"; };
+		69EA3765C6535688E3C2FAA4CCE87CA3 /* ChameleonEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonEnums.h; path = "Pod/Classes/Objective-C/ChameleonEnums.h"; sourceTree = "<group>"; };
+		6DD705EBE37D64F4B90DCB785539EA29 /* Pods_TipPoolCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TipPoolCalc.framework; path = "Pods-TipPoolCalc.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		723675191AEBECF076D928D24FE8685A /* Chameleon_.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Chameleon_.m; path = "Pod/Classes/Objective-C/Chameleon_.m"; sourceTree = "<group>"; };
+		73BEFF7EBF3359A3581A0D0A7C765924 /* UIImage+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.h"; sourceTree = "<group>"; };
 		75E31393270FA1F5980359C93253A9D8 /* Pods-TipPoolCalc-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TipPoolCalc-frameworks.sh"; sourceTree = "<group>"; };
 		7723B0D29FB95C404FF691EF76AAACF6 /* Pods-TipPoolCalc-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TipPoolCalc-umbrella.h"; sourceTree = "<group>"; };
-		78EF8DC990CCA0A26706C03198A3491F /* CurrencyTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CurrencyTextField-dummy.m"; sourceTree = "<group>"; };
-		790C58889AC33E1D3F4A7FFF9F4552F5 /* Chameleon_.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Chameleon_.m; path = "Pod/Classes/Objective-C/Chameleon_.m"; sourceTree = "<group>"; };
-		851D505FCA53B9156E564D00599D7859 /* CurrencyTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CurrencyTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E95B5958817401AD8A7C31241205DD7 /* UIColor+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Chameleon.h"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9A70CBCDE4CCEF43AF5DDC4090916FAB /* UIButton+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Chameleon.h"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.h"; sourceTree = "<group>"; };
-		9E418D27C025109B4DB1B43BA0F35A4E /* ChameleonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = "Pod/Classes/Objective-C/ChameleonMacros.h"; sourceTree = "<group>"; };
+		7812F16CBCE99CE4C2862EA8C5E9F6E5 /* SkyFloatingLabelTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-umbrella.h"; sourceTree = "<group>"; };
+		7A4E35B8B25CA8C1712F36ECB95E8F07 /* SkyFloatingLabelTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SkyFloatingLabelTextField.xcconfig; sourceTree = "<group>"; };
+		7A8A895569E76DF60EA59F983523F36E /* UIView+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		7B4EB04C1168793854271206D556B834 /* ChameleonFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChameleonFramework.xcconfig; sourceTree = "<group>"; };
+		7E67773A9146DEC8D5B3EFD553059FA1 /* SkyFloatingLabelTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-prefix.pch"; sourceTree = "<group>"; };
+		85F0702E5E49F0858E493E89860B6397 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A014D95A614FCD5AD3C533A8ED0A5FC /* McPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = McPicker.framework; path = McPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		932A808D74095F455907EB620F5438A0 /* CurrencyTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CurrencyTextField.xcconfig; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96A9B9AF8873EFBFB393FA0485B1F119 /* UINavigationController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Chameleon.m"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.m"; sourceTree = "<group>"; };
+		9A5F64FCAB736D3BC16C64F30E9E6740 /* CurrencyTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CurrencyTextField.swift; path = CurrencyTextField/CurrencyTextField.swift; sourceTree = "<group>"; };
+		9CCD97A72B6FD619F663CA90103679E3 /* ChameleonShorthand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChameleonShorthand.swift; path = Pod/Classes/Swift/ChameleonShorthand.swift; sourceTree = "<group>"; };
 		A2A589628C7CD6488EC9ABEB4D678821 /* Pods-TipPoolCalc.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TipPoolCalc.modulemap"; sourceTree = "<group>"; };
-		A2FD3DDA1C8D712BC86A4E23E2E11B8C /* ChameleonFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChameleonFramework-dummy.m"; sourceTree = "<group>"; };
 		A30B884AB692F1A8FCBDA5F8D0B00112 /* Pods-TipPoolCalc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TipPoolCalc.debug.xcconfig"; sourceTree = "<group>"; };
-		A4D0B4C62CD9A0FF43089C2E777A30DB /* ChameleonFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChameleonFramework.xcconfig; sourceTree = "<group>"; };
-		A8CD1769E8B1593800B8C53A3F154392 /* McPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = McPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A93FF74CF0E5E6369984413922B21DD6 /* UIColor+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.h"; sourceTree = "<group>"; };
-		A94930E99D7084F6666C7C31FA5729A0 /* NSArray+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Chameleon.m"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.m"; sourceTree = "<group>"; };
+		A9F77390D3B770B73D1FED4DC03B52A9 /* UILabel+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Chameleon.m"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.m"; sourceTree = "<group>"; };
+		AA396B53BEDEABF55E6DEE4E07CA07F9 /* McPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = McPicker.swift; path = McPicker/Classes/McPicker.swift; sourceTree = "<group>"; };
+		AB180B1437733B6A35923AB36DFD0DF6 /* McPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = McPicker.xcconfig; sourceTree = "<group>"; };
+		AD2330DA28D0B1F7346DC8A8D131D8B3 /* ChameleonFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ChameleonFramework.modulemap; sourceTree = "<group>"; };
+		AFA67212EA15241A9B58FEB5A9A048B9 /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.m"; sourceTree = "<group>"; };
+		B1E1FE26B4B5DA6855D46395F434315C /* UIColor+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Chameleon.h"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.h"; sourceTree = "<group>"; };
+		B493CB88A82E439B65347E7EDE6123B0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B65E433A68C225D6FF6B2CE970853F1D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		BAD706737190F8393004911B95EF8EA4 /* Pods-TipPoolCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TipPoolCalc.release.xcconfig"; sourceTree = "<group>"; };
-		BDEE77BE5E32BE1B49B4BD31BB5F1B9B /* CurrencyTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CurrencyTextField.modulemap; sourceTree = "<group>"; };
-		CD96EA12F3FB3D68EFCF39F0680C3DED /* ChameleonConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonConstants.h; path = "Pod/Classes/Objective-C/ChameleonConstants.h"; sourceTree = "<group>"; };
-		D015DE1E4048C20FF472F8E3AF7B086E /* ChameleonFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-prefix.pch"; sourceTree = "<group>"; };
-		D1E89A34F2E75DFBE8D8F5BC88C265BE /* CurrencyTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CurrencyTextField-umbrella.h"; sourceTree = "<group>"; };
-		D50CB25B5543FCE317558923570C0BE9 /* ChameleonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChameleonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEB55A945FE5A3675E9F5D4932358381 /* NSArray+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chameleon.h"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.h"; sourceTree = "<group>"; };
+		C169891E42F21549E48DA42F1656C109 /* SkyFloatingLabelTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextField.swift; path = Sources/SkyFloatingLabelTextField.swift; sourceTree = "<group>"; };
+		C78FA569C8D0EC55714B2F942A685F93 /* UINavigationController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Chameleon.h"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.h"; sourceTree = "<group>"; };
+		CC55529EDDB45FED1BD5E49662D1E5B5 /* CurrencyTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CurrencyTextField.framework; path = CurrencyTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFEECB26C3249854545F0B28BD9218EE /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Chameleon.h"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.h"; sourceTree = "<group>"; };
+		D077EAAC0D200D947140579ACDE2510B /* McTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = McTextField.swift; path = McPicker/Classes/McTextField.swift; sourceTree = "<group>"; };
 		D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DC0666C9332A7B226F8DC0B953352CDA /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.m"; sourceTree = "<group>"; };
-		DECB88DECC29F4822C43FC24D2178990 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E847AF53BB9C9CBD3F867E03ADE68817 /* ChameleonShorthand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChameleonShorthand.swift; path = Pod/Classes/Swift/ChameleonShorthand.swift; sourceTree = "<group>"; };
+		D9F1D14E2F901215855638DAB1BE7296 /* UIColor+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		DA8547A1ED65F5E6491A37E72EF0BA14 /* UIColor+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chameleon.m"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.m"; sourceTree = "<group>"; };
+		DE6F533572043794FA25DB4068E143A1 /* McPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "McPicker-dummy.m"; sourceTree = "<group>"; };
 		E89163E94743FDDD60913C47150E225B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		EB49041E1D5E630EF2A00482172E7DD4 /* CurrencyTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CurrencyTextField-prefix.pch"; sourceTree = "<group>"; };
-		ED162296AE8978D58C95CCAB3DF0CCF7 /* McPickerPopoverViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = McPickerPopoverViewController.swift; path = McPicker/Classes/McPickerPopoverViewController.swift; sourceTree = "<group>"; };
-		F6349A9AA63FF97CCC9A262D372E0DC0 /* UINavigationController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Chameleon.h"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.h"; sourceTree = "<group>"; };
-		F81609061F0279BB8E0A22F0770E146E /* McPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "McPicker-umbrella.h"; sourceTree = "<group>"; };
-		FBE30861BDF4211A7A7BB6430FB97930 /* ChameleonFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-umbrella.h"; sourceTree = "<group>"; };
-		FD3B7031E1EE1714711D5E2E8B7DF8FE /* CurrencyTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CurrencyTextField.swift; path = CurrencyTextField/CurrencyTextField.swift; sourceTree = "<group>"; };
-		FD4042D45D5752CCA8DFE0235A4E1BBA /* UIButton+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Chameleon.m"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.m"; sourceTree = "<group>"; };
+		EB18A202D9BCB3227BCDE0238527CB55 /* ChameleonFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChameleonFramework-dummy.m"; sourceTree = "<group>"; };
+		ED58D937E07772A2A93D72B52E02D1D1 /* SkyFloatingLabelTextFieldWithIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextFieldWithIcon.swift; path = Sources/SkyFloatingLabelTextFieldWithIcon.swift; sourceTree = "<group>"; };
+		FCFE105E32ADF80038B48832673B3C76 /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SkyFloatingLabelTextField.framework; path = SkyFloatingLabelTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +187,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B7AD02E9887ADF404C61B450C0A4F7A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3D9548464C5AD792C5A52C1E0E18E7D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E159E4140377AB9B8BD749C396A0235E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C20EEF968D82CBB0AB1CE8235008F1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E3FD70AC579E74592E2EAC475ADFB8D9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -172,14 +211,6 @@
 				9DD693AA2ADE8FEB96FB893D6F2EA633 /* Foundation.framework in Frameworks */,
 				BB0FDDCC82B2A765E40D762291143991 /* QuartzCore.framework in Frameworks */,
 				673D37B7393421A843ECBC8A42CC56CB /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAF6DFD79902C5E0118AD839A68CFEB0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E3D94A76D5526347E923FCC03F056F85 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,18 +234,91 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		52EA87F1DE804D23E0685C5B6AE4060C /* Support Files */ = {
+		18D3D1CEFF1667FB7319FBB520482443 /* ChameleonFramework */ = {
 			isa = PBXGroup;
 			children = (
-				BDEE77BE5E32BE1B49B4BD31BB5F1B9B /* CurrencyTextField.modulemap */,
-				67AC412F8367F71902B7133D9C935071 /* CurrencyTextField.xcconfig */,
-				78EF8DC990CCA0A26706C03198A3491F /* CurrencyTextField-dummy.m */,
-				EB49041E1D5E630EF2A00482172E7DD4 /* CurrencyTextField-prefix.pch */,
-				D1E89A34F2E75DFBE8D8F5BC88C265BE /* CurrencyTextField-umbrella.h */,
-				5994354EA148E9A251EAB269A5E11307 /* Info.plist */,
+				4636696C34B84FBDE24AA8A152C54D89 /* Default */,
+				54B09BB6AAA0730460BAC8004786AA7E /* Support Files */,
+				9E092E508DF42419CFF7ED573FD50FCB /* Swift */,
+			);
+			name = ChameleonFramework;
+			path = ChameleonFramework;
+			sourceTree = "<group>";
+		};
+		1A0498000CEC758D6A1A1A4562B207E2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				35662D9C81486809C4C71107DC93C925 /* CurrencyTextField.modulemap */,
+				932A808D74095F455907EB620F5438A0 /* CurrencyTextField.xcconfig */,
+				2017594C90B9372DC75CEDFF21B80BFF /* CurrencyTextField-dummy.m */,
+				343CBA70148C28A9A794223C685A3736 /* CurrencyTextField-prefix.pch */,
+				0C31E4B35220876DA0D39EB2A88B00C1 /* CurrencyTextField-umbrella.h */,
+				85F0702E5E49F0858E493E89860B6397 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/CurrencyTextField";
+			sourceTree = "<group>";
+		};
+		343D0D5F9CD6F49B2B9FDA67623EE46A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B493CB88A82E439B65347E7EDE6123B0 /* Info.plist */,
+				5DA3DD8E809EA7A5716B835BE409269B /* McPicker.modulemap */,
+				AB180B1437733B6A35923AB36DFD0DF6 /* McPicker.xcconfig */,
+				DE6F533572043794FA25DB4068E143A1 /* McPicker-dummy.m */,
+				5D87CB74485269355586B33DE20C08DD /* McPicker-prefix.pch */,
+				477222DBF16486E4B70D6F0655711732 /* McPicker-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/McPicker";
+			sourceTree = "<group>";
+		};
+		43B1EFF585071FBEC3BE92978BE8D6B6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				44CE5ACAC2601ECC59E0D5D55DADF21E /* Info.plist */,
+				60EBECEA06473B870BE3ED510B4096BF /* SkyFloatingLabelTextField.modulemap */,
+				7A4E35B8B25CA8C1712F36ECB95E8F07 /* SkyFloatingLabelTextField.xcconfig */,
+				11A808D0EC054C259C115296F3854615 /* SkyFloatingLabelTextField-dummy.m */,
+				7E67773A9146DEC8D5B3EFD553059FA1 /* SkyFloatingLabelTextField-prefix.pch */,
+				7812F16CBCE99CE4C2862EA8C5E9F6E5 /* SkyFloatingLabelTextField-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SkyFloatingLabelTextField";
+			sourceTree = "<group>";
+		};
+		4636696C34B84FBDE24AA8A152C54D89 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				5EF0937CD202543FAB7A5F0F3557F076 /* Chameleon.h */,
+				28E402840288B794C3B4D3197B6978AF /* Chameleon_.h */,
+				723675191AEBECF076D928D24FE8685A /* Chameleon_.m */,
+				1BBA7DDCA59D88BD86458C5E98F33140 /* ChameleonConstants.h */,
+				06751D3E6DA131262252798484A56921 /* ChameleonConstants.m */,
+				69EA3765C6535688E3C2FAA4CCE87CA3 /* ChameleonEnums.h */,
+				21FE7D065C7675083D2D98C4C196A15F /* ChameleonMacros.h */,
+				BEB55A945FE5A3675E9F5D4932358381 /* NSArray+Chameleon.h */,
+				21CB03F38B0803BC96D5AC81675E0ADB /* NSArray+Chameleon.m */,
+				297186BC80A4997AAFB659FFB1166C08 /* UIAppearance+Swift.h */,
+				4681B3EE6D4E40B21C2A6F12B603B3E6 /* UIAppearance+Swift.m */,
+				010782BF90F1898DA6C665EBCCF4AE09 /* UIButton+Chameleon.h */,
+				66CC504635D2BC6B7FCCE14F04E64E28 /* UIButton+Chameleon.m */,
+				B1E1FE26B4B5DA6855D46395F434315C /* UIColor+Chameleon.h */,
+				DA8547A1ED65F5E6491A37E72EF0BA14 /* UIColor+Chameleon.m */,
+				D9F1D14E2F901215855638DAB1BE7296 /* UIColor+ChameleonPrivate.h */,
+				041CA8EA61F692F9C94684CCD7509D32 /* UIColor+ChameleonPrivate.m */,
+				73BEFF7EBF3359A3581A0D0A7C765924 /* UIImage+ChameleonPrivate.h */,
+				57B0E3699982A73A612FD4D30D84B0D6 /* UIImage+ChameleonPrivate.m */,
+				5BB86FBF7F809FA286FAE84DC6C424FC /* UILabel+Chameleon.h */,
+				A9F77390D3B770B73D1FED4DC03B52A9 /* UILabel+Chameleon.m */,
+				C78FA569C8D0EC55714B2F942A685F93 /* UINavigationController+Chameleon.h */,
+				96A9B9AF8873EFBFB393FA0485B1F119 /* UINavigationController+Chameleon.m */,
+				7A8A895569E76DF60EA59F983523F36E /* UIView+ChameleonPrivate.h */,
+				0F1098E0E61B04AB97EF0E78D1B0155F /* UIView+ChameleonPrivate.m */,
+				CFEECB26C3249854545F0B28BD9218EE /* UIViewController+Chameleon.h */,
+				AFA67212EA15241A9B58FEB5A9A048B9 /* UIViewController+Chameleon.m */,
+			);
+			name = Default;
 			sourceTree = "<group>";
 		};
 		53C8B4AB97860F06FE722851EA867B18 /* iOS */ = {
@@ -226,6 +330,20 @@
 				E89163E94743FDDD60913C47150E225B /* UIKit.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		54B09BB6AAA0730460BAC8004786AA7E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD2330DA28D0B1F7346DC8A8D131D8B3 /* ChameleonFramework.modulemap */,
+				7B4EB04C1168793854271206D556B834 /* ChameleonFramework.xcconfig */,
+				EB18A202D9BCB3227BCDE0238527CB55 /* ChameleonFramework-dummy.m */,
+				30680EDCA3C9AC99444A5E3F910D25E0 /* ChameleonFramework-prefix.pch */,
+				2F30F3A89480D35DA4D47D1D0F983DB6 /* ChameleonFramework-umbrella.h */,
+				204FE35E388A5B14D087206A11DBF1E5 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ChameleonFramework";
 			sourceTree = "<group>";
 		};
 		55DC51BD495309720F580444DBF38ADE /* Pods-TipPoolCalc */ = {
@@ -246,14 +364,6 @@
 			path = "Target Support Files/Pods-TipPoolCalc";
 			sourceTree = "<group>";
 		};
-		5AA46BBB608BBE80B851B80E475CCD27 /* Swift */ = {
-			isa = PBXGroup;
-			children = (
-				E847AF53BB9C9CBD3F867E03ADE68817 /* ChameleonShorthand.swift */,
-			);
-			name = Swift;
-			sourceTree = "<group>";
-		};
 		6BD567504073BB678F74C74603558745 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,129 +372,81 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		6E1AED8DE10C5CB5778EEDB4A2C85329 /* CurrencyTextField */ = {
+			isa = PBXGroup;
+			children = (
+				9A5F64FCAB736D3BC16C64F30E9E6740 /* CurrencyTextField.swift */,
+				1A0498000CEC758D6A1A1A4562B207E2 /* Support Files */,
+			);
+			name = CurrencyTextField;
+			path = CurrencyTextField;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
-				F15B495243935FB60EBC255FE7A05592 /* Pods */,
-				E0E137E88E5EC850A72BAECD5748D912 /* Products */,
+				B2C0945B7DB8B14F7C700918FC273500 /* Pods */,
+				DF1FECBF79E0B7D2682DD6C9B24D1BB0 /* Products */,
 				6BD567504073BB678F74C74603558745 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8974461E67191A2FBAA4B96092400B82 /* McPicker */ = {
+		9B815C8B77986B83C8EA70C5117A054F /* SkyFloatingLabelTextField */ = {
 			isa = PBXGroup;
 			children = (
-				1153BAF97B4F02112AFBF6DB9DC8C3C5 /* McPicker.swift */,
-				0FB579FA3D081D816C77D45287C3890E /* McPickerBarButtonItem.swift */,
-				ED162296AE8978D58C95CCAB3DF0CCF7 /* McPickerPopoverViewController.swift */,
-				55B9A67F5CC602F2FC5DA20E87855F83 /* McTextField.swift */,
-				D19B8862ED0EAFF125C290FD0A74B1C6 /* Support Files */,
+				C169891E42F21549E48DA42F1656C109 /* SkyFloatingLabelTextField.swift */,
+				ED58D937E07772A2A93D72B52E02D1D1 /* SkyFloatingLabelTextFieldWithIcon.swift */,
+				351FEBDF4A8F48B5704685D8C5A9E168 /* UITextField+fixCaretPosition.swift */,
+				43B1EFF585071FBEC3BE92978BE8D6B6 /* Support Files */,
 			);
+			name = SkyFloatingLabelTextField;
+			path = SkyFloatingLabelTextField;
+			sourceTree = "<group>";
+		};
+		9E092E508DF42419CFF7ED573FD50FCB /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				9CCD97A72B6FD619F663CA90103679E3 /* ChameleonShorthand.swift */,
+			);
+			name = Swift;
+			sourceTree = "<group>";
+		};
+		AB112C9A6FAF0FEC004E28BD664C3BFD /* McPicker */ = {
+			isa = PBXGroup;
+			children = (
+				AA396B53BEDEABF55E6DEE4E07CA07F9 /* McPicker.swift */,
+				6321658BFCB028465CEEF45F880F8329 /* McPickerBarButtonItem.swift */,
+				3DA732201B2B92973BB12003B0ECD369 /* McPickerPopoverViewController.swift */,
+				D077EAAC0D200D947140579ACDE2510B /* McTextField.swift */,
+				343D0D5F9CD6F49B2B9FDA67623EE46A /* Support Files */,
+			);
+			name = McPicker;
 			path = McPicker;
 			sourceTree = "<group>";
 		};
-		AE3711D15339DA4778BF103BCAE00FA8 /* ChameleonFramework */ = {
+		B2C0945B7DB8B14F7C700918FC273500 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F0EACDBA547F98660C67BE75EBDEEA7B /* Default */,
-				FC2BA204B48CED4E8CD0567880C2CF6F /* Support Files */,
-				5AA46BBB608BBE80B851B80E475CCD27 /* Swift */,
-			);
-			path = ChameleonFramework;
-			sourceTree = "<group>";
-		};
-		BFF75D7190B63F0CFD3C8D45CB8F106E /* CurrencyTextField */ = {
-			isa = PBXGroup;
-			children = (
-				FD3B7031E1EE1714711D5E2E8B7DF8FE /* CurrencyTextField.swift */,
-				52EA87F1DE804D23E0685C5B6AE4060C /* Support Files */,
-			);
-			path = CurrencyTextField;
-			sourceTree = "<group>";
-		};
-		D19B8862ED0EAFF125C290FD0A74B1C6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				318C6B3FB70AA456F8320F1B5F262AB4 /* Info.plist */,
-				6D8BED2F290A30101DE80DBDDCC66EF0 /* McPicker.modulemap */,
-				09323AA4D3EE18C4024A28FBB3815389 /* McPicker.xcconfig */,
-				5E0BCECF24EFB2914B70BE988F925E05 /* McPicker-dummy.m */,
-				2D3B431E993400EA16BCF40F44C554FD /* McPicker-prefix.pch */,
-				F81609061F0279BB8E0A22F0770E146E /* McPicker-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/McPicker";
-			sourceTree = "<group>";
-		};
-		E0E137E88E5EC850A72BAECD5748D912 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D50CB25B5543FCE317558923570C0BE9 /* ChameleonFramework.framework */,
-				851D505FCA53B9156E564D00599D7859 /* CurrencyTextField.framework */,
-				A8CD1769E8B1593800B8C53A3F154392 /* McPicker.framework */,
-				1BC830A6FCFD070A59CC2B3371F8858D /* Pods_TipPoolCalc.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		F0EACDBA547F98660C67BE75EBDEEA7B /* Default */ = {
-			isa = PBXGroup;
-			children = (
-				1E9A98CB3DEA50DF62EDC62FE93A5368 /* Chameleon.h */,
-				3978EEECC893A2E09F9D99278A4A9DEB /* Chameleon_.h */,
-				790C58889AC33E1D3F4A7FFF9F4552F5 /* Chameleon_.m */,
-				CD96EA12F3FB3D68EFCF39F0680C3DED /* ChameleonConstants.h */,
-				2315E5A47F6262386CFC6DD2C8D768C6 /* ChameleonConstants.m */,
-				2D8E93D3844491DAAE8945BFD8A1F7FB /* ChameleonEnums.h */,
-				9E418D27C025109B4DB1B43BA0F35A4E /* ChameleonMacros.h */,
-				6C39DF759578191608549DD2C09F8F64 /* NSArray+Chameleon.h */,
-				A94930E99D7084F6666C7C31FA5729A0 /* NSArray+Chameleon.m */,
-				3336D85DA227762CFE64A413F562D231 /* UIAppearance+Swift.h */,
-				6514677D5D0DCB52E8C119D4AB64DDA3 /* UIAppearance+Swift.m */,
-				9A70CBCDE4CCEF43AF5DDC4090916FAB /* UIButton+Chameleon.h */,
-				FD4042D45D5752CCA8DFE0235A4E1BBA /* UIButton+Chameleon.m */,
-				8E95B5958817401AD8A7C31241205DD7 /* UIColor+Chameleon.h */,
-				25D73405B0D19D0B58300DD0DE9DE82F /* UIColor+Chameleon.m */,
-				A93FF74CF0E5E6369984413922B21DD6 /* UIColor+ChameleonPrivate.h */,
-				430F2A587F9EBF5BED472BFC285044AC /* UIColor+ChameleonPrivate.m */,
-				37B2DF70C08EBF32D6DBDAC4FA17F80F /* UIImage+ChameleonPrivate.h */,
-				2B826FB5D0D4D77F41559C5E7C6F5314 /* UIImage+ChameleonPrivate.m */,
-				57B21627268C69C6736CFBC6A9C810AA /* UILabel+Chameleon.h */,
-				61F1C2DD0C4B044B737181251F361FF4 /* UILabel+Chameleon.m */,
-				F6349A9AA63FF97CCC9A262D372E0DC0 /* UINavigationController+Chameleon.h */,
-				6EB70340141DE8A569E8DB52A59BD12F /* UINavigationController+Chameleon.m */,
-				6C6EC59CFE1EAE6F3B02A618A03CE14E /* UIView+ChameleonPrivate.h */,
-				0505D502DD94785111D1C719130F9BC2 /* UIView+ChameleonPrivate.m */,
-				3C9D738141A79E7391678E44B9EC9FF7 /* UIViewController+Chameleon.h */,
-				DC0666C9332A7B226F8DC0B953352CDA /* UIViewController+Chameleon.m */,
-			);
-			name = Default;
-			sourceTree = "<group>";
-		};
-		F15B495243935FB60EBC255FE7A05592 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				AE3711D15339DA4778BF103BCAE00FA8 /* ChameleonFramework */,
-				BFF75D7190B63F0CFD3C8D45CB8F106E /* CurrencyTextField */,
-				8974461E67191A2FBAA4B96092400B82 /* McPicker */,
+				18D3D1CEFF1667FB7319FBB520482443 /* ChameleonFramework */,
+				6E1AED8DE10C5CB5778EEDB4A2C85329 /* CurrencyTextField */,
+				AB112C9A6FAF0FEC004E28BD664C3BFD /* McPicker */,
+				9B815C8B77986B83C8EA70C5117A054F /* SkyFloatingLabelTextField */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		FC2BA204B48CED4E8CD0567880C2CF6F /* Support Files */ = {
+		DF1FECBF79E0B7D2682DD6C9B24D1BB0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				09CD584E4DBD8DEB69F4CEB745161E23 /* ChameleonFramework.modulemap */,
-				A4D0B4C62CD9A0FF43089C2E777A30DB /* ChameleonFramework.xcconfig */,
-				A2FD3DDA1C8D712BC86A4E23E2E11B8C /* ChameleonFramework-dummy.m */,
-				D015DE1E4048C20FF472F8E3AF7B086E /* ChameleonFramework-prefix.pch */,
-				FBE30861BDF4211A7A7BB6430FB97930 /* ChameleonFramework-umbrella.h */,
-				DECB88DECC29F4822C43FC24D2178990 /* Info.plist */,
+				134231F2EAB43ED7E3A4D819458F4640 /* ChameleonFramework.framework */,
+				CC55529EDDB45FED1BD5E49662D1E5B5 /* CurrencyTextField.framework */,
+				8A014D95A614FCD5AD3C533A8ED0A5FC /* McPicker.framework */,
+				6DD705EBE37D64F4B90DCB785539EA29 /* Pods_TipPoolCalc.framework */,
+				FCFE105E32ADF80038B48832673B3C76 /* SkyFloatingLabelTextField.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/ChameleonFramework";
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,11 +460,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7347D49B6E1D2B43FA4C4E2D20D60B2D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BD51C3AF439990929574DBBB46271CA /* Pods-TipPoolCalc-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7FA9C5DCC6627F64AB184D5D00C37E12 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F7CAA4DAC0D4C6CC1A25CFB387A6F5B1 /* McPicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B5E048B3BFEEBAD4A549F13350D303F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEE9EEB17EE44C63DF4D03B3DA039D00 /* SkyFloatingLabelTextField-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,17 +507,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9D8029F73B4746F99896C3CDC363878F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E11D7AD8DA07B7034991A420DA815E31 /* Pods-TipPoolCalc-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		2EB5A9FC0FCC6C2564BA5E431B6D3CAF /* SkyFloatingLabelTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36FF0017D2C6BD9B21B74178621FE402 /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */;
+			buildPhases = (
+				87D3F6B4D0A24D362662A98BFB4326C5 /* Sources */,
+				B7AD02E9887ADF404C61B450C0A4F7A2 /* Frameworks */,
+				8B5E048B3BFEEBAD4A549F13350D303F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkyFloatingLabelTextField;
+			productName = SkyFloatingLabelTextField;
+			productReference = FCFE105E32ADF80038B48832673B3C76 /* SkyFloatingLabelTextField.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		64FB6E81E491C0A1F61455E3D4588BE5 /* McPicker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10954CA9883B7CE59C48E98094557BBC /* Build configuration list for PBXNativeTarget "McPicker" */;
@@ -454,7 +541,7 @@
 			);
 			name = McPicker;
 			productName = McPicker;
-			productReference = A8CD1769E8B1593800B8C53A3F154392 /* McPicker.framework */;
+			productReference = 8A014D95A614FCD5AD3C533A8ED0A5FC /* McPicker.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		76BD4592010354D6C23D6ECCA20D83A8 /* ChameleonFramework */ = {
@@ -471,7 +558,7 @@
 			);
 			name = ChameleonFramework;
 			productName = ChameleonFramework;
-			productReference = D50CB25B5543FCE317558923570C0BE9 /* ChameleonFramework.framework */;
+			productReference = 134231F2EAB43ED7E3A4D819458F4640 /* ChameleonFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9681B55F2BD95C0085CBEBEC971A1030 /* CurrencyTextField */ = {
@@ -488,27 +575,28 @@
 			);
 			name = CurrencyTextField;
 			productName = CurrencyTextField;
-			productReference = 851D505FCA53B9156E564D00599D7859 /* CurrencyTextField.framework */;
+			productReference = CC55529EDDB45FED1BD5E49662D1E5B5 /* CurrencyTextField.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DAB52AFBE4B1A75C95FE3C472D39EF67 /* Pods-TipPoolCalc */ = {
+		9A566909AD05153E3A31C3956AA1ACD1 /* Pods-TipPoolCalc */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6241A2D2B184205623E74D302B191327 /* Build configuration list for PBXNativeTarget "Pods-TipPoolCalc" */;
+			buildConfigurationList = 12318E57F23679CB6B234BBD1E7AC542 /* Build configuration list for PBXNativeTarget "Pods-TipPoolCalc" */;
 			buildPhases = (
-				3C093E304ECCF4BB61354E97AE51B818 /* Sources */,
-				FAF6DFD79902C5E0118AD839A68CFEB0 /* Frameworks */,
-				9D8029F73B4746F99896C3CDC363878F /* Headers */,
+				5F776B1E92155070CAE3F058B0CB7510 /* Sources */,
+				E159E4140377AB9B8BD749C396A0235E /* Frameworks */,
+				7347D49B6E1D2B43FA4C4E2D20D60B2D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0631028304A849CE653B41F4B8BD9E29 /* PBXTargetDependency */,
-				EE9C85EB6C548F8265E18F050AC8180E /* PBXTargetDependency */,
-				28413BCAC31DCB06B7F018325B7F8D5F /* PBXTargetDependency */,
+				021A46A86B06786C4018DB2CB966B021 /* PBXTargetDependency */,
+				2F6C97635B676456EAD80437DDB07E03 /* PBXTargetDependency */,
+				45CDB144E3431CA5FEBFC4C6414B82A3 /* PBXTargetDependency */,
+				E110E3DE8B9CF1B43FD6BB76D97CE2FA /* PBXTargetDependency */,
 			);
 			name = "Pods-TipPoolCalc";
 			productName = "Pods-TipPoolCalc";
-			productReference = 1BC830A6FCFD070A59CC2B3371F8858D /* Pods_TipPoolCalc.framework */;
+			productReference = 6DD705EBE37D64F4B90DCB785539EA29 /* Pods_TipPoolCalc.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -519,11 +607,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
-				TargetAttributes = {
-					64FB6E81E491C0A1F61455E3D4588BE5 = {
-						LastSwiftMigration = 1000;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -533,33 +616,45 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = E0E137E88E5EC850A72BAECD5748D912 /* Products */;
+			productRefGroup = DF1FECBF79E0B7D2682DD6C9B24D1BB0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				76BD4592010354D6C23D6ECCA20D83A8 /* ChameleonFramework */,
 				9681B55F2BD95C0085CBEBEC971A1030 /* CurrencyTextField */,
 				64FB6E81E491C0A1F61455E3D4588BE5 /* McPicker */,
-				DAB52AFBE4B1A75C95FE3C472D39EF67 /* Pods-TipPoolCalc */,
+				9A566909AD05153E3A31C3956AA1ACD1 /* Pods-TipPoolCalc */,
+				2EB5A9FC0FCC6C2564BA5E431B6D3CAF /* SkyFloatingLabelTextField */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3C093E304ECCF4BB61354E97AE51B818 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CD47A06EC0176FBAB0BA550102F2F580 /* Pods-TipPoolCalc-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		510964C4FA8CEA1601A862A3313E12C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B5B7888D0FDB9CE5180E0D9391150DB2 /* CurrencyTextField-dummy.m in Sources */,
 				9652EC69FDFC0B8E7A899C265F4949EF /* CurrencyTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F776B1E92155070CAE3F058B0CB7510 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A396071DF2D1C080F5AC3B5AD3D5385 /* Pods-TipPoolCalc-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87D3F6B4D0A24D362662A98BFB4326C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25BB7F3378AC8269552C0EEB5A7FFB22 /* SkyFloatingLabelTextField-dummy.m in Sources */,
+				F3187D0036FAAB20D383A091777AA49A /* SkyFloatingLabelTextField.swift in Sources */,
+				EB7C67AC844F6FEB49E5AE794E83EBAC /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */,
+				467807D12D00B9E61BDDDE270DE30C2B /* UITextField+fixCaretPosition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,30 +694,36 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0631028304A849CE653B41F4B8BD9E29 /* PBXTargetDependency */ = {
+		021A46A86B06786C4018DB2CB966B021 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ChameleonFramework;
 			target = 76BD4592010354D6C23D6ECCA20D83A8 /* ChameleonFramework */;
-			targetProxy = C0B4A26C3A09E2AE9FCF487E65E3C24C /* PBXContainerItemProxy */;
+			targetProxy = 8A05EF78C70AC8ECD9847A36F7B6371C /* PBXContainerItemProxy */;
 		};
-		28413BCAC31DCB06B7F018325B7F8D5F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = McPicker;
-			target = 64FB6E81E491C0A1F61455E3D4588BE5 /* McPicker */;
-			targetProxy = 925B58F114C7F43E4886B132DF6CD915 /* PBXContainerItemProxy */;
-		};
-		EE9C85EB6C548F8265E18F050AC8180E /* PBXTargetDependency */ = {
+		2F6C97635B676456EAD80437DDB07E03 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CurrencyTextField;
 			target = 9681B55F2BD95C0085CBEBEC971A1030 /* CurrencyTextField */;
-			targetProxy = 2A5F40786B20102D4AD5CEEE3DAABBEF /* PBXContainerItemProxy */;
+			targetProxy = F1F50D575B2BDC4FB978935B53AA028C /* PBXContainerItemProxy */;
+		};
+		45CDB144E3431CA5FEBFC4C6414B82A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = McPicker;
+			target = 64FB6E81E491C0A1F61455E3D4588BE5 /* McPicker */;
+			targetProxy = 6D9159A60EF5C251ABB12B3846046C68 /* PBXContainerItemProxy */;
+		};
+		E110E3DE8B9CF1B43FD6BB76D97CE2FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SkyFloatingLabelTextField;
+			target = 2EB5A9FC0FCC6C2564BA5E431B6D3CAF /* SkyFloatingLabelTextField */;
+			targetProxy = C44A5DF790A66AD8FB145ABA5018B4AF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		09E91BC842FCD8E23F11E141D060DC7E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09323AA4D3EE18C4024A28FBB3815389 /* McPicker.xcconfig */;
+			baseConfigurationReference = AB180B1437733B6A35923AB36DFD0DF6 /* McPicker.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -637,7 +738,11 @@
 				INFOPLIST_FILE = "Target Support Files/McPicker/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/McPicker/McPicker.modulemap";
 				PRODUCT_MODULE_NAME = McPicker;
 				PRODUCT_NAME = McPicker;
@@ -645,7 +750,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -654,7 +759,7 @@
 		};
 		0E47837C3B263A3BC718E8CAD02FF256 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4D0B4C62CD9A0FF43089C2E777A30DB /* ChameleonFramework.xcconfig */;
+			baseConfigurationReference = 7B4EB04C1168793854271206D556B834 /* ChameleonFramework.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -669,7 +774,11 @@
 				INFOPLIST_FILE = "Target Support Files/ChameleonFramework/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/ChameleonFramework/ChameleonFramework.modulemap";
 				PRODUCT_MODULE_NAME = ChameleonFramework;
 				PRODUCT_NAME = ChameleonFramework;
@@ -687,7 +796,7 @@
 		};
 		44758535E815EDD0775F2D6F3EBA72BC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67AC412F8367F71902B7133D9C935071 /* CurrencyTextField.xcconfig */;
+			baseConfigurationReference = 932A808D74095F455907EB620F5438A0 /* CurrencyTextField.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -702,7 +811,11 @@
 				INFOPLIST_FILE = "Target Support Files/CurrencyTextField/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/CurrencyTextField/CurrencyTextField.modulemap";
 				PRODUCT_MODULE_NAME = CurrencyTextField;
 				PRODUCT_NAME = CurrencyTextField;
@@ -711,6 +824,86 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		49067FB6DAA1113688959FF092E71EF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAD706737190F8393004911B95EF8EA4 /* Pods-TipPoolCalc.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TipPoolCalc/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TipPoolCalc/Pods-TipPoolCalc.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4AD0853B7E22A61A8C3E7A638F7E8A5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A30B884AB692F1A8FCBDA5F8D0B00112 /* Pods-TipPoolCalc.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TipPoolCalc/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TipPoolCalc/Pods-TipPoolCalc.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -782,7 +975,7 @@
 		};
 		70741DE854B83AF224A01325E679C628 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4D0B4C62CD9A0FF43089C2E777A30DB /* ChameleonFramework.xcconfig */;
+			baseConfigurationReference = 7B4EB04C1168793854271206D556B834 /* ChameleonFramework.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -797,7 +990,11 @@
 				INFOPLIST_FILE = "Target Support Files/ChameleonFramework/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/ChameleonFramework/ChameleonFramework.modulemap";
 				PRODUCT_MODULE_NAME = ChameleonFramework;
 				PRODUCT_NAME = ChameleonFramework;
@@ -812,12 +1009,10 @@
 			};
 			name = Debug;
 		};
-		9BDB34EB5B5411B510A62A66DF94EF24 /* Release */ = {
+		A5AB92735E6A850CB7378903A43212BC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BAD706737190F8393004911B95EF8EA4 /* Pods-TipPoolCalc.release.xcconfig */;
+			baseConfigurationReference = 7A4E35B8B25CA8C1712F36ECB95E8F07 /* SkyFloatingLabelTextField.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -827,26 +1022,28 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TipPoolCalc/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TipPoolCalc/Pods-TipPoolCalc.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
+				PRODUCT_MODULE_NAME = SkyFloatingLabelTextField;
+				PRODUCT_NAME = SkyFloatingLabelTextField;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -908,7 +1105,7 @@
 		};
 		CA3DC89CFCF3E35006708C891B220835 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09323AA4D3EE18C4024A28FBB3815389 /* McPicker.xcconfig */;
+			baseConfigurationReference = AB180B1437733B6A35923AB36DFD0DF6 /* McPicker.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -923,7 +1120,11 @@
 				INFOPLIST_FILE = "Target Support Files/McPicker/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/McPicker/McPicker.modulemap";
 				PRODUCT_MODULE_NAME = McPicker;
 				PRODUCT_NAME = McPicker;
@@ -931,7 +1132,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -939,45 +1140,9 @@
 			};
 			name = Release;
 		};
-		EE957CA2975C39C6A436857956D0021D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A30B884AB692F1A8FCBDA5F8D0B00112 /* Pods-TipPoolCalc.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TipPoolCalc/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TipPoolCalc/Pods-TipPoolCalc.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		F392EA2E48A5EBFBAA27D23A038488D2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67AC412F8367F71902B7133D9C935071 /* CurrencyTextField.xcconfig */;
+			baseConfigurationReference = 932A808D74095F455907EB620F5438A0 /* CurrencyTextField.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -992,10 +1157,51 @@
 				INFOPLIST_FILE = "Target Support Files/CurrencyTextField/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/CurrencyTextField/CurrencyTextField.modulemap";
 				PRODUCT_MODULE_NAME = CurrencyTextField;
 				PRODUCT_NAME = CurrencyTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FAA9033CD81485C03963BFB4734F25C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A4E35B8B25CA8C1712F36ECB95E8F07 /* SkyFloatingLabelTextField.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
+				PRODUCT_MODULE_NAME = SkyFloatingLabelTextField;
+				PRODUCT_NAME = SkyFloatingLabelTextField;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1029,6 +1235,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		12318E57F23679CB6B234BBD1E7AC542 /* Build configuration list for PBXNativeTarget "Pods-TipPoolCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AD0853B7E22A61A8C3E7A638F7E8A5C /* Debug */,
+				49067FB6DAA1113688959FF092E71EF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1038,11 +1253,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6241A2D2B184205623E74D302B191327 /* Build configuration list for PBXNativeTarget "Pods-TipPoolCalc" */ = {
+		36FF0017D2C6BD9B21B74178621FE402 /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EE957CA2975C39C6A436857956D0021D /* Debug */,
-				9BDB34EB5B5411B510A62A66DF94EF24 /* Release */,
+				A5AB92735E6A850CB7378903A43212BC /* Debug */,
+				FAA9033CD81485C03963BFB4734F25C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

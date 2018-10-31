@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import CurrencyTextField
+import SkyFloatingLabelTextField
 
 class TipEntryViewController: UIViewController {
   
@@ -23,6 +25,7 @@ class TipEntryViewController: UIViewController {
   
   let tierTVC = TierTableViewController()
   
+
   
   @IBOutlet weak var cashTipsTextField: UITextField!
   @IBOutlet weak var creditTipsTextField: UITextField!
@@ -74,11 +77,16 @@ class TipEntryViewController: UIViewController {
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+    print("Cash Tips skyScannerTextfield: \(cashTipsTextField.text!)")
+    
     if segue.identifier == "HourlySegue"  {
       if let employeeVC = segue.destination as? EmployeeEntryViewController {
         
         let formatter = NumberFormatter()
-        formatter.numberStyle = .currency
+        formatter.numberStyle = .decimal  //.currency
+        
+        print("Cash number skyScannerTextfield: \(formatter.number(from: cashTipsTextField.text!))")
         
         if let number1 = formatter.number(from: cashTipsTextField.text!) {
           cashTips = number1.decimalValue

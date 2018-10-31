@@ -9,6 +9,7 @@
 import UIKit
 import CurrencyTextField
 import ChameleonFramework
+import SkyFloatingLabelTextField
 
 class EmployeeEntryViewController: UITableViewController {
   
