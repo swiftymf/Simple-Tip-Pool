@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8D1070FC49765B86481C330F20E8C0D6"
+               BlueprintIdentifier = "9A566909AD05153E3A31C3956AA1ACD1"
                BuildableName = "Pods_TipPoolCalc.framework"
                BlueprintName = "Pods-TipPoolCalc"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8D1070FC49765B86481C330F20E8C0D6"
+            BlueprintIdentifier = "9A566909AD05153E3A31C3956AA1ACD1"
             BuildableName = "Pods_TipPoolCalc.framework"
             BlueprintName = "Pods-TipPoolCalc"
             ReferencedContainer = "container:Pods.xcodeproj">
