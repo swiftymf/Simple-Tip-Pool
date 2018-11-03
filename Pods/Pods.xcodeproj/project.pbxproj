@@ -7,86 +7,122 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03DCD393DF69EE6DE4AD424B1192DD02 /* UIViewController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = CFEECB26C3249854545F0B28BD9218EE /* UIViewController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0B9BE893ACCBE50D08178C883FE91B9C /* CurrencyTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C31E4B35220876DA0D39EB2A88B00C1 /* CurrencyTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0D7F425CFB628271BFB6FCFF8201BF4F /* UIButton+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 010782BF90F1898DA6C665EBCCF4AE09 /* UIButton+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		139A9CEDE5163F58CBB1A3A135DAD6A3 /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B0E3699982A73A612FD4D30D84B0D6 /* UIImage+ChameleonPrivate.m */; };
-		1B704F3C816C4532F9B7FDFE0625732E /* ChameleonFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F30F3A89480D35DA4D47D1D0F983DB6 /* ChameleonFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1BD51C3AF439990929574DBBB46271CA /* Pods-TipPoolCalc-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7723B0D29FB95C404FF691EF76AAACF6 /* Pods-TipPoolCalc-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		25BB7F3378AC8269552C0EEB5A7FFB22 /* SkyFloatingLabelTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A808D0EC054C259C115296F3854615 /* SkyFloatingLabelTextField-dummy.m */; };
-		29F74E8A334254C68C6720E3B247CE32 /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB55A945FE5A3675E9F5D4932358381 /* NSArray+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2DDDE2C06FB4DCC639CFD100F224D6FD /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8547A1ED65F5E6491A37E72EF0BA14 /* UIColor+Chameleon.m */; };
+		033D4E3F3923E52CDC07C06EE192B205 /* PKHUDAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202052FDDB01BAA7793CCFD38818ABAD /* PKHUDAssets.swift */; };
+		03DCD393DF69EE6DE4AD424B1192DD02 /* UIViewController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E6B8EA614C51344A16DEB1225E6C6E1 /* UIViewController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B9BE893ACCBE50D08178C883FE91B9C /* CurrencyTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36E0556517485D9035DE5EC3FFC61B64 /* CurrencyTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D7F425CFB628271BFB6FCFF8201BF4F /* UIButton+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = A42893D5C48E8200330D44EE0282C255 /* UIButton+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DDC6308BF2A52DDCBFA7E88F5F6B9F9 /* PKHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83FB7E2D22F592EA69BEBBDDA019578 /* PKHUD.swift */; };
+		139A9CEDE5163F58CBB1A3A135DAD6A3 /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C2644A735281773B64C14DAE778036 /* UIImage+ChameleonPrivate.m */; };
+		1B704F3C816C4532F9B7FDFE0625732E /* ChameleonFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C7E85B5A0008A6961B2D3498E62807C /* ChameleonFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FBBB305C13AA02977FC90B76BF96EA1 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF617A99E49F286DBC84A4FFFBE8396B /* HUD.swift */; };
+		225F3A109E9725BC303BACDA96EE8B0E /* PKHUDProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C65D02D828F007A1201C6A31C3DFBF /* PKHUDProgressView.swift */; };
+		25D78C572333EA7DB32A7A06C10390AF /* SkyFloatingLabelTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 68826940614CAE901163F372BC5FC32D /* SkyFloatingLabelTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2757C13E7B853F039E358EFB94128019 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB53DD5FF21804AB9D551E2D16DDDE01 /* Images.xcassets */; };
+		29F74E8A334254C68C6720E3B247CE32 /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A14FC831817630E9DABEC00BEA9E18 /* NSArray+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DDDE2C06FB4DCC639CFD100F224D6FD /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 54083742D12491B8EB8DE849DC76F5CF /* UIColor+Chameleon.m */; };
 		36107423FC93FF8CAF6C04BEDF2D8FEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */; };
-		3D08C4F4E2E65D192D317AED0A8237B3 /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CA8EA61F692F9C94684CCD7509D32 /* UIColor+ChameleonPrivate.m */; };
-		44117424757A5E62D87B8BF4B41A4207 /* UIColor+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F1D14E2F901215855638DAB1BE7296 /* UIColor+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		459048ECD9FAA42B77566EC56ECAD793 /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A9B9AF8873EFBFB393FA0485B1F119 /* UINavigationController+Chameleon.m */; };
-		467807D12D00B9E61BDDDE270DE30C2B /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351FEBDF4A8F48B5704685D8C5A9E168 /* UITextField+fixCaretPosition.swift */; };
-		4A396071DF2D1C080F5AC3B5AD3D5385 /* Pods-TipPoolCalc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A79767988EF3BBA9C61D2A44E4D9F27 /* Pods-TipPoolCalc-dummy.m */; };
+		3646A0F87A19FEB05D98A46572410B7D /* PKHUDAnimating.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80F7B968CD2492B1CAB6920725E2858 /* PKHUDAnimating.swift */; };
+		370ADF286C8DD49D8D17D138DCC798E9 /* PKHUDAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2CFB77DE030F6C2F3DD970C65154E0 /* PKHUDAnimation.swift */; };
+		3D08C4F4E2E65D192D317AED0A8237B3 /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F065C654383FA2764D3717C901E68 /* UIColor+ChameleonPrivate.m */; };
+		3FA50C93E5CB15D49AB1D1102EFAADCE /* SkyFloatingLabelTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD061D015A2124F81D6CBC67C67241D /* SkyFloatingLabelTextField-dummy.m */; };
+		44117424757A5E62D87B8BF4B41A4207 /* UIColor+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 64CEA3E277604971C4673C0999167F0A /* UIColor+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		459048ECD9FAA42B77566EC56ECAD793 /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 621B2E7181BA1C33E770A3D1CA2D8EA6 /* UINavigationController+Chameleon.m */; };
+		48923056806188F7C866C390081EB29E /* PKHUDResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6574C28BE989D55972584F8FD9FF5831 /* PKHUDResources.bundle */; };
+		4913A1B4406294C7645D169545C2514B /* Pods-TipPoolCalc-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7723B0D29FB95C404FF691EF76AAACF6 /* Pods-TipPoolCalc-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AE50F3BF84B88469289F8DD6E4169C2 /* PKHUDSquareBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0DCCA0B51AAC0773726C7D5E4F3CB5 /* PKHUDSquareBaseView.swift */; };
+		4C11D132C8A13B4546176F68A467FE6C /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BAA7654FAB7A5D4CABA9464FFBE211 /* SkyFloatingLabelTextFieldWithIcon.swift */; };
 		5AA6DE679DDAF159A904532F556022B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */; };
-		5EA9F0ED011B06DEFA8542EEE72508C3 /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA67212EA15241A9B58FEB5A9A048B9 /* UIViewController+Chameleon.m */; };
-		604286A8F8A2ACB063BDF97B09D4987C /* UILabel+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BB86FBF7F809FA286FAE84DC6C424FC /* UILabel+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6712100A2CCB9B987281A02F6778473C /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CB03F38B0803BC96D5AC81675E0ADB /* NSArray+Chameleon.m */; };
+		5B00FB5798171F269F499CD9756D6524 /* Pods-TipPoolCalc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A79767988EF3BBA9C61D2A44E4D9F27 /* Pods-TipPoolCalc-dummy.m */; };
+		5EA9F0ED011B06DEFA8542EEE72508C3 /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEC5EDCF687155BCDEDB06162E0684 /* UIViewController+Chameleon.m */; };
+		604286A8F8A2ACB063BDF97B09D4987C /* UILabel+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 72F7420B3F4E8ED66C6D2D3CE3C387AB /* UILabel+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6712100A2CCB9B987281A02F6778473C /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2274AE425512AB8741159A31C9D7D9 /* NSArray+Chameleon.m */; };
 		673D37B7393421A843ECBC8A42CC56CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89163E94743FDDD60913C47150E225B /* UIKit.framework */; };
-		78281D8673FC507089FCFDC439DEDC16 /* Chameleon_.h in Headers */ = {isa = PBXBuildFile; fileRef = 28E402840288B794C3B4D3197B6978AF /* Chameleon_.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7C965FED7530AB946E6629E5ADE29B02 /* McPickerBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6321658BFCB028465CEEF45F880F8329 /* McPickerBarButtonItem.swift */; };
-		833F15A28A0D562548517BCA8EAF23B6 /* ChameleonShorthand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCD97A72B6FD619F663CA90103679E3 /* ChameleonShorthand.swift */; };
-		83CFC8F573AD5B75191E162E64C7D039 /* UIButton+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CC504635D2BC6B7FCCE14F04E64E28 /* UIButton+Chameleon.m */; };
-		84C20EEF968D82CBB0AB1CE8235008F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */; };
-		86F7D970F220974A0E26C3B632C5C74F /* UIImage+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 73BEFF7EBF3359A3581A0D0A7C765924 /* UIImage+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C42289A8CAC16236C564C8A1BBCE4AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */; };
+		6CDE85FDF84278B7195ED20B84B918DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */; };
+		6D883E1F6E9CB143D5C03A54A95FAB75 /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A9450A0C232B64975B31FD4ECF8A4E /* SkyFloatingLabelTextField.swift */; };
+		7292FDCBD308617BCFA3C7C11794B5E1 /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD2F9CC1A8149D45B1FC5190CC13D14 /* UITextField+fixCaretPosition.swift */; };
+		76830B3CA4730CD429FFB8F3C378128E /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDAA6B1597CFC225C5EA115E47E8583 /* FrameView.swift */; };
+		78281D8673FC507089FCFDC439DEDC16 /* Chameleon_.h in Headers */ = {isa = PBXBuildFile; fileRef = 559F168710E1DAA588CB3E576AEE7829 /* Chameleon_.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B0EBA8E937025A0866EC0FFF8119D6D /* PKHUDTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B37324CFFF637A046C225953B8F035F /* PKHUDTextView.swift */; };
+		7B1D060ECDE4FD225A500F58081A22EC /* PKHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A4FF387FBAE5B534876AB7AD146D09F /* PKHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C965FED7530AB946E6629E5ADE29B02 /* McPickerBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3B84E2D869EAC34C4CDA9EC1FEEE8D /* McPickerBarButtonItem.swift */; };
+		80FF9B0C5CAC7C43537E26644AE15EBF /* PKHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 24F6DED2E4B63350F86E7DA9EEA2353E /* PKHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		833F15A28A0D562548517BCA8EAF23B6 /* ChameleonShorthand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265DBDA327409B8CD83E90FF29F9C357 /* ChameleonShorthand.swift */; };
+		83CFC8F573AD5B75191E162E64C7D039 /* UIButton+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 5350ECAEDB695F4550121A00E1166279 /* UIButton+Chameleon.m */; };
+		85E17018F201C89069DC534CDA469F0F /* PKHUDErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1109488AFD1504100C78ECA2F05375 /* PKHUDErrorView.swift */; };
+		86F7D970F220974A0E26C3B632C5C74F /* UIImage+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 190E5A578A83226A3BA6FFE0FCEB4C00 /* UIImage+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		880335F009F5E57916A71EB430982255 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89163E94743FDDD60913C47150E225B /* UIKit.framework */; };
-		8ECF929AC5E737EBEB542283886D5E07 /* UIView+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A8A895569E76DF60EA59F983523F36E /* UIView+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		95E542740750F827BE2EBE3DE6F62D0E /* ChameleonFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB18A202D9BCB3227BCDE0238527CB55 /* ChameleonFramework-dummy.m */; };
-		9652EC69FDFC0B8E7A899C265F4949EF /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5F64FCAB736D3BC16C64F30E9E6740 /* CurrencyTextField.swift */; };
+		8ECF929AC5E737EBEB542283886D5E07 /* UIView+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 983E9EF9894DFCC07151BB6ED396AEE6 /* UIView+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95E542740750F827BE2EBE3DE6F62D0E /* ChameleonFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB76EF9A986A78CF54E81F5B54C1D5EE /* ChameleonFramework-dummy.m */; };
+		9652EC69FDFC0B8E7A899C265F4949EF /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F510A6727D0C6B2C206FF1F71005767 /* CurrencyTextField.swift */; };
 		97E9904F140EF13E0605FEF48FCE9604 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C473026796F8AFAA2ECD5A761494CE /* CoreGraphics.framework */; };
-		9A3EAF15D3C58FD56A552FD703A9154C /* ChameleonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BBA7DDCA59D88BD86458C5E98F33140 /* ChameleonConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9B6AD39C81FAF37861FC0FEC41022146 /* UIAppearance+Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 297186BC80A4997AAFB659FFB1166C08 /* UIAppearance+Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9B9348C7CD2CD875D569E3B2A99B6CB2 /* McPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA396B53BEDEABF55E6DEE4E07CA07F9 /* McPicker.swift */; };
+		9A3EAF15D3C58FD56A552FD703A9154C /* ChameleonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 138AB7FF595C484BE1CB4079E526C153 /* ChameleonConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B6AD39C81FAF37861FC0FEC41022146 /* UIAppearance+Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = D9155236FA9B63FAADB59BEE4F0DDC6F /* UIAppearance+Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B9348C7CD2CD875D569E3B2A99B6CB2 /* McPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F540E15E48AF8BF1565FF9FEA35DCFE4 /* McPicker.swift */; };
 		9DD693AA2ADE8FEB96FB893D6F2EA633 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */; };
-		A664D0A12D5F3DBD08A7E8DFE3AE83E2 /* UIView+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F1098E0E61B04AB97EF0E78D1B0155F /* UIView+ChameleonPrivate.m */; };
-		A94D766F7F89500E75FD25A9151DC3C2 /* McTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D077EAAC0D200D947140579ACDE2510B /* McTextField.swift */; };
-		B26038F91C7C4CC322D7F25C5D16FE9E /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 06751D3E6DA131262252798484A56921 /* ChameleonConstants.m */; };
-		B3D9548464C5AD792C5A52C1E0E18E7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */; };
-		B4EA53699AA19822E674188743266B2B /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 21FE7D065C7675083D2D98C4C196A15F /* ChameleonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B5B7888D0FDB9CE5180E0D9391150DB2 /* CurrencyTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2017594C90B9372DC75CEDFF21B80BFF /* CurrencyTextField-dummy.m */; };
+		A664D0A12D5F3DBD08A7E8DFE3AE83E2 /* UIView+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8DD1A6CC30761F6B7352393755C039 /* UIView+ChameleonPrivate.m */; };
+		A94D766F7F89500E75FD25A9151DC3C2 /* McTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70076224D0979253156CD8DD22D5E80 /* McTextField.swift */; };
+		B26038F91C7C4CC322D7F25C5D16FE9E /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CB22903BB5EAE6809237A9AABEFAE1 /* ChameleonConstants.m */; };
+		B4BE6DCFE4F82F78E4028328AF9B52B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */; };
+		B4EA53699AA19822E674188743266B2B /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 58DA7B3E12871B54187A9CB77599A601 /* ChameleonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5B7888D0FDB9CE5180E0D9391150DB2 /* CurrencyTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07594421A67EBB304A8BE7672162DA60 /* CurrencyTextField-dummy.m */; };
 		BB0FDDCC82B2A765E40D762291143991 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65E433A68C225D6FF6B2CE970853F1D /* QuartzCore.framework */; };
-		BEE9EEB17EE44C63DF4D03B3DA039D00 /* SkyFloatingLabelTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7812F16CBCE99CE4C2862EA8C5E9F6E5 /* SkyFloatingLabelTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BFA97401155C4E14893D9AA1E0D1EC80 /* UINavigationController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = C78FA569C8D0EC55714B2F942A685F93 /* UINavigationController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C3C8BB46937DD0BBC7FBE25E298052F8 /* UIAppearance+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = 4681B3EE6D4E40B21C2A6F12B603B3E6 /* UIAppearance+Swift.m */; };
-		D9D1D1E695E286199FD28E2E2B4DF818 /* McPickerPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA732201B2B92973BB12003B0ECD369 /* McPickerPopoverViewController.swift */; };
-		DB5FB611FB6EBF2F2BA7B78FE0CED535 /* UIColor+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = B1E1FE26B4B5DA6855D46395F434315C /* UIColor+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E7FA38FEAF957D69E92153FBAFB3DB40 /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = 723675191AEBECF076D928D24FE8685A /* Chameleon_.m */; };
-		EB551CA1B0426BE7941431D5CD4A28F8 /* McPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6F533572043794FA25DB4068E143A1 /* McPicker-dummy.m */; };
-		EB7C67AC844F6FEB49E5AE794E83EBAC /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED58D937E07772A2A93D72B52E02D1D1 /* SkyFloatingLabelTextFieldWithIcon.swift */; };
-		EC786817C5CEBCD51A4C9EC9B883ED6F /* ChameleonEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 69EA3765C6535688E3C2FAA4CCE87CA3 /* ChameleonEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ED4DBD1E13182AA813DC1237FA6E3A42 /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EF0937CD202543FAB7A5F0F3557F076 /* Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F3187D0036FAAB20D383A091777AA49A /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C169891E42F21549E48DA42F1656C109 /* SkyFloatingLabelTextField.swift */; };
-		F7CAA4DAC0D4C6CC1A25CFB387A6F5B1 /* McPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 477222DBF16486E4B70D6F0655711732 /* McPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FB82C1293D7DDE0D3E2E6D68CDD5852C /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F77390D3B770B73D1FED4DC03B52A9 /* UILabel+Chameleon.m */; };
+		BFA97401155C4E14893D9AA1E0D1EC80 /* UINavigationController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = C87933022998D3A732377582D0EB9BC2 /* UINavigationController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3C8BB46937DD0BBC7FBE25E298052F8 /* UIAppearance+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC8A97E695C809FC8ADC41F36BC026B /* UIAppearance+Swift.m */; };
+		C5EC1D758058957E1AD881CE220FCBBD /* PKHUDRotatingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EDA8E3635F45E43AA52978AE1DC7E7 /* PKHUDRotatingImageView.swift */; };
+		C64F7BACB17D65199E20EA8883EABF09 /* PKHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 393B40D60C356FFEF15421A1145CB701 /* PKHUD-dummy.m */; };
+		C69ED330F9E24C76D2BE338931D14007 /* PKHUDSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B1A377565B0707B1832F23E9F00268 /* PKHUDSuccessView.swift */; };
+		D9D1D1E695E286199FD28E2E2B4DF818 /* McPickerPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23837431BE6C94932292C43792BB6AC5 /* McPickerPopoverViewController.swift */; };
+		DB5FB611FB6EBF2F2BA7B78FE0CED535 /* UIColor+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = D1BC582E45902BC341D50DF42B6C0DEB /* UIColor+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0126B27539B6AE100B7757C0BF809F6 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465BBE7719BE405AD66F66665C12B4DA /* Window.swift */; };
+		E7FA38FEAF957D69E92153FBAFB3DB40 /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = DD75E9ABC02B7FA97ED904D28DC9AC3F /* Chameleon_.m */; };
+		E9A16F94114CBC17B81C41C2CD7CC869 /* PKHUDSystemActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338B41E8C9240B1664927E3C7C37A0F0 /* PKHUDSystemActivityIndicatorView.swift */; };
+		EB551CA1B0426BE7941431D5CD4A28F8 /* McPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499A20FC0D9D3B8C0A405B694E2AC36 /* McPicker-dummy.m */; };
+		EC44BB01575FF56AC99FAB7956CCB1F0 /* WindowRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819949E18646A8C18A4A28757C8E8DC3 /* WindowRootViewController.swift */; };
+		EC786817C5CEBCD51A4C9EC9B883ED6F /* ChameleonEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 0051893E018D4B27E1A04ABD684FE9B7 /* ChameleonEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED4DBD1E13182AA813DC1237FA6E3A42 /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 39CE95B8175D0E25D526232E1B5B729D /* Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7CAA4DAC0D4C6CC1A25CFB387A6F5B1 /* McPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2952DEA4E9FE699BB64972DC87C8FDC0 /* McPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA9A09AB98A590ED7505137DA25E8572 /* PKHUDWideBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296112B559456F262AD5BC01E08D266A /* PKHUDWideBaseView.swift */; };
+		FB82C1293D7DDE0D3E2E6D68CDD5852C /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9C3370A940ABEE2CD16D2B7C73F3AF /* UILabel+Chameleon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6D9159A60EF5C251ABB12B3846046C68 /* PBXContainerItemProxy */ = {
+		7E849368A2BD78EFEE6F6CD53CB9A531 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20F9C4C7510C7E18B33984CC4CF800A6;
+			remoteInfo = SkyFloatingLabelTextField;
+		};
+		7F059212B7F76625F0085DE858A885D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A09979172F37020AB3D778731BFDEBE;
+			remoteInfo = "PKHUD-PKHUDResources";
+		};
+		99DEB55D0A5EFE63938698DDCD025952 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 64FB6E81E491C0A1F61455E3D4588BE5;
 			remoteInfo = McPicker;
 		};
-		8A05EF78C70AC8ECD9847A36F7B6371C /* PBXContainerItemProxy */ = {
+		A35BA80A69C96E08E95507EF53EF0CA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0A904AA2B910FFDB150F671A2DAA8F4;
+			remoteInfo = PKHUD;
+		};
+		A72D161C65427A3034CE7B76D87E012F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 76BD4592010354D6C23D6ECCA20D83A8;
 			remoteInfo = ChameleonFramework;
 		};
-		C44A5DF790A66AD8FB145ABA5018B4AF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2EB5A9FC0FCC6C2564BA5E431B6D3CAF;
-			remoteInfo = SkyFloatingLabelTextField;
-		};
-		F1F50D575B2BDC4FB978935B53AA028C /* PBXContainerItemProxy */ = {
+		E40053F426D3B9D6E094F4260A64C9A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -96,86 +132,113 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		010782BF90F1898DA6C665EBCCF4AE09 /* UIButton+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Chameleon.h"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.h"; sourceTree = "<group>"; };
-		041CA8EA61F692F9C94684CCD7509D32 /* UIColor+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.m"; sourceTree = "<group>"; };
-		06751D3E6DA131262252798484A56921 /* ChameleonConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChameleonConstants.m; path = "Pod/Classes/Objective-C/ChameleonConstants.m"; sourceTree = "<group>"; };
+		0051893E018D4B27E1A04ABD684FE9B7 /* ChameleonEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonEnums.h; path = "Pod/Classes/Objective-C/ChameleonEnums.h"; sourceTree = "<group>"; };
+		0499A20FC0D9D3B8C0A405B694E2AC36 /* McPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "McPicker-dummy.m"; sourceTree = "<group>"; };
+		07594421A67EBB304A8BE7672162DA60 /* CurrencyTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CurrencyTextField-dummy.m"; sourceTree = "<group>"; };
+		0819F179F403334160A0F5099DEF95C4 /* ChameleonFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-prefix.pch"; sourceTree = "<group>"; };
 		0A79767988EF3BBA9C61D2A44E4D9F27 /* Pods-TipPoolCalc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TipPoolCalc-dummy.m"; sourceTree = "<group>"; };
-		0C31E4B35220876DA0D39EB2A88B00C1 /* CurrencyTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CurrencyTextField-umbrella.h"; sourceTree = "<group>"; };
-		0F1098E0E61B04AB97EF0E78D1B0155F /* UIView+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.m"; sourceTree = "<group>"; };
-		11A808D0EC054C259C115296F3854615 /* SkyFloatingLabelTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SkyFloatingLabelTextField-dummy.m"; sourceTree = "<group>"; };
-		134231F2EAB43ED7E3A4D819458F4640 /* ChameleonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ChameleonFramework.framework; path = ChameleonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B4901BAEE819840DEB1D7B1FB1DBA0A /* CurrencyTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CurrencyTextField-prefix.pch"; sourceTree = "<group>"; };
+		0DDB5A5A44C2275492D0734F7D7CEF98 /* SkyFloatingLabelTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-prefix.pch"; sourceTree = "<group>"; };
+		0F2274AE425512AB8741159A31C9D7D9 /* NSArray+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Chameleon.m"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.m"; sourceTree = "<group>"; };
+		12A14FC831817630E9DABEC00BEA9E18 /* NSArray+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chameleon.h"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.h"; sourceTree = "<group>"; };
+		138AB7FF595C484BE1CB4079E526C153 /* ChameleonConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonConstants.h; path = "Pod/Classes/Objective-C/ChameleonConstants.h"; sourceTree = "<group>"; };
+		18A9450A0C232B64975B31FD4ECF8A4E /* SkyFloatingLabelTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextField.swift; path = Sources/SkyFloatingLabelTextField.swift; sourceTree = "<group>"; };
+		190E5A578A83226A3BA6FFE0FCEB4C00 /* UIImage+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.h"; sourceTree = "<group>"; };
 		19E9831692079777493125DDED55D2DE /* Pods-TipPoolCalc-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TipPoolCalc-acknowledgements.plist"; sourceTree = "<group>"; };
-		1BBA7DDCA59D88BD86458C5E98F33140 /* ChameleonConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonConstants.h; path = "Pod/Classes/Objective-C/ChameleonConstants.h"; sourceTree = "<group>"; };
-		2017594C90B9372DC75CEDFF21B80BFF /* CurrencyTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CurrencyTextField-dummy.m"; sourceTree = "<group>"; };
-		204FE35E388A5B14D087206A11DBF1E5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		21CB03F38B0803BC96D5AC81675E0ADB /* NSArray+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Chameleon.m"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.m"; sourceTree = "<group>"; };
-		21FE7D065C7675083D2D98C4C196A15F /* ChameleonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = "Pod/Classes/Objective-C/ChameleonMacros.h"; sourceTree = "<group>"; };
-		28E402840288B794C3B4D3197B6978AF /* Chameleon_.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon_.h; path = "Pod/Classes/Objective-C/Chameleon_.h"; sourceTree = "<group>"; };
-		297186BC80A4997AAFB659FFB1166C08 /* UIAppearance+Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAppearance+Swift.h"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.h"; sourceTree = "<group>"; };
-		2F30F3A89480D35DA4D47D1D0F983DB6 /* ChameleonFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-umbrella.h"; sourceTree = "<group>"; };
-		30680EDCA3C9AC99444A5E3F910D25E0 /* ChameleonFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-prefix.pch"; sourceTree = "<group>"; };
-		343CBA70148C28A9A794223C685A3736 /* CurrencyTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CurrencyTextField-prefix.pch"; sourceTree = "<group>"; };
-		351FEBDF4A8F48B5704685D8C5A9E168 /* UITextField+fixCaretPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+fixCaretPosition.swift"; path = "Sources/UITextField+fixCaretPosition.swift"; sourceTree = "<group>"; };
-		35662D9C81486809C4C71107DC93C925 /* CurrencyTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CurrencyTextField.modulemap; sourceTree = "<group>"; };
+		1D0DCCA0B51AAC0773726C7D5E4F3CB5 /* PKHUDSquareBaseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDSquareBaseView.swift; path = PKHUD/PKHUDSquareBaseView.swift; sourceTree = "<group>"; };
+		202052FDDB01BAA7793CCFD38818ABAD /* PKHUDAssets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDAssets.swift; path = PKHUD/PKHUDAssets.swift; sourceTree = "<group>"; };
+		23837431BE6C94932292C43792BB6AC5 /* McPickerPopoverViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = McPickerPopoverViewController.swift; path = McPicker/Classes/McPickerPopoverViewController.swift; sourceTree = "<group>"; };
+		24F6DED2E4B63350F86E7DA9EEA2353E /* PKHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PKHUD-umbrella.h"; sourceTree = "<group>"; };
+		265DBDA327409B8CD83E90FF29F9C357 /* ChameleonShorthand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChameleonShorthand.swift; path = Pod/Classes/Swift/ChameleonShorthand.swift; sourceTree = "<group>"; };
+		28CB22903BB5EAE6809237A9AABEFAE1 /* ChameleonConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChameleonConstants.m; path = "Pod/Classes/Objective-C/ChameleonConstants.m"; sourceTree = "<group>"; };
+		2952DEA4E9FE699BB64972DC87C8FDC0 /* McPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "McPicker-umbrella.h"; sourceTree = "<group>"; };
+		296112B559456F262AD5BC01E08D266A /* PKHUDWideBaseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDWideBaseView.swift; path = PKHUD/PKHUDWideBaseView.swift; sourceTree = "<group>"; };
+		3081D595725B271A5D586A359FB7A112 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		338B41E8C9240B1664927E3C7C37A0F0 /* PKHUDSystemActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDSystemActivityIndicatorView.swift; path = PKHUD/PKHUDSystemActivityIndicatorView.swift; sourceTree = "<group>"; };
+		366AA84621EB8C46D7D34F516B47A330 /* CurrencyTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CurrencyTextField.framework; path = CurrencyTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36E0556517485D9035DE5EC3FFC61B64 /* CurrencyTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CurrencyTextField-umbrella.h"; sourceTree = "<group>"; };
 		37C473026796F8AFAA2ECD5A761494CE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		37EDA8DC32DFC6712E1E5399FB18C30C /* Pods-TipPoolCalc-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TipPoolCalc-resources.sh"; sourceTree = "<group>"; };
-		3DA732201B2B92973BB12003B0ECD369 /* McPickerPopoverViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = McPickerPopoverViewController.swift; path = McPicker/Classes/McPickerPopoverViewController.swift; sourceTree = "<group>"; };
+		393B40D60C356FFEF15421A1145CB701 /* PKHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PKHUD-dummy.m"; sourceTree = "<group>"; };
+		39CE95B8175D0E25D526232E1B5B729D /* Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon.h; path = "Pod/Classes/Objective-C/Chameleon.h"; sourceTree = "<group>"; };
 		3F261BBB5335FC251AB7EEA3D72FC28F /* Pods-TipPoolCalc-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TipPoolCalc-acknowledgements.markdown"; sourceTree = "<group>"; };
-		44CE5ACAC2601ECC59E0D5D55DADF21E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4681B3EE6D4E40B21C2A6F12B603B3E6 /* UIAppearance+Swift.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAppearance+Swift.m"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.m"; sourceTree = "<group>"; };
-		477222DBF16486E4B70D6F0655711732 /* McPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "McPicker-umbrella.h"; sourceTree = "<group>"; };
+		3F510A6727D0C6B2C206FF1F71005767 /* CurrencyTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CurrencyTextField.swift; path = CurrencyTextField/CurrencyTextField.swift; sourceTree = "<group>"; };
+		42B1A377565B0707B1832F23E9F00268 /* PKHUDSuccessView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDSuccessView.swift; path = PKHUD/PKHUDSuccessView.swift; sourceTree = "<group>"; };
+		465BBE7719BE405AD66F66665C12B4DA /* Window.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Window.swift; path = PKHUD/Window.swift; sourceTree = "<group>"; };
+		48C2644A735281773B64C14DAE778036 /* UIImage+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		4C369150A9ABCC62B6C3990F956D0135 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E9F065C654383FA2764D3717C901E68 /* UIColor+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		4F2CFB77DE030F6C2F3DD970C65154E0 /* PKHUDAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDAnimation.swift; path = PKHUD/PKHUDAnimation.swift; sourceTree = "<group>"; };
+		4F421074FD06781C51E9FC3D9588DA64 /* SkyFloatingLabelTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SkyFloatingLabelTextField.xcconfig; sourceTree = "<group>"; };
+		5350ECAEDB695F4550121A00E1166279 /* UIButton+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Chameleon.m"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.m"; sourceTree = "<group>"; };
+		54083742D12491B8EB8DE849DC76F5CF /* UIColor+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chameleon.m"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.m"; sourceTree = "<group>"; };
 		54888FA530A979AC9AAD4AE213A077CB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		57B0E3699982A73A612FD4D30D84B0D6 /* UIImage+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.m"; sourceTree = "<group>"; };
-		5BB86FBF7F809FA286FAE84DC6C424FC /* UILabel+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+Chameleon.h"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.h"; sourceTree = "<group>"; };
-		5D87CB74485269355586B33DE20C08DD /* McPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "McPicker-prefix.pch"; sourceTree = "<group>"; };
-		5DA3DD8E809EA7A5716B835BE409269B /* McPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = McPicker.modulemap; sourceTree = "<group>"; };
-		5EF0937CD202543FAB7A5F0F3557F076 /* Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon.h; path = "Pod/Classes/Objective-C/Chameleon.h"; sourceTree = "<group>"; };
-		60EBECEA06473B870BE3ED510B4096BF /* SkyFloatingLabelTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SkyFloatingLabelTextField.modulemap; sourceTree = "<group>"; };
-		6321658BFCB028465CEEF45F880F8329 /* McPickerBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = McPickerBarButtonItem.swift; path = McPicker/Classes/McPickerBarButtonItem.swift; sourceTree = "<group>"; };
-		66CC504635D2BC6B7FCCE14F04E64E28 /* UIButton+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Chameleon.m"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.m"; sourceTree = "<group>"; };
-		69EA3765C6535688E3C2FAA4CCE87CA3 /* ChameleonEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonEnums.h; path = "Pod/Classes/Objective-C/ChameleonEnums.h"; sourceTree = "<group>"; };
-		6DD705EBE37D64F4B90DCB785539EA29 /* Pods_TipPoolCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TipPoolCalc.framework; path = "Pods-TipPoolCalc.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		723675191AEBECF076D928D24FE8685A /* Chameleon_.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Chameleon_.m; path = "Pod/Classes/Objective-C/Chameleon_.m"; sourceTree = "<group>"; };
-		73BEFF7EBF3359A3581A0D0A7C765924 /* UIImage+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		559F168710E1DAA588CB3E576AEE7829 /* Chameleon_.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon_.h; path = "Pod/Classes/Objective-C/Chameleon_.h"; sourceTree = "<group>"; };
+		58DA7B3E12871B54187A9CB77599A601 /* ChameleonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = "Pod/Classes/Objective-C/ChameleonMacros.h"; sourceTree = "<group>"; };
+		5B6F6EF5A39077C17DF904477B818E9A /* ChameleonFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChameleonFramework.xcconfig; sourceTree = "<group>"; };
+		621B2E7181BA1C33E770A3D1CA2D8EA6 /* UINavigationController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Chameleon.m"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.m"; sourceTree = "<group>"; };
+		64A23C3C59651BCA14676A8784F2A24D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64CEA3E277604971C4673C0999167F0A /* UIColor+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		6574C28BE989D55972584F8FD9FF5831 /* PKHUDResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = PKHUDResources.bundle; path = "PKHUD-PKHUDResources.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65EDA8E3635F45E43AA52978AE1DC7E7 /* PKHUDRotatingImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDRotatingImageView.swift; path = PKHUD/PKHUDRotatingImageView.swift; sourceTree = "<group>"; };
+		667EF7AE17398D87664D3B0B555CE604 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68826940614CAE901163F372BC5FC32D /* SkyFloatingLabelTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-umbrella.h"; sourceTree = "<group>"; };
+		72F7420B3F4E8ED66C6D2D3CE3C387AB /* UILabel+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+Chameleon.h"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.h"; sourceTree = "<group>"; };
 		75E31393270FA1F5980359C93253A9D8 /* Pods-TipPoolCalc-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TipPoolCalc-frameworks.sh"; sourceTree = "<group>"; };
 		7723B0D29FB95C404FF691EF76AAACF6 /* Pods-TipPoolCalc-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TipPoolCalc-umbrella.h"; sourceTree = "<group>"; };
-		7812F16CBCE99CE4C2862EA8C5E9F6E5 /* SkyFloatingLabelTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-umbrella.h"; sourceTree = "<group>"; };
-		7A4E35B8B25CA8C1712F36ECB95E8F07 /* SkyFloatingLabelTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SkyFloatingLabelTextField.xcconfig; sourceTree = "<group>"; };
-		7A8A895569E76DF60EA59F983523F36E /* UIView+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.h"; sourceTree = "<group>"; };
-		7B4EB04C1168793854271206D556B834 /* ChameleonFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChameleonFramework.xcconfig; sourceTree = "<group>"; };
-		7E67773A9146DEC8D5B3EFD553059FA1 /* SkyFloatingLabelTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-prefix.pch"; sourceTree = "<group>"; };
-		85F0702E5E49F0858E493E89860B6397 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A014D95A614FCD5AD3C533A8ED0A5FC /* McPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = McPicker.framework; path = McPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		932A808D74095F455907EB620F5438A0 /* CurrencyTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CurrencyTextField.xcconfig; sourceTree = "<group>"; };
+		7C7E85B5A0008A6961B2D3498E62807C /* ChameleonFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-umbrella.h"; sourceTree = "<group>"; };
+		7D9C3370A940ABEE2CD16D2B7C73F3AF /* UILabel+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Chameleon.m"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.m"; sourceTree = "<group>"; };
+		7DB68CDBCF6ED096CD727C18B50AE428 /* ResourceBundle-PKHUDResources-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-PKHUDResources-Info.plist"; sourceTree = "<group>"; };
+		7DD2F9CC1A8149D45B1FC5190CC13D14 /* UITextField+fixCaretPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+fixCaretPosition.swift"; path = "Sources/UITextField+fixCaretPosition.swift"; sourceTree = "<group>"; };
+		7E3A7DAACA360395951B433E11E83B25 /* PKHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PKHUD.xcconfig; sourceTree = "<group>"; };
+		7F1109488AFD1504100C78ECA2F05375 /* PKHUDErrorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDErrorView.swift; path = PKHUD/PKHUDErrorView.swift; sourceTree = "<group>"; };
+		819949E18646A8C18A4A28757C8E8DC3 /* WindowRootViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WindowRootViewController.swift; path = PKHUD/WindowRootViewController.swift; sourceTree = "<group>"; };
+		8C4295A5EE93F5B8BDB6AF4C16F41220 /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SkyFloatingLabelTextField.framework; path = SkyFloatingLabelTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E6B8EA614C51344A16DEB1225E6C6E1 /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Chameleon.h"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.h"; sourceTree = "<group>"; };
+		90404F37C20EB3F7349266EE3B185690 /* PKHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PKHUD.framework; path = PKHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90D2F79FDF5B3E2A31B338F568DD9960 /* ChameleonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ChameleonFramework.framework; path = ChameleonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		96A9B9AF8873EFBFB393FA0485B1F119 /* UINavigationController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Chameleon.m"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.m"; sourceTree = "<group>"; };
-		9A5F64FCAB736D3BC16C64F30E9E6740 /* CurrencyTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CurrencyTextField.swift; path = CurrencyTextField/CurrencyTextField.swift; sourceTree = "<group>"; };
-		9CCD97A72B6FD619F663CA90103679E3 /* ChameleonShorthand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChameleonShorthand.swift; path = Pod/Classes/Swift/ChameleonShorthand.swift; sourceTree = "<group>"; };
+		947F9C1B777C114A90EEE1248870B705 /* McPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = McPicker.framework; path = McPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95085D9AB90A7499E793482C15FC505C /* CurrencyTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CurrencyTextField.modulemap; sourceTree = "<group>"; };
+		95BAA7654FAB7A5D4CABA9464FFBE211 /* SkyFloatingLabelTextFieldWithIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextFieldWithIcon.swift; path = Sources/SkyFloatingLabelTextFieldWithIcon.swift; sourceTree = "<group>"; };
+		983E9EF9894DFCC07151BB6ED396AEE6 /* UIView+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		9A4FF387FBAE5B534876AB7AD146D09F /* PKHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKHUD.h; path = PKHUD/PKHUD.h; sourceTree = "<group>"; };
+		9B37324CFFF637A046C225953B8F035F /* PKHUDTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDTextView.swift; path = PKHUD/PKHUDTextView.swift; sourceTree = "<group>"; };
+		9CC8A97E695C809FC8ADC41F36BC026B /* UIAppearance+Swift.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAppearance+Swift.m"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.m"; sourceTree = "<group>"; };
 		A2A589628C7CD6488EC9ABEB4D678821 /* Pods-TipPoolCalc.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TipPoolCalc.modulemap"; sourceTree = "<group>"; };
+		A2BAA9D045345C8FD0D84980C93FBF9D /* ChameleonFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ChameleonFramework.modulemap; sourceTree = "<group>"; };
 		A30B884AB692F1A8FCBDA5F8D0B00112 /* Pods-TipPoolCalc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TipPoolCalc.debug.xcconfig"; sourceTree = "<group>"; };
-		A9F77390D3B770B73D1FED4DC03B52A9 /* UILabel+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Chameleon.m"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.m"; sourceTree = "<group>"; };
-		AA396B53BEDEABF55E6DEE4E07CA07F9 /* McPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = McPicker.swift; path = McPicker/Classes/McPicker.swift; sourceTree = "<group>"; };
-		AB180B1437733B6A35923AB36DFD0DF6 /* McPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = McPicker.xcconfig; sourceTree = "<group>"; };
-		AD2330DA28D0B1F7346DC8A8D131D8B3 /* ChameleonFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ChameleonFramework.modulemap; sourceTree = "<group>"; };
-		AFA67212EA15241A9B58FEB5A9A048B9 /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.m"; sourceTree = "<group>"; };
-		B1E1FE26B4B5DA6855D46395F434315C /* UIColor+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Chameleon.h"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.h"; sourceTree = "<group>"; };
-		B493CB88A82E439B65347E7EDE6123B0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A42893D5C48E8200330D44EE0282C255 /* UIButton+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Chameleon.h"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.h"; sourceTree = "<group>"; };
+		A4C65D02D828F007A1201C6A31C3DFBF /* PKHUDProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDProgressView.swift; path = PKHUD/PKHUDProgressView.swift; sourceTree = "<group>"; };
+		A80F7B968CD2492B1CAB6920725E2858 /* PKHUDAnimating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDAnimating.swift; path = PKHUD/PKHUDAnimating.swift; sourceTree = "<group>"; };
+		AB3B84E2D869EAC34C4CDA9EC1FEEE8D /* McPickerBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = McPickerBarButtonItem.swift; path = McPicker/Classes/McPickerBarButtonItem.swift; sourceTree = "<group>"; };
+		AE7BF9D8E1790726E88B329243384C5D /* PKHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PKHUD-prefix.pch"; sourceTree = "<group>"; };
+		AFD061D015A2124F81D6CBC67C67241D /* SkyFloatingLabelTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SkyFloatingLabelTextField-dummy.m"; sourceTree = "<group>"; };
+		AFDAA6B1597CFC225C5EA115E47E8583 /* FrameView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameView.swift; path = PKHUD/FrameView.swift; sourceTree = "<group>"; };
 		B65E433A68C225D6FF6B2CE970853F1D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		BAD706737190F8393004911B95EF8EA4 /* Pods-TipPoolCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TipPoolCalc.release.xcconfig"; sourceTree = "<group>"; };
-		BEB55A945FE5A3675E9F5D4932358381 /* NSArray+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chameleon.h"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.h"; sourceTree = "<group>"; };
-		C169891E42F21549E48DA42F1656C109 /* SkyFloatingLabelTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextField.swift; path = Sources/SkyFloatingLabelTextField.swift; sourceTree = "<group>"; };
-		C78FA569C8D0EC55714B2F942A685F93 /* UINavigationController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Chameleon.h"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.h"; sourceTree = "<group>"; };
-		CC55529EDDB45FED1BD5E49662D1E5B5 /* CurrencyTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CurrencyTextField.framework; path = CurrencyTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFEECB26C3249854545F0B28BD9218EE /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Chameleon.h"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.h"; sourceTree = "<group>"; };
-		D077EAAC0D200D947140579ACDE2510B /* McTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = McTextField.swift; path = McPicker/Classes/McTextField.swift; sourceTree = "<group>"; };
+		C4F1D9BE84FB492A148026E1EC8CBC8C /* Pods_TipPoolCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TipPoolCalc.framework; path = "Pods-TipPoolCalc.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C87933022998D3A732377582D0EB9BC2 /* UINavigationController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Chameleon.h"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.h"; sourceTree = "<group>"; };
+		D1BC582E45902BC341D50DF42B6C0DEB /* UIColor+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Chameleon.h"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.h"; sourceTree = "<group>"; };
 		D56348597C0DD615177C5C15A774BCF2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D9F1D14E2F901215855638DAB1BE7296 /* UIColor+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.h"; sourceTree = "<group>"; };
-		DA8547A1ED65F5E6491A37E72EF0BA14 /* UIColor+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chameleon.m"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.m"; sourceTree = "<group>"; };
-		DE6F533572043794FA25DB4068E143A1 /* McPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "McPicker-dummy.m"; sourceTree = "<group>"; };
+		D70076224D0979253156CD8DD22D5E80 /* McTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = McTextField.swift; path = McPicker/Classes/McTextField.swift; sourceTree = "<group>"; };
+		D7A4D50D6F30ECB144A2DB7B664FBE03 /* SkyFloatingLabelTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SkyFloatingLabelTextField.modulemap; sourceTree = "<group>"; };
+		D83FB7E2D22F592EA69BEBBDDA019578 /* PKHUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUD.swift; path = PKHUD/PKHUD.swift; sourceTree = "<group>"; };
+		D9155236FA9B63FAADB59BEE4F0DDC6F /* UIAppearance+Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAppearance+Swift.h"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.h"; sourceTree = "<group>"; };
+		DA5FE06BE5E4296EA1670BC03FFB5CBE /* McPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = McPicker.modulemap; sourceTree = "<group>"; };
+		DA8DD1A6CC30761F6B7352393755C039 /* UIView+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		DD75E9ABC02B7FA97ED904D28DC9AC3F /* Chameleon_.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Chameleon_.m; path = "Pod/Classes/Objective-C/Chameleon_.m"; sourceTree = "<group>"; };
+		DF617A99E49F286DBC84A4FFFBE8396B /* HUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HUD.swift; path = PKHUD/HUD.swift; sourceTree = "<group>"; };
 		E89163E94743FDDD60913C47150E225B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		EB18A202D9BCB3227BCDE0238527CB55 /* ChameleonFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChameleonFramework-dummy.m"; sourceTree = "<group>"; };
-		ED58D937E07772A2A93D72B52E02D1D1 /* SkyFloatingLabelTextFieldWithIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextFieldWithIcon.swift; path = Sources/SkyFloatingLabelTextFieldWithIcon.swift; sourceTree = "<group>"; };
-		FCFE105E32ADF80038B48832673B3C76 /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SkyFloatingLabelTextField.framework; path = SkyFloatingLabelTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB53DD5FF21804AB9D551E2D16DDDE01 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = PKHUD/Images.xcassets; sourceTree = "<group>"; };
+		EB76EF9A986A78CF54E81F5B54C1D5EE /* ChameleonFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChameleonFramework-dummy.m"; sourceTree = "<group>"; };
+		ED40F1FA2752B83C4332B2A2E888A698 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFB96923D2BDE01447CFB9EE4B8A61F3 /* PKHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PKHUD.modulemap; sourceTree = "<group>"; };
+		F540E15E48AF8BF1565FF9FEA35DCFE4 /* McPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = McPicker.swift; path = McPicker/Classes/McPicker.swift; sourceTree = "<group>"; };
+		F5AF9D1448A22025B6C7A4495EB09A4C /* McPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = McPicker.xcconfig; sourceTree = "<group>"; };
+		F77AD76D6E0BFE7D61C2291500012A73 /* CurrencyTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CurrencyTextField.xcconfig; sourceTree = "<group>"; };
+		F9FEC5EDCF687155BCDEDB06162E0684 /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.m"; sourceTree = "<group>"; };
+		FAE3A7246792A1E64083AE06662F4BF5 /* McPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "McPicker-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,19 +250,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B7AD02E9887ADF404C61B450C0A4F7A2 /* Frameworks */ = {
+		C511AF4A3C12325D9EFC57D2C678A0F9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3D9548464C5AD792C5A52C1E0E18E7D /* Foundation.framework in Frameworks */,
+				6C42289A8CAC16236C564C8A1BBCE4AB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E159E4140377AB9B8BD749C396A0235E /* Frameworks */ = {
+		D36921A4150210542D5EF394E2A87258 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84C20EEF968D82CBB0AB1CE8235008F1 /* Foundation.framework in Frameworks */,
+				B4BE6DCFE4F82F78E4028328AF9B52B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3EA68E569C8B1836EA9E8366136FB58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +281,14 @@
 				9DD693AA2ADE8FEB96FB893D6F2EA633 /* Foundation.framework in Frameworks */,
 				BB0FDDCC82B2A765E40D762291143991 /* QuartzCore.framework in Frameworks */,
 				673D37B7393421A843ECBC8A42CC56CB /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4EF2B47440B40E0046FBCDE951C37DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CDE85FDF84278B7195ED20B84B918DE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +304,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		125351C791C19109154700F180680889 /* PKHUD */ = {
+			isa = PBXGroup;
+			children = (
+				AFDAA6B1597CFC225C5EA115E47E8583 /* FrameView.swift */,
+				DF617A99E49F286DBC84A4FFFBE8396B /* HUD.swift */,
+				9A4FF387FBAE5B534876AB7AD146D09F /* PKHUD.h */,
+				D83FB7E2D22F592EA69BEBBDDA019578 /* PKHUD.swift */,
+				A80F7B968CD2492B1CAB6920725E2858 /* PKHUDAnimating.swift */,
+				4F2CFB77DE030F6C2F3DD970C65154E0 /* PKHUDAnimation.swift */,
+				202052FDDB01BAA7793CCFD38818ABAD /* PKHUDAssets.swift */,
+				7F1109488AFD1504100C78ECA2F05375 /* PKHUDErrorView.swift */,
+				A4C65D02D828F007A1201C6A31C3DFBF /* PKHUDProgressView.swift */,
+				65EDA8E3635F45E43AA52978AE1DC7E7 /* PKHUDRotatingImageView.swift */,
+				1D0DCCA0B51AAC0773726C7D5E4F3CB5 /* PKHUDSquareBaseView.swift */,
+				42B1A377565B0707B1832F23E9F00268 /* PKHUDSuccessView.swift */,
+				338B41E8C9240B1664927E3C7C37A0F0 /* PKHUDSystemActivityIndicatorView.swift */,
+				9B37324CFFF637A046C225953B8F035F /* PKHUDTextView.swift */,
+				296112B559456F262AD5BC01E08D266A /* PKHUDWideBaseView.swift */,
+				465BBE7719BE405AD66F66665C12B4DA /* Window.swift */,
+				819949E18646A8C18A4A28757C8E8DC3 /* WindowRootViewController.swift */,
+				BE255123F591222C87AD83CEA034C2BD /* Resources */,
+				F9B967E27F162FC94A7BF8171C68749B /* Support Files */,
+			);
+			name = PKHUD;
+			path = PKHUD;
+			sourceTree = "<group>";
+		};
 		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,91 +339,46 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		18D3D1CEFF1667FB7319FBB520482443 /* ChameleonFramework */ = {
+		238898B7211AB02A05715F6BF8506E40 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4636696C34B84FBDE24AA8A152C54D89 /* Default */,
-				54B09BB6AAA0730460BAC8004786AA7E /* Support Files */,
-				9E092E508DF42419CFF7ED573FD50FCB /* Swift */,
-			);
-			name = ChameleonFramework;
-			path = ChameleonFramework;
-			sourceTree = "<group>";
-		};
-		1A0498000CEC758D6A1A1A4562B207E2 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				35662D9C81486809C4C71107DC93C925 /* CurrencyTextField.modulemap */,
-				932A808D74095F455907EB620F5438A0 /* CurrencyTextField.xcconfig */,
-				2017594C90B9372DC75CEDFF21B80BFF /* CurrencyTextField-dummy.m */,
-				343CBA70148C28A9A794223C685A3736 /* CurrencyTextField-prefix.pch */,
-				0C31E4B35220876DA0D39EB2A88B00C1 /* CurrencyTextField-umbrella.h */,
-				85F0702E5E49F0858E493E89860B6397 /* Info.plist */,
+				A2BAA9D045345C8FD0D84980C93FBF9D /* ChameleonFramework.modulemap */,
+				5B6F6EF5A39077C17DF904477B818E9A /* ChameleonFramework.xcconfig */,
+				EB76EF9A986A78CF54E81F5B54C1D5EE /* ChameleonFramework-dummy.m */,
+				0819F179F403334160A0F5099DEF95C4 /* ChameleonFramework-prefix.pch */,
+				7C7E85B5A0008A6961B2D3498E62807C /* ChameleonFramework-umbrella.h */,
+				64A23C3C59651BCA14676A8784F2A24D /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/CurrencyTextField";
+			path = "../Target Support Files/ChameleonFramework";
 			sourceTree = "<group>";
 		};
-		343D0D5F9CD6F49B2B9FDA67623EE46A /* Support Files */ = {
+		24EB674F038174A81CF4238ED297277D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B493CB88A82E439B65347E7EDE6123B0 /* Info.plist */,
-				5DA3DD8E809EA7A5716B835BE409269B /* McPicker.modulemap */,
-				AB180B1437733B6A35923AB36DFD0DF6 /* McPicker.xcconfig */,
-				DE6F533572043794FA25DB4068E143A1 /* McPicker-dummy.m */,
-				5D87CB74485269355586B33DE20C08DD /* McPicker-prefix.pch */,
-				477222DBF16486E4B70D6F0655711732 /* McPicker-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/McPicker";
-			sourceTree = "<group>";
-		};
-		43B1EFF585071FBEC3BE92978BE8D6B6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				44CE5ACAC2601ECC59E0D5D55DADF21E /* Info.plist */,
-				60EBECEA06473B870BE3ED510B4096BF /* SkyFloatingLabelTextField.modulemap */,
-				7A4E35B8B25CA8C1712F36ECB95E8F07 /* SkyFloatingLabelTextField.xcconfig */,
-				11A808D0EC054C259C115296F3854615 /* SkyFloatingLabelTextField-dummy.m */,
-				7E67773A9146DEC8D5B3EFD553059FA1 /* SkyFloatingLabelTextField-prefix.pch */,
-				7812F16CBCE99CE4C2862EA8C5E9F6E5 /* SkyFloatingLabelTextField-umbrella.h */,
+				4C369150A9ABCC62B6C3990F956D0135 /* Info.plist */,
+				D7A4D50D6F30ECB144A2DB7B664FBE03 /* SkyFloatingLabelTextField.modulemap */,
+				4F421074FD06781C51E9FC3D9588DA64 /* SkyFloatingLabelTextField.xcconfig */,
+				AFD061D015A2124F81D6CBC67C67241D /* SkyFloatingLabelTextField-dummy.m */,
+				0DDB5A5A44C2275492D0734F7D7CEF98 /* SkyFloatingLabelTextField-prefix.pch */,
+				68826940614CAE901163F372BC5FC32D /* SkyFloatingLabelTextField-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SkyFloatingLabelTextField";
 			sourceTree = "<group>";
 		};
-		4636696C34B84FBDE24AA8A152C54D89 /* Default */ = {
+		259E7AB3083CB83975C1BFF5C06BA598 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5EF0937CD202543FAB7A5F0F3557F076 /* Chameleon.h */,
-				28E402840288B794C3B4D3197B6978AF /* Chameleon_.h */,
-				723675191AEBECF076D928D24FE8685A /* Chameleon_.m */,
-				1BBA7DDCA59D88BD86458C5E98F33140 /* ChameleonConstants.h */,
-				06751D3E6DA131262252798484A56921 /* ChameleonConstants.m */,
-				69EA3765C6535688E3C2FAA4CCE87CA3 /* ChameleonEnums.h */,
-				21FE7D065C7675083D2D98C4C196A15F /* ChameleonMacros.h */,
-				BEB55A945FE5A3675E9F5D4932358381 /* NSArray+Chameleon.h */,
-				21CB03F38B0803BC96D5AC81675E0ADB /* NSArray+Chameleon.m */,
-				297186BC80A4997AAFB659FFB1166C08 /* UIAppearance+Swift.h */,
-				4681B3EE6D4E40B21C2A6F12B603B3E6 /* UIAppearance+Swift.m */,
-				010782BF90F1898DA6C665EBCCF4AE09 /* UIButton+Chameleon.h */,
-				66CC504635D2BC6B7FCCE14F04E64E28 /* UIButton+Chameleon.m */,
-				B1E1FE26B4B5DA6855D46395F434315C /* UIColor+Chameleon.h */,
-				DA8547A1ED65F5E6491A37E72EF0BA14 /* UIColor+Chameleon.m */,
-				D9F1D14E2F901215855638DAB1BE7296 /* UIColor+ChameleonPrivate.h */,
-				041CA8EA61F692F9C94684CCD7509D32 /* UIColor+ChameleonPrivate.m */,
-				73BEFF7EBF3359A3581A0D0A7C765924 /* UIImage+ChameleonPrivate.h */,
-				57B0E3699982A73A612FD4D30D84B0D6 /* UIImage+ChameleonPrivate.m */,
-				5BB86FBF7F809FA286FAE84DC6C424FC /* UILabel+Chameleon.h */,
-				A9F77390D3B770B73D1FED4DC03B52A9 /* UILabel+Chameleon.m */,
-				C78FA569C8D0EC55714B2F942A685F93 /* UINavigationController+Chameleon.h */,
-				96A9B9AF8873EFBFB393FA0485B1F119 /* UINavigationController+Chameleon.m */,
-				7A8A895569E76DF60EA59F983523F36E /* UIView+ChameleonPrivate.h */,
-				0F1098E0E61B04AB97EF0E78D1B0155F /* UIView+ChameleonPrivate.m */,
-				CFEECB26C3249854545F0B28BD9218EE /* UIViewController+Chameleon.h */,
-				AFA67212EA15241A9B58FEB5A9A048B9 /* UIViewController+Chameleon.m */,
+				90D2F79FDF5B3E2A31B338F568DD9960 /* ChameleonFramework.framework */,
+				366AA84621EB8C46D7D34F516B47A330 /* CurrencyTextField.framework */,
+				947F9C1B777C114A90EEE1248870B705 /* McPicker.framework */,
+				90404F37C20EB3F7349266EE3B185690 /* PKHUD.framework */,
+				6574C28BE989D55972584F8FD9FF5831 /* PKHUDResources.bundle */,
+				C4F1D9BE84FB492A148026E1EC8CBC8C /* Pods_TipPoolCalc.framework */,
+				8C4295A5EE93F5B8BDB6AF4C16F41220 /* SkyFloatingLabelTextField.framework */,
 			);
-			name = Default;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		53C8B4AB97860F06FE722851EA867B18 /* iOS */ = {
@@ -330,20 +390,6 @@
 				E89163E94743FDDD60913C47150E225B /* UIKit.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		54B09BB6AAA0730460BAC8004786AA7E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				AD2330DA28D0B1F7346DC8A8D131D8B3 /* ChameleonFramework.modulemap */,
-				7B4EB04C1168793854271206D556B834 /* ChameleonFramework.xcconfig */,
-				EB18A202D9BCB3227BCDE0238527CB55 /* ChameleonFramework-dummy.m */,
-				30680EDCA3C9AC99444A5E3F910D25E0 /* ChameleonFramework-prefix.pch */,
-				2F30F3A89480D35DA4D47D1D0F983DB6 /* ChameleonFramework-umbrella.h */,
-				204FE35E388A5B14D087206A11DBF1E5 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ChameleonFramework";
 			sourceTree = "<group>";
 		};
 		55DC51BD495309720F580444DBF38ADE /* Pods-TipPoolCalc */ = {
@@ -364,6 +410,19 @@
 			path = "Target Support Files/Pods-TipPoolCalc";
 			sourceTree = "<group>";
 		};
+		58E952EE02C24DF2EE91D51541E2BAC5 /* McPicker */ = {
+			isa = PBXGroup;
+			children = (
+				F540E15E48AF8BF1565FF9FEA35DCFE4 /* McPicker.swift */,
+				AB3B84E2D869EAC34C4CDA9EC1FEEE8D /* McPickerBarButtonItem.swift */,
+				23837431BE6C94932292C43792BB6AC5 /* McPickerPopoverViewController.swift */,
+				D70076224D0979253156CD8DD22D5E80 /* McTextField.swift */,
+				AF73141E2E47E8D05E90FE16F72D3F3C /* Support Files */,
+			);
+			name = McPicker;
+			path = McPicker;
+			sourceTree = "<group>";
+		};
 		6BD567504073BB678F74C74603558745 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -372,14 +431,16 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		6E1AED8DE10C5CB5778EEDB4A2C85329 /* CurrencyTextField */ = {
+		7D17424CB971AAC2D9A78C85DA86EDF9 /* SkyFloatingLabelTextField */ = {
 			isa = PBXGroup;
 			children = (
-				9A5F64FCAB736D3BC16C64F30E9E6740 /* CurrencyTextField.swift */,
-				1A0498000CEC758D6A1A1A4562B207E2 /* Support Files */,
+				18A9450A0C232B64975B31FD4ECF8A4E /* SkyFloatingLabelTextField.swift */,
+				95BAA7654FAB7A5D4CABA9464FFBE211 /* SkyFloatingLabelTextFieldWithIcon.swift */,
+				7DD2F9CC1A8149D45B1FC5190CC13D14 /* UITextField+fixCaretPosition.swift */,
+				24EB674F038174A81CF4238ED297277D /* Support Files */,
 			);
-			name = CurrencyTextField;
-			path = CurrencyTextField;
+			name = SkyFloatingLabelTextField;
+			path = SkyFloatingLabelTextField;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -387,66 +448,136 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
-				B2C0945B7DB8B14F7C700918FC273500 /* Pods */,
-				DF1FECBF79E0B7D2682DD6C9B24D1BB0 /* Products */,
+				EC71C7CBE1B3EFD788F01E6F6FBAE8D2 /* Pods */,
+				259E7AB3083CB83975C1BFF5C06BA598 /* Products */,
 				6BD567504073BB678F74C74603558745 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		9B815C8B77986B83C8EA70C5117A054F /* SkyFloatingLabelTextField */ = {
+		8261F6E7A51D2458ED8EB797BF0856E0 /* ChameleonFramework */ = {
 			isa = PBXGroup;
 			children = (
-				C169891E42F21549E48DA42F1656C109 /* SkyFloatingLabelTextField.swift */,
-				ED58D937E07772A2A93D72B52E02D1D1 /* SkyFloatingLabelTextFieldWithIcon.swift */,
-				351FEBDF4A8F48B5704685D8C5A9E168 /* UITextField+fixCaretPosition.swift */,
-				43B1EFF585071FBEC3BE92978BE8D6B6 /* Support Files */,
+				D4FC4120E577B58940260FEA579D82E6 /* Default */,
+				238898B7211AB02A05715F6BF8506E40 /* Support Files */,
+				CACF540E8AF4D5F7B7DF014C44AEF9AB /* Swift */,
 			);
-			name = SkyFloatingLabelTextField;
-			path = SkyFloatingLabelTextField;
+			name = ChameleonFramework;
+			path = ChameleonFramework;
 			sourceTree = "<group>";
 		};
-		9E092E508DF42419CFF7ED573FD50FCB /* Swift */ = {
+		AF73141E2E47E8D05E90FE16F72D3F3C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9CCD97A72B6FD619F663CA90103679E3 /* ChameleonShorthand.swift */,
+				3081D595725B271A5D586A359FB7A112 /* Info.plist */,
+				DA5FE06BE5E4296EA1670BC03FFB5CBE /* McPicker.modulemap */,
+				F5AF9D1448A22025B6C7A4495EB09A4C /* McPicker.xcconfig */,
+				0499A20FC0D9D3B8C0A405B694E2AC36 /* McPicker-dummy.m */,
+				FAE3A7246792A1E64083AE06662F4BF5 /* McPicker-prefix.pch */,
+				2952DEA4E9FE699BB64972DC87C8FDC0 /* McPicker-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/McPicker";
+			sourceTree = "<group>";
+		};
+		BE255123F591222C87AD83CEA034C2BD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EB53DD5FF21804AB9D551E2D16DDDE01 /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CACF540E8AF4D5F7B7DF014C44AEF9AB /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				265DBDA327409B8CD83E90FF29F9C357 /* ChameleonShorthand.swift */,
 			);
 			name = Swift;
 			sourceTree = "<group>";
 		};
-		AB112C9A6FAF0FEC004E28BD664C3BFD /* McPicker */ = {
+		D4FC4120E577B58940260FEA579D82E6 /* Default */ = {
 			isa = PBXGroup;
 			children = (
-				AA396B53BEDEABF55E6DEE4E07CA07F9 /* McPicker.swift */,
-				6321658BFCB028465CEEF45F880F8329 /* McPickerBarButtonItem.swift */,
-				3DA732201B2B92973BB12003B0ECD369 /* McPickerPopoverViewController.swift */,
-				D077EAAC0D200D947140579ACDE2510B /* McTextField.swift */,
-				343D0D5F9CD6F49B2B9FDA67623EE46A /* Support Files */,
+				39CE95B8175D0E25D526232E1B5B729D /* Chameleon.h */,
+				559F168710E1DAA588CB3E576AEE7829 /* Chameleon_.h */,
+				DD75E9ABC02B7FA97ED904D28DC9AC3F /* Chameleon_.m */,
+				138AB7FF595C484BE1CB4079E526C153 /* ChameleonConstants.h */,
+				28CB22903BB5EAE6809237A9AABEFAE1 /* ChameleonConstants.m */,
+				0051893E018D4B27E1A04ABD684FE9B7 /* ChameleonEnums.h */,
+				58DA7B3E12871B54187A9CB77599A601 /* ChameleonMacros.h */,
+				12A14FC831817630E9DABEC00BEA9E18 /* NSArray+Chameleon.h */,
+				0F2274AE425512AB8741159A31C9D7D9 /* NSArray+Chameleon.m */,
+				D9155236FA9B63FAADB59BEE4F0DDC6F /* UIAppearance+Swift.h */,
+				9CC8A97E695C809FC8ADC41F36BC026B /* UIAppearance+Swift.m */,
+				A42893D5C48E8200330D44EE0282C255 /* UIButton+Chameleon.h */,
+				5350ECAEDB695F4550121A00E1166279 /* UIButton+Chameleon.m */,
+				D1BC582E45902BC341D50DF42B6C0DEB /* UIColor+Chameleon.h */,
+				54083742D12491B8EB8DE849DC76F5CF /* UIColor+Chameleon.m */,
+				64CEA3E277604971C4673C0999167F0A /* UIColor+ChameleonPrivate.h */,
+				4E9F065C654383FA2764D3717C901E68 /* UIColor+ChameleonPrivate.m */,
+				190E5A578A83226A3BA6FFE0FCEB4C00 /* UIImage+ChameleonPrivate.h */,
+				48C2644A735281773B64C14DAE778036 /* UIImage+ChameleonPrivate.m */,
+				72F7420B3F4E8ED66C6D2D3CE3C387AB /* UILabel+Chameleon.h */,
+				7D9C3370A940ABEE2CD16D2B7C73F3AF /* UILabel+Chameleon.m */,
+				C87933022998D3A732377582D0EB9BC2 /* UINavigationController+Chameleon.h */,
+				621B2E7181BA1C33E770A3D1CA2D8EA6 /* UINavigationController+Chameleon.m */,
+				983E9EF9894DFCC07151BB6ED396AEE6 /* UIView+ChameleonPrivate.h */,
+				DA8DD1A6CC30761F6B7352393755C039 /* UIView+ChameleonPrivate.m */,
+				8E6B8EA614C51344A16DEB1225E6C6E1 /* UIViewController+Chameleon.h */,
+				F9FEC5EDCF687155BCDEDB06162E0684 /* UIViewController+Chameleon.m */,
 			);
-			name = McPicker;
-			path = McPicker;
+			name = Default;
 			sourceTree = "<group>";
 		};
-		B2C0945B7DB8B14F7C700918FC273500 /* Pods */ = {
+		EC71C7CBE1B3EFD788F01E6F6FBAE8D2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				18D3D1CEFF1667FB7319FBB520482443 /* ChameleonFramework */,
-				6E1AED8DE10C5CB5778EEDB4A2C85329 /* CurrencyTextField */,
-				AB112C9A6FAF0FEC004E28BD664C3BFD /* McPicker */,
-				9B815C8B77986B83C8EA70C5117A054F /* SkyFloatingLabelTextField */,
+				8261F6E7A51D2458ED8EB797BF0856E0 /* ChameleonFramework */,
+				F18E98748AF954FEF20B676ED5E5A1F4 /* CurrencyTextField */,
+				58E952EE02C24DF2EE91D51541E2BAC5 /* McPicker */,
+				125351C791C19109154700F180680889 /* PKHUD */,
+				7D17424CB971AAC2D9A78C85DA86EDF9 /* SkyFloatingLabelTextField */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		DF1FECBF79E0B7D2682DD6C9B24D1BB0 /* Products */ = {
+		ECDF737E5FA4137DED89EC9A6D8E6ED4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				134231F2EAB43ED7E3A4D819458F4640 /* ChameleonFramework.framework */,
-				CC55529EDDB45FED1BD5E49662D1E5B5 /* CurrencyTextField.framework */,
-				8A014D95A614FCD5AD3C533A8ED0A5FC /* McPicker.framework */,
-				6DD705EBE37D64F4B90DCB785539EA29 /* Pods_TipPoolCalc.framework */,
-				FCFE105E32ADF80038B48832673B3C76 /* SkyFloatingLabelTextField.framework */,
+				95085D9AB90A7499E793482C15FC505C /* CurrencyTextField.modulemap */,
+				F77AD76D6E0BFE7D61C2291500012A73 /* CurrencyTextField.xcconfig */,
+				07594421A67EBB304A8BE7672162DA60 /* CurrencyTextField-dummy.m */,
+				0B4901BAEE819840DEB1D7B1FB1DBA0A /* CurrencyTextField-prefix.pch */,
+				36E0556517485D9035DE5EC3FFC61B64 /* CurrencyTextField-umbrella.h */,
+				667EF7AE17398D87664D3B0B555CE604 /* Info.plist */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/CurrencyTextField";
+			sourceTree = "<group>";
+		};
+		F18E98748AF954FEF20B676ED5E5A1F4 /* CurrencyTextField */ = {
+			isa = PBXGroup;
+			children = (
+				3F510A6727D0C6B2C206FF1F71005767 /* CurrencyTextField.swift */,
+				ECDF737E5FA4137DED89EC9A6D8E6ED4 /* Support Files */,
+			);
+			name = CurrencyTextField;
+			path = CurrencyTextField;
+			sourceTree = "<group>";
+		};
+		F9B967E27F162FC94A7BF8171C68749B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED40F1FA2752B83C4332B2A2E888A698 /* Info.plist */,
+				EFB96923D2BDE01447CFB9EE4B8A61F3 /* PKHUD.modulemap */,
+				7E3A7DAACA360395951B433E11E83B25 /* PKHUD.xcconfig */,
+				393B40D60C356FFEF15421A1145CB701 /* PKHUD-dummy.m */,
+				AE7BF9D8E1790726E88B329243384C5D /* PKHUD-prefix.pch */,
+				24F6DED2E4B63350F86E7DA9EEA2353E /* PKHUD-umbrella.h */,
+				7DB68CDBCF6ED096CD727C18B50AE428 /* ResourceBundle-PKHUDResources-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PKHUD";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -460,11 +591,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7347D49B6E1D2B43FA4C4E2D20D60B2D /* Headers */ = {
+		219BF16ED9EB0D9C69DA725500B8801F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BD51C3AF439990929574DBBB46271CA /* Pods-TipPoolCalc-umbrella.h in Headers */,
+				4913A1B4406294C7645D169545C2514B /* Pods-TipPoolCalc-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF0D7FE2E8256F1708A7E9C865E06B9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80FF9B0C5CAC7C43537E26644AE15EBF /* PKHUD-umbrella.h in Headers */,
+				7B1D060ECDE4FD225A500F58081A22EC /* PKHUD.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,11 +616,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8B5E048B3BFEEBAD4A549F13350D303F /* Headers */ = {
+		82975C55A3C9D95F1F25712D58411778 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEE9EEB17EE44C63DF4D03B3DA039D00 /* SkyFloatingLabelTextField-umbrella.h in Headers */,
+				25D78C572333EA7DB32A7A06C10390AF /* SkyFloatingLabelTextField-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,13 +650,13 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2EB5A9FC0FCC6C2564BA5E431B6D3CAF /* SkyFloatingLabelTextField */ = {
+		20F9C4C7510C7E18B33984CC4CF800A6 /* SkyFloatingLabelTextField */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 36FF0017D2C6BD9B21B74178621FE402 /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */;
+			buildConfigurationList = 827C20771910F39AB0DFEA23811F4312 /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */;
 			buildPhases = (
-				87D3F6B4D0A24D362662A98BFB4326C5 /* Sources */,
-				B7AD02E9887ADF404C61B450C0A4F7A2 /* Frameworks */,
-				8B5E048B3BFEEBAD4A549F13350D303F /* Headers */,
+				0ACF0295C00BB18EC43F1CB2DD81C25C /* Sources */,
+				C511AF4A3C12325D9EFC57D2C678A0F9 /* Frameworks */,
+				82975C55A3C9D95F1F25712D58411778 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -524,8 +664,25 @@
 			);
 			name = SkyFloatingLabelTextField;
 			productName = SkyFloatingLabelTextField;
-			productReference = FCFE105E32ADF80038B48832673B3C76 /* SkyFloatingLabelTextField.framework */;
+			productReference = 8C4295A5EE93F5B8BDB6AF4C16F41220 /* SkyFloatingLabelTextField.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		3A09979172F37020AB3D778731BFDEBE /* PKHUD-PKHUDResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 707FA5CC215A867BE27AC1FFC39071E0 /* Build configuration list for PBXNativeTarget "PKHUD-PKHUDResources" */;
+			buildPhases = (
+				8CDB236F1E058663E46670F1A45CBAFA /* Sources */,
+				D3EA68E569C8B1836EA9E8366136FB58 /* Frameworks */,
+				2F76C398559AA38EE4D12B91FDFFFC43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PKHUD-PKHUDResources";
+			productName = "PKHUD-PKHUDResources";
+			productReference = 6574C28BE989D55972584F8FD9FF5831 /* PKHUDResources.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 		64FB6E81E491C0A1F61455E3D4588BE5 /* McPicker */ = {
 			isa = PBXNativeTarget;
@@ -541,7 +698,7 @@
 			);
 			name = McPicker;
 			productName = McPicker;
-			productReference = 8A014D95A614FCD5AD3C533A8ED0A5FC /* McPicker.framework */;
+			productReference = 947F9C1B777C114A90EEE1248870B705 /* McPicker.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		76BD4592010354D6C23D6ECCA20D83A8 /* ChameleonFramework */ = {
@@ -558,7 +715,7 @@
 			);
 			name = ChameleonFramework;
 			productName = ChameleonFramework;
-			productReference = 134231F2EAB43ED7E3A4D819458F4640 /* ChameleonFramework.framework */;
+			productReference = 90D2F79FDF5B3E2A31B338F568DD9960 /* ChameleonFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9681B55F2BD95C0085CBEBEC971A1030 /* CurrencyTextField */ = {
@@ -575,28 +732,48 @@
 			);
 			name = CurrencyTextField;
 			productName = CurrencyTextField;
-			productReference = CC55529EDDB45FED1BD5E49662D1E5B5 /* CurrencyTextField.framework */;
+			productReference = 366AA84621EB8C46D7D34F516B47A330 /* CurrencyTextField.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9A566909AD05153E3A31C3956AA1ACD1 /* Pods-TipPoolCalc */ = {
+		B0A904AA2B910FFDB150F671A2DAA8F4 /* PKHUD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 12318E57F23679CB6B234BBD1E7AC542 /* Build configuration list for PBXNativeTarget "Pods-TipPoolCalc" */;
+			buildConfigurationList = 28BA51E0B8C2680291F74B891701D5D6 /* Build configuration list for PBXNativeTarget "PKHUD" */;
 			buildPhases = (
-				5F776B1E92155070CAE3F058B0CB7510 /* Sources */,
-				E159E4140377AB9B8BD749C396A0235E /* Frameworks */,
-				7347D49B6E1D2B43FA4C4E2D20D60B2D /* Headers */,
+				38159AB27801F07BDECB8B701CA13037 /* Sources */,
+				D36921A4150210542D5EF394E2A87258 /* Frameworks */,
+				B400784A95556F1E561B00BFC7D8E784 /* Resources */,
+				2CF0D7FE2E8256F1708A7E9C865E06B9 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				021A46A86B06786C4018DB2CB966B021 /* PBXTargetDependency */,
-				2F6C97635B676456EAD80437DDB07E03 /* PBXTargetDependency */,
-				45CDB144E3431CA5FEBFC4C6414B82A3 /* PBXTargetDependency */,
-				E110E3DE8B9CF1B43FD6BB76D97CE2FA /* PBXTargetDependency */,
+				D34802BF5D01377A2FA3B4067273BED4 /* PBXTargetDependency */,
+			);
+			name = PKHUD;
+			productName = PKHUD;
+			productReference = 90404F37C20EB3F7349266EE3B185690 /* PKHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FC8AA3B77978DC02999AAC0C2A30E790 /* Pods-TipPoolCalc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6894EE93387F3CA7C82A0229E7200AA /* Build configuration list for PBXNativeTarget "Pods-TipPoolCalc" */;
+			buildPhases = (
+				771C09B1825707B32C30C9A780F4362C /* Sources */,
+				E4EF2B47440B40E0046FBCDE951C37DD /* Frameworks */,
+				219BF16ED9EB0D9C69DA725500B8801F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				190895F15AA461ADD5C6066E0A3E77E8 /* PBXTargetDependency */,
+				4C4F31453553032AD230BCA953053F73 /* PBXTargetDependency */,
+				9057026C28857EB87B155A1D9C430788 /* PBXTargetDependency */,
+				4740587D15AB7EFB51F88501544583C7 /* PBXTargetDependency */,
+				F4FC4C47A58EC07FAB4B720DDA70F6DE /* PBXTargetDependency */,
 			);
 			name = "Pods-TipPoolCalc";
 			productName = "Pods-TipPoolCalc";
-			productReference = 6DD705EBE37D64F4B90DCB785539EA29 /* Pods_TipPoolCalc.framework */;
+			productReference = C4F1D9BE84FB492A148026E1EC8CBC8C /* Pods_TipPoolCalc.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -616,20 +793,76 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = DF1FECBF79E0B7D2682DD6C9B24D1BB0 /* Products */;
+			productRefGroup = 259E7AB3083CB83975C1BFF5C06BA598 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				76BD4592010354D6C23D6ECCA20D83A8 /* ChameleonFramework */,
 				9681B55F2BD95C0085CBEBEC971A1030 /* CurrencyTextField */,
 				64FB6E81E491C0A1F61455E3D4588BE5 /* McPicker */,
-				9A566909AD05153E3A31C3956AA1ACD1 /* Pods-TipPoolCalc */,
-				2EB5A9FC0FCC6C2564BA5E431B6D3CAF /* SkyFloatingLabelTextField */,
+				B0A904AA2B910FFDB150F671A2DAA8F4 /* PKHUD */,
+				3A09979172F37020AB3D778731BFDEBE /* PKHUD-PKHUDResources */,
+				FC8AA3B77978DC02999AAC0C2A30E790 /* Pods-TipPoolCalc */,
+				20F9C4C7510C7E18B33984CC4CF800A6 /* SkyFloatingLabelTextField */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		2F76C398559AA38EE4D12B91FDFFFC43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2757C13E7B853F039E358EFB94128019 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B400784A95556F1E561B00BFC7D8E784 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48923056806188F7C866C390081EB29E /* PKHUDResources.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		0ACF0295C00BB18EC43F1CB2DD81C25C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FA50C93E5CB15D49AB1D1102EFAADCE /* SkyFloatingLabelTextField-dummy.m in Sources */,
+				6D883E1F6E9CB143D5C03A54A95FAB75 /* SkyFloatingLabelTextField.swift in Sources */,
+				4C11D132C8A13B4546176F68A467FE6C /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */,
+				7292FDCBD308617BCFA3C7C11794B5E1 /* UITextField+fixCaretPosition.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38159AB27801F07BDECB8B701CA13037 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76830B3CA4730CD429FFB8F3C378128E /* FrameView.swift in Sources */,
+				1FBBB305C13AA02977FC90B76BF96EA1 /* HUD.swift in Sources */,
+				C64F7BACB17D65199E20EA8883EABF09 /* PKHUD-dummy.m in Sources */,
+				0DDC6308BF2A52DDCBFA7E88F5F6B9F9 /* PKHUD.swift in Sources */,
+				3646A0F87A19FEB05D98A46572410B7D /* PKHUDAnimating.swift in Sources */,
+				370ADF286C8DD49D8D17D138DCC798E9 /* PKHUDAnimation.swift in Sources */,
+				033D4E3F3923E52CDC07C06EE192B205 /* PKHUDAssets.swift in Sources */,
+				85E17018F201C89069DC534CDA469F0F /* PKHUDErrorView.swift in Sources */,
+				225F3A109E9725BC303BACDA96EE8B0E /* PKHUDProgressView.swift in Sources */,
+				C5EC1D758058957E1AD881CE220FCBBD /* PKHUDRotatingImageView.swift in Sources */,
+				4AE50F3BF84B88469289F8DD6E4169C2 /* PKHUDSquareBaseView.swift in Sources */,
+				C69ED330F9E24C76D2BE338931D14007 /* PKHUDSuccessView.swift in Sources */,
+				E9A16F94114CBC17B81C41C2CD7CC869 /* PKHUDSystemActivityIndicatorView.swift in Sources */,
+				7B0EBA8E937025A0866EC0FFF8119D6D /* PKHUDTextView.swift in Sources */,
+				FA9A09AB98A590ED7505137DA25E8572 /* PKHUDWideBaseView.swift in Sources */,
+				E0126B27539B6AE100B7757C0BF809F6 /* Window.swift in Sources */,
+				EC44BB01575FF56AC99FAB7956CCB1F0 /* WindowRootViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		510964C4FA8CEA1601A862A3313E12C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -639,22 +872,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5F776B1E92155070CAE3F058B0CB7510 /* Sources */ = {
+		771C09B1825707B32C30C9A780F4362C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A396071DF2D1C080F5AC3B5AD3D5385 /* Pods-TipPoolCalc-dummy.m in Sources */,
+				5B00FB5798171F269F499CD9756D6524 /* Pods-TipPoolCalc-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		87D3F6B4D0A24D362662A98BFB4326C5 /* Sources */ = {
+		8CDB236F1E058663E46670F1A45CBAFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25BB7F3378AC8269552C0EEB5A7FFB22 /* SkyFloatingLabelTextField-dummy.m in Sources */,
-				F3187D0036FAAB20D383A091777AA49A /* SkyFloatingLabelTextField.swift in Sources */,
-				EB7C67AC844F6FEB49E5AE794E83EBAC /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */,
-				467807D12D00B9E61BDDDE270DE30C2B /* UITextField+fixCaretPosition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -694,36 +923,48 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		021A46A86B06786C4018DB2CB966B021 /* PBXTargetDependency */ = {
+		190895F15AA461ADD5C6066E0A3E77E8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ChameleonFramework;
 			target = 76BD4592010354D6C23D6ECCA20D83A8 /* ChameleonFramework */;
-			targetProxy = 8A05EF78C70AC8ECD9847A36F7B6371C /* PBXContainerItemProxy */;
+			targetProxy = A72D161C65427A3034CE7B76D87E012F /* PBXContainerItemProxy */;
 		};
-		2F6C97635B676456EAD80437DDB07E03 /* PBXTargetDependency */ = {
+		4740587D15AB7EFB51F88501544583C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PKHUD;
+			target = B0A904AA2B910FFDB150F671A2DAA8F4 /* PKHUD */;
+			targetProxy = A35BA80A69C96E08E95507EF53EF0CA4 /* PBXContainerItemProxy */;
+		};
+		4C4F31453553032AD230BCA953053F73 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CurrencyTextField;
 			target = 9681B55F2BD95C0085CBEBEC971A1030 /* CurrencyTextField */;
-			targetProxy = F1F50D575B2BDC4FB978935B53AA028C /* PBXContainerItemProxy */;
+			targetProxy = E40053F426D3B9D6E094F4260A64C9A5 /* PBXContainerItemProxy */;
 		};
-		45CDB144E3431CA5FEBFC4C6414B82A3 /* PBXTargetDependency */ = {
+		9057026C28857EB87B155A1D9C430788 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = McPicker;
 			target = 64FB6E81E491C0A1F61455E3D4588BE5 /* McPicker */;
-			targetProxy = 6D9159A60EF5C251ABB12B3846046C68 /* PBXContainerItemProxy */;
+			targetProxy = 99DEB55D0A5EFE63938698DDCD025952 /* PBXContainerItemProxy */;
 		};
-		E110E3DE8B9CF1B43FD6BB76D97CE2FA /* PBXTargetDependency */ = {
+		D34802BF5D01377A2FA3B4067273BED4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "PKHUD-PKHUDResources";
+			target = 3A09979172F37020AB3D778731BFDEBE /* PKHUD-PKHUDResources */;
+			targetProxy = 7F059212B7F76625F0085DE858A885D5 /* PBXContainerItemProxy */;
+		};
+		F4FC4C47A58EC07FAB4B720DDA70F6DE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SkyFloatingLabelTextField;
-			target = 2EB5A9FC0FCC6C2564BA5E431B6D3CAF /* SkyFloatingLabelTextField */;
-			targetProxy = C44A5DF790A66AD8FB145ABA5018B4AF /* PBXContainerItemProxy */;
+			target = 20F9C4C7510C7E18B33984CC4CF800A6 /* SkyFloatingLabelTextField */;
+			targetProxy = 7E849368A2BD78EFEE6F6CD53CB9A531 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		09E91BC842FCD8E23F11E141D060DC7E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB180B1437733B6A35923AB36DFD0DF6 /* McPicker.xcconfig */;
+			baseConfigurationReference = F5AF9D1448A22025B6C7A4495EB09A4C /* McPicker.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -757,80 +998,7 @@
 			};
 			name = Debug;
 		};
-		0E47837C3B263A3BC718E8CAD02FF256 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B4EB04C1168793854271206D556B834 /* ChameleonFramework.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ChameleonFramework/ChameleonFramework-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ChameleonFramework/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/ChameleonFramework/ChameleonFramework.modulemap";
-				PRODUCT_MODULE_NAME = ChameleonFramework;
-				PRODUCT_NAME = ChameleonFramework;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		44758535E815EDD0775F2D6F3EBA72BC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 932A808D74095F455907EB620F5438A0 /* CurrencyTextField.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CurrencyTextField/CurrencyTextField-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CurrencyTextField/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/CurrencyTextField/CurrencyTextField.modulemap";
-				PRODUCT_MODULE_NAME = CurrencyTextField;
-				PRODUCT_NAME = CurrencyTextField;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		49067FB6DAA1113688959FF092E71EF9 /* Release */ = {
+		0B39C55306068EE58CCF7692D4E27698 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BAD706737190F8393004911B95EF8EA4 /* Pods-TipPoolCalc.release.xcconfig */;
 			buildSettings = {
@@ -870,12 +1038,10 @@
 			};
 			name = Release;
 		};
-		4AD0853B7E22A61A8C3E7A638F7E8A5C /* Debug */ = {
+		0E47837C3B263A3BC718E8CAD02FF256 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A30B884AB692F1A8FCBDA5F8D0B00112 /* Pods-TipPoolCalc.debug.xcconfig */;
+			baseConfigurationReference = 5B6F6EF5A39077C17DF904477B818E9A /* ChameleonFramework.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -885,25 +1051,112 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TipPoolCalc/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ChameleonFramework/ChameleonFramework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ChameleonFramework/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TipPoolCalc/Pods-TipPoolCalc.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/ChameleonFramework/ChameleonFramework.modulemap";
+				PRODUCT_MODULE_NAME = ChameleonFramework;
+				PRODUCT_NAME = ChameleonFramework;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2826EC7880F83446B943D97EA2A198F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E3A7DAACA360395951B433E11E83B25 /* PKHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PKHUD";
+				INFOPLIST_FILE = "Target Support Files/PKHUD/ResourceBundle-PKHUDResources-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = PKHUDResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		44758535E815EDD0775F2D6F3EBA72BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F77AD76D6E0BFE7D61C2291500012A73 /* CurrencyTextField.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CurrencyTextField/CurrencyTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CurrencyTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CurrencyTextField/CurrencyTextField.modulemap";
+				PRODUCT_MODULE_NAME = CurrencyTextField;
+				PRODUCT_NAME = CurrencyTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		50889044E41F1A39E48920806B8B2CD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E3A7DAACA360395951B433E11E83B25 /* PKHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PKHUD/PKHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PKHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PKHUD/PKHUD.modulemap";
+				PRODUCT_MODULE_NAME = PKHUD;
+				PRODUCT_NAME = PKHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -973,9 +1226,45 @@
 			};
 			name = Debug;
 		};
+		6FEBDDEE16B882019A88583AF7133767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F421074FD06781C51E9FC3D9588DA64 /* SkyFloatingLabelTextField.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
+				PRODUCT_MODULE_NAME = SkyFloatingLabelTextField;
+				PRODUCT_NAME = SkyFloatingLabelTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		70741DE854B83AF224A01325E679C628 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B4EB04C1168793854271206D556B834 /* ChameleonFramework.xcconfig */;
+			baseConfigurationReference = 5B6F6EF5A39077C17DF904477B818E9A /* ChameleonFramework.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1009,9 +1298,9 @@
 			};
 			name = Debug;
 		};
-		A5AB92735E6A850CB7378903A43212BC /* Debug */ = {
+		79CC2D964A9A5B62B8BD3357B8FAF3EE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A4E35B8B25CA8C1712F36ECB95E8F07 /* SkyFloatingLabelTextField.xcconfig */;
+			baseConfigurationReference = 4F421074FD06781C51E9FC3D9588DA64 /* SkyFloatingLabelTextField.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1037,13 +1326,14 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		AEEA80476F98EB645C4DD53EB2BB6D88 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1103,9 +1393,25 @@
 			};
 			name = Release;
 		};
+		C3DECD27322A02F0F9D3FC7D7DC12FB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E3A7DAACA360395951B433E11E83B25 /* PKHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PKHUD";
+				INFOPLIST_FILE = "Target Support Files/PKHUD/ResourceBundle-PKHUDResources-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = PKHUDResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		CA3DC89CFCF3E35006708C891B220835 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB180B1437733B6A35923AB36DFD0DF6 /* McPicker.xcconfig */;
+			baseConfigurationReference = F5AF9D1448A22025B6C7A4495EB09A4C /* McPicker.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1140,9 +1446,46 @@
 			};
 			name = Release;
 		};
+		E673CEE9BFBCB6CE6C16BBB50EE1C5F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E3A7DAACA360395951B433E11E83B25 /* PKHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PKHUD/PKHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PKHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PKHUD/PKHUD.modulemap";
+				PRODUCT_MODULE_NAME = PKHUD;
+				PRODUCT_NAME = PKHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		F392EA2E48A5EBFBAA27D23A038488D2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 932A808D74095F455907EB620F5438A0 /* CurrencyTextField.xcconfig */;
+			baseConfigurationReference = F77AD76D6E0BFE7D61C2291500012A73 /* CurrencyTextField.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1177,10 +1520,12 @@
 			};
 			name = Release;
 		};
-		FAA9033CD81485C03963BFB4734F25C0 /* Release */ = {
+		FE4BCCE56562C5AF444F1619021D5FE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A4E35B8B25CA8C1712F36ECB95E8F07 /* SkyFloatingLabelTextField.xcconfig */;
+			baseConfigurationReference = A30B884AB692F1A8FCBDA5F8D0B00112 /* Pods-TipPoolCalc.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1190,29 +1535,30 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-TipPoolCalc/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
-				PRODUCT_MODULE_NAME = SkyFloatingLabelTextField;
-				PRODUCT_NAME = SkyFloatingLabelTextField;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TipPoolCalc/Pods-TipPoolCalc.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -1235,11 +1581,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		12318E57F23679CB6B234BBD1E7AC542 /* Build configuration list for PBXNativeTarget "Pods-TipPoolCalc" */ = {
+		28BA51E0B8C2680291F74B891701D5D6 /* Build configuration list for PBXNativeTarget "PKHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4AD0853B7E22A61A8C3E7A638F7E8A5C /* Debug */,
-				49067FB6DAA1113688959FF092E71EF9 /* Release */,
+				50889044E41F1A39E48920806B8B2CD9 /* Debug */,
+				E673CEE9BFBCB6CE6C16BBB50EE1C5F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1253,11 +1599,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		36FF0017D2C6BD9B21B74178621FE402 /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */ = {
+		707FA5CC215A867BE27AC1FFC39071E0 /* Build configuration list for PBXNativeTarget "PKHUD-PKHUDResources" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A5AB92735E6A850CB7378903A43212BC /* Debug */,
-				FAA9033CD81485C03963BFB4734F25C0 /* Release */,
+				C3DECD27322A02F0F9D3FC7D7DC12FB2 /* Debug */,
+				2826EC7880F83446B943D97EA2A198F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		827C20771910F39AB0DFEA23811F4312 /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FEBDDEE16B882019A88583AF7133767 /* Debug */,
+				79CC2D964A9A5B62B8BD3357B8FAF3EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1267,6 +1622,15 @@
 			buildConfigurations = (
 				44758535E815EDD0775F2D6F3EBA72BC /* Debug */,
 				F392EA2E48A5EBFBAA27D23A038488D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6894EE93387F3CA7C82A0229E7200AA /* Build configuration list for PBXNativeTarget "Pods-TipPoolCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE4BCCE56562C5AF444F1619021D5FE3 /* Debug */,
+				0B39C55306068EE58CCF7692D4E27698 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -53,6 +53,15 @@ class TipEntryViewController: UIViewController {
     
   }
   
+  private lazy var backgroundView: UIView = {
+    let view = UIView()
+    
+    // Employee entry background color
+    view.backgroundColor = UIColor.init(hexString: "8ae0ad")
+    
+    return view
+  }()
+  
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     tiersArray.removeAll()
@@ -85,9 +94,7 @@ class TipEntryViewController: UIViewController {
         
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal  //.currency
-        
-        print("Cash number skyScannerTextfield: \(formatter.number(from: cashTipsTextField.text!))")
-        
+                
         if let number1 = formatter.number(from: cashTipsTextField.text!) {
           cashTips = number1.decimalValue
           print("cash tips are \(cashTips)")
@@ -124,7 +131,7 @@ class TipEntryViewController: UIViewController {
       if let quickSplitVC = segue.destination as? QuickSplitViewController {
         
         let formatter = NumberFormatter()
-        formatter.numberStyle = .currency
+        formatter.numberStyle = .decimal
         
         if let number1 = formatter.number(from: cashTipsTextField.text!) {
           cashTips = number1.decimalValue
@@ -161,7 +168,7 @@ class TipEntryViewController: UIViewController {
           if let tierVC = segue.destination as? TierEmployeeEntryViewController {
             
             let formatter = NumberFormatter()
-            formatter.numberStyle = .currency
+            formatter.numberStyle = .decimal
             
             if let number1 = formatter.number(from: cashTipsTextField.text!) {
               cashTips = number1.decimalValue

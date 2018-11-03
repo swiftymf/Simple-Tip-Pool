@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import ChameleonFramework
+import PKHUD
 
 class TierTableViewController: UITableViewController {
   
@@ -198,6 +199,8 @@ class TierTableViewController: UITableViewController {
     }
     positionTextField.text = ""
     weightTextField.text = ""
+    
+    HUD.flash(.success, delay: 1.0)
     
     tableView.reloadData()
   }

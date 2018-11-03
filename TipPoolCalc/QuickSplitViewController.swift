@@ -28,7 +28,15 @@ class QuickSplitViewController: UIViewController {
     totalTipsLabel.text = totalTipsForLabel
     
     }
+  
+  private lazy var backgroundView: UIView = {
+    let view = UIView()
     
+    // Employee entry background color
+    view.backgroundColor = UIColor.init(hexString: "8ae0ad")
+    
+    return view
+  }()
 
   @IBAction func calculateTipsButtonPressed(_ sender: UIButton) {
 
