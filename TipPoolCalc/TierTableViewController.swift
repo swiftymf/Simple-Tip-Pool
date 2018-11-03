@@ -10,9 +10,9 @@ import UIKit
 import CoreData
 import ChameleonFramework
 import PKHUD
+import SkyFloatingLabelTextField
 
 class TierTableViewController: UITableViewController {
-  
   
   @IBOutlet weak var positionTextField: UITextField!
   @IBOutlet weak var weightTextField: UITextField!
@@ -26,17 +26,16 @@ class TierTableViewController: UITableViewController {
   
   var tiersArray: [TiersClass] = []
   
-  
   override func viewDidLoad() {
     super.viewDidLoad()
     self.hideKeyboardWhenTappedAround()
-
+    
     // Nav bar background color (change view background in storyboard)
-    navigationController?.navigationBar.barTintColor = UIColor.init(hexString: "93827f")    //UIColor.flatForestGreen
+    navigationController?.navigationBar.barTintColor = UIColor.init(hexString: "93827f")
     navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     
     pinBackground(backgroundView, to: positionEntryStackView)
-
+    
   }
   private lazy var backgroundView: UIView = {
     let view = UIView()
@@ -85,7 +84,7 @@ class TierTableViewController: UITableViewController {
     tableView.reloadData()
   }
   
-
+  
   
   
   // MARK: - Table view data source
@@ -162,21 +161,28 @@ class TierTableViewController: UITableViewController {
   
   @IBAction func addTierButton(_ sender: UIButton) {
     
-    if weightTextField.text! == "" {
-      print("This isn't allowed to be blank")
+    if weightTextField.text?.isEmpty ?? true {
+      print("This isn't allowed to be blank \(weightTextField.text!)")
+      HUD.flash(.error, delay: 1.0)
       
     } else {
       
       if positionTextField.text! == "" {
         positionTextField.text = "\(tierPositionArray.count + 1)"
-
+        
         let newTier = TiersClass(position: positionTextField.text!, weight: weightTextField.text!)
-
+        
         tiersArray.append(newTier)
         print("tiersArray just added: \(tiersArray)")
         
         tierPositionArray.insert(positionTextField.text!, at: 0)
         tierWeightArray.insert(weightTextField.text!, at: 0)
+        
+        self.save(position: positionTextField.text!, weight: weightTextField.text!)
+        
+        for i in 0..<tierPositionArray.count {
+          print("\(tierPositionArray[i]): \(tierWeightArray[i])")
+        }
         
       } else {
         
@@ -188,19 +194,17 @@ class TierTableViewController: UITableViewController {
         tierPositionArray.insert(positionTextField.text!, at: 0)
         tierWeightArray.insert(weightTextField.text!, at: 0)
         
+        self.save(position: positionTextField.text!, weight: weightTextField.text!)
+        
+        for i in 0..<tierPositionArray.count {
+          print("\(tierPositionArray[i]): \(tierWeightArray[i])")
+        }
+        HUD.flash(.success, delay: 1.0)
       }
     }
     
-    self.save(position: positionTextField.text!, weight: weightTextField.text!)
-    
-    for i in 0..<tierPositionArray.count {
-      print("\(tierPositionArray[i]): \(tierWeightArray[i])")
-      
-    }
     positionTextField.text = ""
     weightTextField.text = ""
-    
-    HUD.flash(.success, delay: 1.0)
     
     tableView.reloadData()
   }
@@ -237,5 +241,5 @@ class TierTableViewController: UITableViewController {
       print("Could not save. \(error), \(error.userInfo)")
     }
   }
-
+  
 }
