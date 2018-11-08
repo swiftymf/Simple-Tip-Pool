@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SkyFloatingLabelTextField
 
 class QuickSplitViewController: UIViewController {
   
@@ -14,32 +15,32 @@ class QuickSplitViewController: UIViewController {
   var totalTipsForLabel = ""
   var percentageIsCash: Decimal = 0.00
   var barbackSplitPercentage: Decimal = 0.00
-
-
-  @IBOutlet weak var numberOfBartendersTextField: UITextField!
-  @IBOutlet weak var numberOfBarbacksTextField: UITextField!
+  
+  
+  @IBOutlet weak var numberOfBartendersTextField: SkyFloatingLabelTextField!
+  @IBOutlet weak var numberOfBarbacksTextField: SkyFloatingLabelTextField!
   @IBOutlet weak var bartenderTipsSplitLabel: UILabel!
   @IBOutlet weak var barbackTipSplitLabel: UILabel!
   @IBOutlet weak var totalTipsLabel: UILabel!
   
   override func viewDidLoad() {
     
-        super.viewDidLoad()
+    super.viewDidLoad()
+    
     totalTipsLabel.text = totalTipsForLabel
     
-    }
+    numberOfBartendersTextField.lineColor = UIColor.white
+    numberOfBarbacksTextField.lineColor = UIColor.white
+    numberOfBartendersTextField.placeholderColor = UIColor.white
+    numberOfBarbacksTextField.placeholderColor = UIColor.white
+    
+    self.navigationController?.navigationBar.titleTextAttributes =
+      [NSAttributedString.Key.foregroundColor: UIColor.white,
+       NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20, weight: .light)]
+  }
   
-  private lazy var backgroundView: UIView = {
-    let view = UIView()
-    
-    // Employee entry background color
-    view.backgroundColor = UIColor.init(hexString: "8ae0ad")
-    
-    return view
-  }()
-
   @IBAction func calculateTipsButtonPressed(_ sender: UIButton) {
-
+    
     let formatter = NumberFormatter()
     formatter.generatesDecimalNumbers = true
     
@@ -55,11 +56,11 @@ class QuickSplitViewController: UIViewController {
     
     let tipsForEachBartender = ((totalTips - barbackSplit) / numberOfBartenders)
     let tipsForEachBarback = (barbackSplit / numberOfBarbacks)
-
+    
     
     bartenderTipsSplitLabel.text = "$\(String(format: "%.2f", Double(truncating: tipsForEachBartender as NSNumber))) ($\(String(format: "%.2f", Double(truncating: bartenderSplit as NSNumber))))"
     barbackTipSplitLabel.text = "$\(String(format: "%.2f", Double(truncating: tipsForEachBarback as NSNumber))) ($\(String(format: "%.2f", Double(truncating: barbackSplit as NSNumber))))"
-
+    
   }
-
+  
 }

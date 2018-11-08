@@ -8,14 +8,13 @@
 
 import UIKit
 import CoreData
-import ChameleonFramework
 import PKHUD
 import SkyFloatingLabelTextField
 
 class TierTableViewController: UITableViewController {
   
-  @IBOutlet weak var positionTextField: UITextField!
-  @IBOutlet weak var weightTextField: UITextField!
+  @IBOutlet weak var positionTextField: SkyFloatingNotCurrencyTextField!
+  @IBOutlet weak var weightTextField: SkyFloatingNotCurrencyTextField!
   @IBOutlet var positionEntryStackView: UIStackView!
   
   
@@ -30,41 +29,44 @@ class TierTableViewController: UITableViewController {
     super.viewDidLoad()
     self.hideKeyboardWhenTappedAround()
     
-    // Nav bar background color (change view background in storyboard)
-    navigationController?.navigationBar.barTintColor = UIColor.init(hexString: "93827f")
-    navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+    self.navigationController?.navigationBar.titleTextAttributes =
+      [NSAttributedString.Key.foregroundColor: UIColor.white,
+       NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20, weight: .light)]
     
-    pinBackground(backgroundView, to: positionEntryStackView)
+    tableView.backgroundView = UIImageView(image: UIImage(named: "gradientbg"))
     
+    positionTextField.lineColor = UIColor.white
+    weightTextField.lineColor = UIColor.white
+    positionTextField.placeholderColor = UIColor.white
+    weightTextField.placeholderColor = UIColor.white
+    
+    self.tableView.tableFooterView = UIView()
+
   }
-  private lazy var backgroundView: UIView = {
-    let view = UIView()
-    
-    // Employee entry background color
-    view.backgroundColor = UIColor.init(hexString: "8ae0ad")
-    
-    return view
-  }()
   
-  private func pinBackground(_ view: UIView, to stackView: UIStackView) {
-    view.translatesAutoresizingMaskIntoConstraints = false
-    stackView.insertSubview(view, at: 0)
-    view.pin(to: stackView)
+  @IBAction func infoButtonTapped(_ sender: UIButton) {
+    
+    let alert = UIAlertController(title: "", message: "1. Enter Cash and Credit card tips\n\n2. Enter % for support staff\n(ignore if using points system)\n\n3. Choose Split Hourly or\nSplit by Points\n\n4. Enter employee name and hours worked\n\n5. Choose server or support for hourly split or select position if splitting by points\n\n- As you add employees, tips will be calculated automatically\n\n- If splitting by points, you will first create the positions and assign point values in this screen.\n\n- The app will remember positions for future use. Swipe to delete if needed.", preferredStyle: .alert)
+    alert.addAction(UIAlertAction(title: "Let's go!", style: .default, handler: nil))
+    
+    self.present(alert, animated: true)
   }
+  
+//  private func pinBackground(_ view: UIView, to stackView: UIStackView) {
+//    view.translatesAutoresizingMaskIntoConstraints = false
+//    stackView.insertSubview(view, at: 0)
+//    view.pin(to: stackView)
+//  }
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     tiersArray.removeAll()
-    //1
     guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
       return
     }
     
     let managedContext = appDelegate.persistentContainer.viewContext
-    
-    //2
     let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Tiers")
-    //3
     do {
       tiers = try managedContext.fetch(fetchRequest)
       print(tiers)
@@ -83,10 +85,7 @@ class TierTableViewController: UITableViewController {
     
     tableView.reloadData()
   }
-  
-  
-  
-  
+
   // MARK: - Table view data source
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return tiers.count
@@ -101,13 +100,8 @@ class TierTableViewController: UITableViewController {
   }
   
   override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int){
-    
-    // Cell header background color
-    
-    //let cellColor = GradientColor(UIGradientStyle.leftToRight, frame: header.frame, colors: [UIColor(hexString: "4fd9bb")!, UIColor(hexString: "87e5d1")!])
     let header = view as! UITableViewHeaderFooterView
-    
-    view.tintColor =  GradientColor(UIGradientStyle.leftToRight, frame: header.frame, colors: [UIColor(hexString: "2ccaa7")!, UIColor(hexString: "4fd9bb")!]) //UIColor.init(hexString: "aa9d9b")   //UIColor.flatMint
+    view.tintColor =  UIColor.clear
     header.textLabel?.textColor = UIColor.black
   }
   
@@ -115,7 +109,7 @@ class TierTableViewController: UITableViewController {
     
     tableView.separatorStyle = .singleLine
     
-    let cellColor = UIColor.init(hexString: "d9d3d2")!
+    let cellColor = UIColor.clear  //UIColor.init(hexString: "d9d3d2")!
     
     let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
     
@@ -126,7 +120,7 @@ class TierTableViewController: UITableViewController {
     
     cell.backgroundColor = cellColor
     
-    cell.textLabel?.textColor = ContrastColorOf(cellColor, returnFlat: true)
+    //cell.textLabel?.textColor = ContrastColorOf(cellColor, returnFlat: true)
     cell.detailTextLabel?.backgroundColor = UIColor.clear
     
     return cell

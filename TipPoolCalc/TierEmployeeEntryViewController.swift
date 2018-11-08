@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 import McPicker
-import ChameleonFramework
+import SkyFloatingLabelTextField
 
 class TierEmployeeEntryViewController: UITableViewController {
   
@@ -28,11 +28,11 @@ class TierEmployeeEntryViewController: UITableViewController {
   var totalTips: Decimal = 0.00
   var totalPoints: Decimal = 0.00
   
-
+  
   
   @IBOutlet weak var tierButtonLabel: UIButton!
-  @IBOutlet weak var employeeNameTextField: UITextField!
-  @IBOutlet weak var hoursTextField: UITextField!
+  @IBOutlet weak var employeeNameTextField: SkyFloatingLabelTextField!
+  @IBOutlet weak var hoursTextField: SkyFloatingLabelTextField!
   @IBOutlet weak var totalTipsLabel: UILabel!
   @IBOutlet weak var hoursEntryStackView: UIStackView!
   
@@ -40,24 +40,37 @@ class TierEmployeeEntryViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     self.hideKeyboardWhenTappedAround()
-
-    tierButtonLabel.setTitle("Tap Here", for: .normal)
+    
+    tierButtonLabel.setTitle("Select Position", for: .normal)
     
     totalTipsLabel.text = totalTipsForLabel
-
-    // Nav bar background color (change view background in storyboard)
-    navigationController?.navigationBar.barTintColor = UIColor.init(hexString: "93827f")    //UIColor.flatForestGreen
-    navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     
-    pinBackground(backgroundView, to: hoursEntryStackView)
-
+//    // Nav bar background color (change view background in storyboard)
+//    navigationController?.navigationBar.barTintColor = UIColor.init(hexString: "93827f")    //UIColor.flatForestGreen
+//    navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+//    
+//    pinBackground(backgroundView, to: hoursEntryStackView)
+//    
+    self.navigationController?.navigationBar.titleTextAttributes =
+      [NSAttributedString.Key.foregroundColor: UIColor.white,
+       NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20, weight: .light)]
+    
+    tableView.backgroundView = UIImageView(image: UIImage(named: "gradientbg"))
+    
+    employeeNameTextField.lineColor = UIColor.white
+    hoursTextField.lineColor = UIColor.white
+    employeeNameTextField.placeholderColor = UIColor.white
+    hoursTextField.placeholderColor = UIColor.white
+    
+    self.tableView.tableFooterView = UIView()
   }
   
   private lazy var backgroundView: UIView = {
     let view = UIView()
     
     // Employee entry background color
-    view.backgroundColor = UIColor.init(hexString: "8ae0ad")
+    //view.backgroundColor = UIColor.init(hexString: "8ae0ad")
+    view.backgroundColor = UIColor.clear
     
     return view
   }()
@@ -69,8 +82,6 @@ class TierEmployeeEntryViewController: UITableViewController {
   }
   
   @IBAction func popOverPicker(_ sender: UIButton) {
-    
-    
     McPicker.showAsPopover(data: tierStrings, fromViewController: self, sourceView: sender, doneHandler: { [weak self] (selections: [Int : String]) -> Void in
       if let name = selections[0] {
         self?.tierButtonLabel.setTitle(name, for: .normal)
@@ -85,12 +96,10 @@ class TierEmployeeEntryViewController: UITableViewController {
     })
   }
   
-
-  
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     tiersArray.removeAll()
-
+    
     //1
     guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
       return
@@ -107,11 +116,11 @@ class TierEmployeeEntryViewController: UITableViewController {
     } catch let error as NSError {
       print("Could not fetch. \(error), \(error.userInfo)")
     }
-        
+    
     for tier in tiers {
       let position = tier.value(forKey: "position") as! String
       let weight = tier.value(forKey: "weight") as! String
-
+      
       tiersArray.append(TiersClass(position: position, weight: weight))
       
       print("tiersArray: \(tiersArray)")
@@ -119,7 +128,7 @@ class TierEmployeeEntryViewController: UITableViewController {
     
     for tier in tiersArray {
       let position = tier.position
-    //  let weight = tier.weight
+      //  let weight = tier.weight
       
       tierStrings[0].append("\(position)")
       print("tierStrings: \(tierStrings)")
@@ -141,34 +150,31 @@ class TierEmployeeEntryViewController: UITableViewController {
   // MARK: - Table view data source
   
   override func numberOfSections(in tableView: UITableView) -> Int {
-
+    
     return tiersArray.count
   }
   
   override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int){
-    
-    // Cell header background color
     let header = view as! UITableViewHeaderFooterView
-    
-    view.tintColor =  GradientColor(UIGradientStyle.leftToRight, frame: header.frame, colors: [UIColor(hexString: "2ccaa7")!, UIColor(hexString: "4fd9bb")!]) //UIColor.init(hexString: "aa9d9b")   //UIColor.flatMint
-    header.textLabel?.textColor = UIColor.black
+    view.tintColor =  UIColor.clear
+    header.textLabel?.textColor = UIColor.white
   }
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
+    
     let numberOfSections = tiersArray.count
     var numberOfRows = 0
     for i in 0...numberOfSections {
       if section == i {
         numberOfRows = arrayOfEmployees[i].count
       }
-
+      
     }
     return numberOfRows
   }
   
   override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-
+    
     for i in 0...section {
       titleForHeader =  "\(tiersArray[i].position): \(tiersArray[i].weight)"   //arrayOfPositions[i]
     }
@@ -182,13 +188,7 @@ class TierEmployeeEntryViewController: UITableViewController {
     let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
     
     tableView.separatorStyle = .singleLine
-    
-    let cellColor = UIColor.init(hexString: "d9d3d2")!
-    
     let numberOfSections = tiersArray.count
-    
-
-    
     for i in 1...numberOfSections {
       print("i: \(i)")
       if indexPath.section == i - 1 {
@@ -198,29 +198,27 @@ class TierEmployeeEntryViewController: UITableViewController {
         
         cell.textLabel?.text = "\(name): \(hours) hours"
         
-        // "\(arrayOfEmployees[indexPath.section][indexPath.row].name): hours worked"
-        
-        // cell.detailTextLabel?.text = cash tips + credit card tips = total tips
         let cashPortion = String(format: "%.2f", Double(truncating: (arrayOfEmployees[indexPath.section][indexPath.row].tipsEarned * percentageIsCash) as NSNumber))
         
         let creditPortion = String(format: "%.2f", Double(truncating: (arrayOfEmployees[indexPath.section][indexPath.row].tipsEarned * (1 - percentageIsCash)) as NSNumber))
         
         let stringTips = String(format: "%.2f", Double(truncating: arrayOfEmployees[indexPath.section][indexPath.row].tipsEarned as NSNumber))
         let sharePayoutText = "\(cashPortion) (cash) + \(creditPortion) (credit) = \(stringTips)"
+        
         let payoutText = "\(cashPortion) + \(creditPortion) = \(stringTips)"
-
+        
         cell.detailTextLabel?.text = "\(payoutText)"
-
-        cell.backgroundColor = cellColor
-        cell.textLabel?.textColor = ContrastColorOf(cellColor, returnFlat: true)
+        
+        cell.layer.backgroundColor = UIColor.clear.cgColor //cellColor and remove .layer
+        cell.textLabel?.textColor = UIColor.black //ContrastColorOf(cellColor, returnFlat: true)
         cell.detailTextLabel?.backgroundColor = UIColor.clear
         
         shareText.append("\(tiersArray[i - 1].position) \(name) worked \(hours) hours. \(sharePayoutText)\n")
-
+        
         break
       } else {
-        cell.backgroundColor = cellColor
-        cell.textLabel?.textColor = ContrastColorOf(cellColor, returnFlat: true)
+        cell.layer.backgroundColor = UIColor.clear.cgColor //cellColor and remove .layer
+        cell.textLabel?.textColor = UIColor.black //ContrastColorOf(cellColor, returnFlat: true)
         cell.detailTextLabel?.backgroundColor = UIColor.clear
         cell.textLabel?.text = "Something went wrong"
       }
@@ -250,7 +248,7 @@ class TierEmployeeEntryViewController: UITableViewController {
       self.present(alert, animated: true)
     } else {
       addNewEmployee()
-
+      
     }
     employeeNameTextField.text = ""
     hoursTextField.text = ""
@@ -268,11 +266,11 @@ class TierEmployeeEntryViewController: UITableViewController {
     let newEmployee = Employee()
     newEmployee.name = employeeNameTextField.text ?? "No name entered"
     newEmployee.hours = hoursTextField.text ?? "no hours entered"
-
+    
     // Adding the newEmployee everytime it runs through. need to stop that.
     // selected position needs to match the string in arrayOfPositions, get that index, add to arrayOfEmployees at that index
     
-
+    
     
     for (index, element) in arrayOfPositions.enumerated() {
       
@@ -306,25 +304,24 @@ class TierEmployeeEntryViewController: UITableViewController {
     func decimal(with string: String) -> NSDecimalNumber {
       return formatter.number(from: string) as? NSDecimalNumber ?? 0
     }
-
+    
     for position in arrayOfEmployees {
       for employee in position {
-        let hoursWorked = decimal(with: employee.hours)  //Decimal(Int(employee.hours)!)
-        let positionWeight = decimal(with: employee.weight)  //Decimal(Int(employee.weight)!)
+        let hoursWorked = decimal(with: employee.hours)
+        let positionWeight = decimal(with: employee.weight)
         employee.points = (hoursWorked as Decimal) * (positionWeight as Decimal)
         totalPoints = totalPoints + employee.points
         tipsPerPoint = totalTips / totalPoints
       }
     }
-      for position in arrayOfEmployees {
+    for position in arrayOfEmployees {
       for employee in position {
         employee.tipsEarned = employee.points * tipsPerPoint
         
         let stringTips = String(format: "%.2f", Double(truncating: employee.tipsEarned as NSNumber))
         print("\(employee.name), hours \(employee.hours), position: \(employee.position), points: \(employee.points), tips: \(stringTips)")
-
       }
-      
+      // Running this print statement way too many times
       print("pointsTotal: \(totalPoints)")
       print("tipsPerPoint: \(tipsPerPoint)")
     }
@@ -350,8 +347,6 @@ class TierEmployeeEntryViewController: UITableViewController {
     self.present(activityViewController, animated: true, completion: nil)
     
   }
-  
 
-  
 }
 

@@ -8,7 +8,7 @@
 
 import UIKit
 import CurrencyTextField
-import ChameleonFramework
+//import ChameleonFramework
 import SkyFloatingLabelTextField
 
 class EmployeeEntryViewController: UITableViewController {
@@ -30,8 +30,8 @@ class EmployeeEntryViewController: UITableViewController {
   var serverTipsPerHour: String = ""
   var barbackTipsPerHour: String = ""
   
-  @IBOutlet weak var employeeNameTextField: UITextField!
-  @IBOutlet weak var hoursTextField: UITextField!
+  @IBOutlet weak var employeeNameTextField: SkyFloatingLabelTextField!
+  @IBOutlet weak var hoursTextField: SkyFloatingLabelTextField!
   @IBOutlet weak var totalTipsLabel: UILabel!
   @IBOutlet weak var hoursEntryStackView: UIStackView!
   
@@ -39,45 +39,34 @@ class EmployeeEntryViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     self.hideKeyboardWhenTappedAround()
-
-    // Nav bar color (change empty table area background in storyboard -> identity inspector
-    navigationController?.navigationBar.barTintColor =  UIColor.init(hexString: "93827f")
-    navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+    tableView.backgroundView = UIImageView(image: UIImage(named: "gradientbg"))
     
     totalTipsLabel.text = totalTipsForLabel
     
     let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
     tap.cancelsTouchesInView = false
     self.view.addGestureRecognizer(tap)
+        
+    self.navigationController?.navigationBar.titleTextAttributes =
+      [NSAttributedString.Key.foregroundColor: UIColor.white,
+       NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20, weight: .light)]
     
-    pinBackground(backgroundView, to: hoursEntryStackView)
-    
-  }
-  
-  private lazy var backgroundView: UIView = {
-    let view = UIView()
-    
-    // Employee entry background color
-    view.backgroundColor = UIColor.init(hexString: "8ae0ad")
+    tableView.backgroundView = UIImageView(image: UIImage(named: "gradientbg"))
 
-    return view
-  }()
-
-  private func pinBackground(_ view: UIView, to stackView: UIStackView) {
-    view.translatesAutoresizingMaskIntoConstraints = false
-    stackView.insertSubview(view, at: 0)
-    view.pin(to: stackView)
+    employeeNameTextField.lineColor = UIColor.white
+    hoursTextField.lineColor = UIColor.white
+    employeeNameTextField.placeholderColor = UIColor.white
+    hoursTextField.placeholderColor = UIColor.white
+    
+    self.tableView.tableFooterView = UIView()
   }
   
   // MARK: - Table view data source
-  
   override func numberOfSections(in tableView: UITableView) -> Int {
-    
     return 2
   }
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    
     if section == 0 {
       return serverArray.count
     } else {
@@ -86,14 +75,10 @@ class EmployeeEntryViewController: UITableViewController {
   }
   
   override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int){
-   
-    // Cell header background color
-    
-    //let cellColor = GradientColor(UIGradientStyle.leftToRight, frame: header.frame, colors: [UIColor(hexString: "4fd9bb")!, UIColor(hexString: "87e5d1")!])
-    let header = view as! UITableViewHeaderFooterView
 
-    view.tintColor =  GradientColor(UIGradientStyle.leftToRight, frame: header.frame, colors: [UIColor(hexString: "2ccaa7")!, UIColor(hexString: "4fd9bb")!]) //UIColor.init(hexString: "aa9d9b")   //UIColor.flatMint
-    header.textLabel?.textColor = UIColor.black
+    let header = view as! UITableViewHeaderFooterView
+    view.tintColor =  UIColor.clear
+    header.textLabel?.textColor = UIColor.white
   }
   
   override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -107,13 +92,13 @@ class EmployeeEntryViewController: UITableViewController {
       if section == 0 {
         return "Servers  $\(totalTipsText)   TPH: $\(serverTipsPerHour)"
       } else {
-        return "Barbacks  $0.00   TPH: $\(barbackTipsPerHour)"
+        return "Support  $0.00   TPH: $\(barbackTipsPerHour)"
       }
     } else {
       if section == 0 {
         return "Servers  $\(serverText)   TPH: $\(serverTipsPerHour)"
       } else {
-        return "Barbacks  $\(barbackText)    TPH: $\(barbackTipsPerHour)"
+        return "Support  $\(barbackText)    TPH: $\(barbackTipsPerHour)"
       }
     }
   }
@@ -123,7 +108,7 @@ class EmployeeEntryViewController: UITableViewController {
     
     tableView.separatorStyle = .singleLine
     
-    let cellColor = UIColor.init(hexString: "d9d3d2")!  //GradientColor(UIGradientStyle.leftToRight, frame: cell.frame, colors: [UIColor(hexString: "4fd9bb")!, UIColor(hexString: "87e5d1")!])
+    let cellColor = UIColor.clear //init(hexString: "d9d3d2")!  //GradientColor(UIGradientStyle.leftToRight, frame: cell.frame, colors: [UIColor(hexString: "4fd9bb")!, UIColor(hexString: "87e5d1")!])
     
     if indexPath.section == 0 {
       let nameAndHours = "\(serverArray[indexPath.row]) worked \(serverHours[indexPath.row]) hours. "
@@ -134,8 +119,6 @@ class EmployeeEntryViewController: UITableViewController {
       shareText.append("(Bartender) \(nameAndHours) \(payoutText)\n")
       
       cell.backgroundColor = cellColor
-      
-      cell.textLabel?.textColor = ContrastColorOf(cellColor, returnFlat: true)
       cell.detailTextLabel?.backgroundColor = UIColor.clear
       
     } else {
@@ -147,10 +130,7 @@ class EmployeeEntryViewController: UITableViewController {
       
       shareText.append("(Barback) \(nameAndHours) \(payoutText)\n")
 
-      
       cell.backgroundColor = cellColor
-      
-      cell.textLabel?.textColor = ContrastColorOf(cellColor, returnFlat: true)
       cell.detailTextLabel?.backgroundColor = UIColor.clear
   
     }

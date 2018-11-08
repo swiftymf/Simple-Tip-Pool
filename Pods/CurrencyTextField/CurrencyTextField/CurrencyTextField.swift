@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-@IBDesignable public class CurrencyTextField : UITextField{
+@IBDesignable public class CurrencyTextField : UITextField {
     
     private let maxDigits = 12
     
@@ -79,7 +79,7 @@ import UIKit
                 self.text = previousValue
             }
         }
-        //Set the cursor back to its original poistion
+        //Set the cursor back to its original position
         setCursorOriginalPosition(cursorOffset: cursorOffset, oldTextFieldLength: textFieldLength)
     }
     

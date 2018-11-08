@@ -8,8 +8,8 @@
 
 import UIKit
 import CoreData
-import CurrencyTextField
 import SkyFloatingLabelTextField
+import SquishButton
 
 class TipEntryViewController: UIViewController {
   
@@ -27,40 +27,31 @@ class TipEntryViewController: UIViewController {
   
 
   
-  @IBOutlet weak var cashTipsTextField: UITextField!
-  @IBOutlet weak var creditTipsTextField: UITextField!
-  @IBOutlet weak var barbackSplitTextField: UITextField!
-  
-  @IBAction func infoButtonTapped(_ sender: UIButton) {
-    let alert = UIAlertController(title: "How to use:", message: "1. Enter Cash and Credit card tips\n\n2. Enter % for barbacks\n(ignore if using points system)\n\n3. Choose Split Hourly or Split by Points\n\n4. Enter employee name and hours worked\n\n5. Choose server or barback for hourly split or select position for splitting by points\n\nAs you add employees, tips will be calculated automatically\n\n If splitting by points, if you will first need to create the positions and assign point values by tapping the Positions button in the top right of this screen.\n\nYou only need to do this once and the app will remember your entries. Swipe to delete if needed.", preferredStyle: .alert)
-    alert.addAction(UIAlertAction(title: "Let's go!", style: .default, handler: nil))
-    
-    self.present(alert, animated: true)
-  }
-  
-  
-  
-  // Create share button (text, email, etc.)
-  // Also need to format table to readable text
+  @IBOutlet weak var cashTipsTextField: SkyFloatingLabelTextField!
+  @IBOutlet weak var creditTipsTextField: SkyFloatingLabelTextField!
+  @IBOutlet weak var barbackSplitTextField: SkyFloatingLabelTextField!
+  @IBOutlet weak var splitHourlyButton: SquishButton!
   
   override func viewDidLoad() {
     super.viewDidLoad()
     self.hideKeyboardWhenTappedAround()
+    cashTipsTextField.lineColor = UIColor.white
+    creditTipsTextField.lineColor = UIColor.white
+    barbackSplitTextField.lineColor = UIColor.white
+    cashTipsTextField.placeholderColor = UIColor.white
+    creditTipsTextField.placeholderColor = UIColor.white
+    barbackSplitTextField.placeholderColor = UIColor.white
     
-    // Nav bar background color (change view background in storyboard)
-    navigationController?.navigationBar.barTintColor = UIColor.init(hexString: "93827f")    //UIColor.flatForestGreen
-    navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+    self.navigationController?.navigationBar.shadowImage = UIImage()
+    self.navigationController?.navigationBar.isTranslucent = true
+    self.navigationController?.view.backgroundColor = .clear
     
+    self.navigationController?.navigationBar.titleTextAttributes =
+      [NSAttributedString.Key.foregroundColor: UIColor.white,
+       NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20, weight: .light)]
   }
-  
-  private lazy var backgroundView: UIView = {
-    let view = UIView()
-    
-    // Employee entry background color
-    view.backgroundColor = UIColor.init(hexString: "8ae0ad")
-    
-    return view
-  }()
+
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
@@ -87,14 +78,17 @@ class TipEntryViewController: UIViewController {
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     
-    print("Cash Tips skyScannerTextfield: \(cashTipsTextField.text!)")
-    
     if segue.identifier == "HourlySegue"  {
       if let employeeVC = segue.destination as? EmployeeEntryViewController {
+
+        // why is this here and not in the other segues??
+//        cashTips = Double(cashTipsTextField.text!) ?? 0.00
+//        creditTips = Decimal(Double(creditTipsTextField.text!) ?? 0.00)
+        barbackSplit = Decimal(Double(barbackSplitTextField.text!) ?? 0.00)
         
         let formatter = NumberFormatter()
-        formatter.numberStyle = .decimal  //.currency
-                
+        formatter.numberStyle = .currency //.decimal
+        
         if let number1 = formatter.number(from: cashTipsTextField.text!) {
           cashTips = number1.decimalValue
           print("cash tips are \(cashTips)")
@@ -111,8 +105,14 @@ class TipEntryViewController: UIViewController {
           self.present(alert, animated: true)
         }
         
-        barbackSplit = Decimal(Double(barbackSplitTextField.text!) ?? 0.00)
         
+        if cashTips == 0.00 && creditTips == 0.00 {
+          let alert = UIAlertController(title: "No tips?", message: "You didn't make any tips today? Double check those amounts because you definitely deserved some tips for all your hard work.", preferredStyle: .alert)
+          alert.addAction(UIAlertAction(title: "Go back", style: .default, handler: nil))
+          
+          self.present(alert, animated: true)
+        }
+                
         totalTips = cashTips + creditTips
         print("Total tips: \(totalTips)")
         
@@ -131,7 +131,7 @@ class TipEntryViewController: UIViewController {
       if let quickSplitVC = segue.destination as? QuickSplitViewController {
         
         let formatter = NumberFormatter()
-        formatter.numberStyle = .decimal
+        formatter.numberStyle = .currency //.decimal
         
         if let number1 = formatter.number(from: cashTipsTextField.text!) {
           cashTips = number1.decimalValue
@@ -168,7 +168,7 @@ class TipEntryViewController: UIViewController {
           if let tierVC = segue.destination as? TierEmployeeEntryViewController {
             
             let formatter = NumberFormatter()
-            formatter.numberStyle = .decimal
+            formatter.numberStyle = .currency //.decimal
             
             if let number1 = formatter.number(from: cashTipsTextField.text!) {
               cashTips = number1.decimalValue

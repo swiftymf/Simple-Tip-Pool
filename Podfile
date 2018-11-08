@@ -7,9 +7,9 @@ target 'TipPoolCalc' do
 
   # Pods for TipPoolCalc
 pod 'CurrencyTextField' 
-pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
 pod 'McPicker'
 pod 'SkyFloatingLabelTextField', '~> 3.0'
 pod 'PKHUD', '~> 5.0'
+pod 'SquishButton'
 
 end
