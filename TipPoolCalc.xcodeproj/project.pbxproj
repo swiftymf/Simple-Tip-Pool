@@ -20,6 +20,7 @@
 		2A7F3EB421504C160005AD69 /* TierTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F3EB321504C160005AD69 /* TierTableViewController.swift */; };
 		2A893871215D804B00203A48 /* QuickSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A893870215D804B00203A48 /* QuickSplitViewController.swift */; };
 		2A9968642152E3F80003AA09 /* TiersClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9968632152E3F80003AA09 /* TiersClass.swift */; };
+		BB1234560000000000000001 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1234560000000000000002 /* UIColor+Hex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		2A893870215D804B00203A48 /* QuickSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSplitViewController.swift; sourceTree = "<group>"; };
 		2A9968632152E3F80003AA09 /* TiersClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiersClass.swift; sourceTree = "<group>"; };
 		2ABC8CA12152D9D300B2DFE3 /* EmployeeClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeClass.swift; sourceTree = "<group>"; };
+		BB1234560000000000000002 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		7C8037C554207E3F608888C9 /* Pods_TipPoolCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TipPoolCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B09A3179D8DD911963A908C8 /* Pods-TipPoolCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TipPoolCalc.release.xcconfig"; path = "Pods/Target Support Files/Pods-TipPoolCalc/Pods-TipPoolCalc.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +86,7 @@
 				2A27FE8120CF2BFE00FC8949 /* Main.storyboard */,
 				2A9968632152E3F80003AA09 /* TiersClass.swift */,
 				2ABC8CA12152D9D300B2DFE3 /* EmployeeClass.swift */,
+				BB1234560000000000000002 /* UIColor+Hex.swift */,
 				2A27FE8720CF2C0200FC8949 /* Assets.xcassets */,
 				2A27FE8920CF2C0200FC8949 /* LaunchScreen.storyboard */,
 				2A27FE8C20CF2C0200FC8949 /* Info.plist */,
@@ -183,23 +186,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TipPoolCalc/Pods-TipPoolCalc-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
-				"${BUILT_PRODUCTS_DIR}/CurrencyTextField/CurrencyTextField.framework",
-				"${BUILT_PRODUCTS_DIR}/McPicker/McPicker.framework",
-				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TipPoolCalc/Pods-TipPoolCalc-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CurrencyTextField.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/McPicker.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TipPoolCalc/Pods-TipPoolCalc-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TipPoolCalc/Pods-TipPoolCalc-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TipPoolCalc/Pods-TipPoolCalc-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FC2C7DE03887487F83DB7A22 /* [CP] Check Pods Manifest.lock */ = {
@@ -236,6 +232,7 @@
 				2A9968642152E3F80003AA09 /* TiersClass.swift in Sources */,
 				2A27FE8620CF2BFE00FC8949 /* TipPoolCalc.xcdatamodeld in Sources */,
 				2A15D3FD20CF37E8006B9BD4 /* EmployeeEntryViewController.swift in Sources */,
+				BB1234560000000000000001 /* UIColor+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,14 +380,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NYZ637VQH4;
 				INFOPLIST_FILE = TipPoolCalc/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.markith.TipPool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -403,14 +400,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NYZ637VQH4;
 				INFOPLIST_FILE = TipPoolCalc/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.markith.TipPool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

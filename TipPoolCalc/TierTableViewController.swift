@@ -8,7 +8,6 @@
 
 import UIKit
 import CoreData
-import ChameleonFramework
 
 class TierTableViewController: UITableViewController {
   
@@ -104,10 +103,10 @@ class TierTableViewController: UITableViewController {
     
     // Cell header background color
     
-    //let cellColor = GradientColor(UIGradientStyle.leftToRight, frame: header.frame, colors: [UIColor(hexString: "4fd9bb")!, UIColor(hexString: "87e5d1")!])
+    //let cellColor = UIColor(hexString: "2ccaa7")!
     let header = view as! UITableViewHeaderFooterView
     
-    view.tintColor =  GradientColor(UIGradientStyle.leftToRight, frame: header.frame, colors: [UIColor(hexString: "2ccaa7")!, UIColor(hexString: "4fd9bb")!]) //UIColor.init(hexString: "aa9d9b")   //UIColor.flatMint
+    view.tintColor =  UIColor(hexString: "2ccaa7")! //UIColor.init(hexString: "aa9d9b")   //UIColor.flatMint
     header.textLabel?.textColor = UIColor.black
   }
   
@@ -126,7 +125,7 @@ class TierTableViewController: UITableViewController {
     
     cell.backgroundColor = cellColor
     
-    cell.textLabel?.textColor = ContrastColorOf(cellColor, returnFlat: true)
+    cell.textLabel?.textColor = .label
     cell.detailTextLabel?.backgroundColor = UIColor.clear
     
     return cell

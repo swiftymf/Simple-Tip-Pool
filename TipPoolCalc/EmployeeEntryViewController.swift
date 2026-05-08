@@ -8,7 +8,6 @@
 
 import UIKit
 import CurrencyTextField
-import ChameleonFramework
 import SkyFloatingLabelTextField
 
 class EmployeeEntryViewController: UITableViewController {
@@ -89,10 +88,10 @@ class EmployeeEntryViewController: UITableViewController {
    
     // Cell header background color
     
-    //let cellColor = GradientColor(UIGradientStyle.leftToRight, frame: header.frame, colors: [UIColor(hexString: "4fd9bb")!, UIColor(hexString: "87e5d1")!])
+    //let cellColor = UIColor(hexString: "2ccaa7")!
     let header = view as! UITableViewHeaderFooterView
 
-    view.tintColor =  GradientColor(UIGradientStyle.leftToRight, frame: header.frame, colors: [UIColor(hexString: "2ccaa7")!, UIColor(hexString: "4fd9bb")!]) //UIColor.init(hexString: "aa9d9b")   //UIColor.flatMint
+    view.tintColor =  UIColor(hexString: "2ccaa7")! //UIColor.init(hexString: "aa9d9b")   //UIColor.flatMint
     header.textLabel?.textColor = UIColor.black
   }
   
@@ -123,7 +122,7 @@ class EmployeeEntryViewController: UITableViewController {
     
     tableView.separatorStyle = .singleLine
     
-    let cellColor = UIColor.init(hexString: "d9d3d2")!  //GradientColor(UIGradientStyle.leftToRight, frame: cell.frame, colors: [UIColor(hexString: "4fd9bb")!, UIColor(hexString: "87e5d1")!])
+    let cellColor = UIColor.init(hexString: "d9d3d2")!  //UIColor(hexString: "2ccaa7")!
     
     if indexPath.section == 0 {
       let nameAndHours = "\(serverArray[indexPath.row]) worked \(serverHours[indexPath.row]) hours. "
@@ -135,7 +134,7 @@ class EmployeeEntryViewController: UITableViewController {
       
       cell.backgroundColor = cellColor
       
-      cell.textLabel?.textColor = ContrastColorOf(cellColor, returnFlat: true)
+      cell.textLabel?.textColor = .label
       cell.detailTextLabel?.backgroundColor = UIColor.clear
       
     } else {
@@ -150,7 +149,7 @@ class EmployeeEntryViewController: UITableViewController {
       
       cell.backgroundColor = cellColor
       
-      cell.textLabel?.textColor = ContrastColorOf(cellColor, returnFlat: true)
+      cell.textLabel?.textColor = .label
       cell.detailTextLabel?.backgroundColor = UIColor.clear
   
     }

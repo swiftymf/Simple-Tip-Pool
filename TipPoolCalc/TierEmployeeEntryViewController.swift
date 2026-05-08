@@ -9,7 +9,6 @@
 import UIKit
 import CoreData
 import McPicker
-import ChameleonFramework
 
 class TierEmployeeEntryViewController: UITableViewController {
   
@@ -150,7 +149,7 @@ class TierEmployeeEntryViewController: UITableViewController {
     // Cell header background color
     let header = view as! UITableViewHeaderFooterView
     
-    view.tintColor =  GradientColor(UIGradientStyle.leftToRight, frame: header.frame, colors: [UIColor(hexString: "2ccaa7")!, UIColor(hexString: "4fd9bb")!]) //UIColor.init(hexString: "aa9d9b")   //UIColor.flatMint
+    view.tintColor =  UIColor(hexString: "2ccaa7")! //UIColor.init(hexString: "aa9d9b")   //UIColor.flatMint
     header.textLabel?.textColor = UIColor.black
   }
   
@@ -212,7 +211,7 @@ class TierEmployeeEntryViewController: UITableViewController {
         cell.detailTextLabel?.text = "\(payoutText)"
 
         cell.backgroundColor = cellColor
-        cell.textLabel?.textColor = ContrastColorOf(cellColor, returnFlat: true)
+        cell.textLabel?.textColor = .label
         cell.detailTextLabel?.backgroundColor = UIColor.clear
         
         shareText.append("\(tiersArray[i - 1].position) \(name) worked \(hours) hours. \(sharePayoutText)\n")
@@ -220,7 +219,7 @@ class TierEmployeeEntryViewController: UITableViewController {
         break
       } else {
         cell.backgroundColor = cellColor
-        cell.textLabel?.textColor = ContrastColorOf(cellColor, returnFlat: true)
+        cell.textLabel?.textColor = .label
         cell.detailTextLabel?.backgroundColor = UIColor.clear
         cell.textLabel?.text = "Something went wrong"
       }
@@ -283,7 +282,7 @@ class TierEmployeeEntryViewController: UITableViewController {
         
         arrayOfEmployees[index].append(newEmployee)
         print("Element: \(element)")
-        print("newEmployee \(newEmployee.position, newEmployee.weight, newEmployee.hours, newEmployee.name)") // weight, position wrong
+        print("newEmployee \(newEmployee.position) \(newEmployee.weight) \(newEmployee.hours) \(newEmployee.name)") // weight, position wrong
         print("arrayOfEmployees \(arrayOfEmployees)")
         print("index: \(index)")
       }
